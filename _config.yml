@@ -31,10 +31,10 @@ author:
 # la immagine di anteprima link per i social media
 og_image: "og-image/default-og-image.jpg"
 
-collections:
-  docs:
-    output: true
-    permalink: "/docs/:title/"
+# collections:
+#   docs:
+#     output: true
+#     permalink: "/docs/:title/"
 
 paginate: 20  # numero di post per pagina
 paginate_path: "/blog/page:num"
@@ -48,10 +48,12 @@ plugins:
 navigation:
   - title: "Home"
     url: "/"
-  - title: "Docs"
-    url: "/docs/"
-  - title: "GitHub"
-    url: "https://github.com/kineticmcp/kinetic-mcp-server"
+  - title: "Solutions"
+    url: "/solutions/"
+  - title: "Enterprise"
+    url: "/enterprise/"
+  - title: "Contact"
+    url: "https://forms.gle/your-google-form-link" # TO BE REPLACED WITH USER'S LINK
 
 faq:
   - question: "How fast is the integration?"
@@ -75,7 +77,7 @@ highlighter: rouge
 include:
   - assets
   - robots.txt
-  - _docs_prompts
+
 
 keywords:
   - salesforce
