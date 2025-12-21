@@ -1,0 +1,106 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you:
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title: "Salesforce MCP Server"
+description: "Turn Salesforce Into an AI Operator. not another copilot. A real AI action layer."
+baseurl: ""
+url: "https://kineticmcp.github.io"
+
+author:
+  name: "KineticMCP Team"
+  email: "hello@kineticmcp.com"
+  bio: "Building the missing layer above Salesforce"
+
+# la immagine di anteprima link per i social media
+og_image: "og-image/default-og-image.jpg"
+
+collections:
+  docs:
+    output: true
+    permalink: "/docs/:title/"
+
+paginate: 20  # numero di post per pagina
+paginate_path: "/blog/page:num"
+
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-paginate
+
+navigation:
+  - title: "Home"
+    url: "/"
+  - title: "Docs"
+    url: "/docs/"
+  - title: "GitHub"
+    url: "https://github.com/kineticmcp/kinetic-mcp-server"
+
+faq:
+  - question: "How fast is the integration?"
+    answer: "Extremely fast. Our API is designed for plug-and-play architecture."
+  - question: "Is my data secure?"
+    answer: "Security is our bedrock. We utilize enterprise-grade encryption and permissions."
+  - question: "Does it replace Salesforce?"
+    answer: "No, it turns Salesforce into a tool used by AI agents, allowing them to read data and execute actions."
+  - question: "What models can I use?"
+    answer: "You can use any AI model (Claude, OpenAI, local LLMs) that supports the Model Context Protocol (MCP)."
+
+
+social:
+  github: "https://github.com/kineticmcp"
+  # Add other social links if available
+
+permalink: "/:categories/:title/"
+markdown: kramdown
+highlighter: rouge
+
+include:
+  - assets
+  - robots.txt
+  - _docs_prompts
+
+keywords:
+  - salesforce
+  - mcp
+  - agentic ai
+  - automation
+  - crm
+  - kinetic
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
