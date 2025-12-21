@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: "Salesforce MCP Server"
+title: "KineticMCP"
 description: "Turn Salesforce Into an AI Operator. not another copilot. A real AI action layer."
 baseurl: ""
 url: "https://kineticmcp.github.io"

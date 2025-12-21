@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Documentation - Salesforce MCP Server
+title: Documentation - KineticMCP
 ---
 
 <div class="pt-32 pb-20 px-6 bg-gray-50 dark:bg-neutral-900 min-h-screen">
@@ -8,13 +8,13 @@ title: Documentation - Salesforce MCP Server
         <div class="mb-12">
              <a href="/" class="text-brand-blue font-bold text-sm mb-4 inline-block">&larr; Back to Home</a>
             <h1 class="text-5xl font-black tracking-tight mb-4">Documentation</h1>
-            <p class="text-xl text-gray-500">Getting started with Salesforce MCP Server.</p>
+            <p class="text-xl text-gray-500">Getting started with KineticMCP.</p>
         </div>
 
         <div class="bg-white dark:bg-neutral-800 p-10 rounded-[2rem] shadow-sm border border-gray-100 dark:border-white/5 prose dark:prose-invert max-w-none">
             <h2>Introduction</h2>
             <p>
-                Salesforce MCP Server implements the Model Context Protocol (MCP) to allow AI agents to interact with your Salesforce instance.
+                KineticMCP implements the Model Context Protocol (MCP) to allow AI agents to interact with your Salesforce instance.
                 This enables capabilities like reading records, searching SOQL, and executing DML operations within a rigorous security context.
             </p>
 
