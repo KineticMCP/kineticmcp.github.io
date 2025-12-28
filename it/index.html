@@ -273,28 +273,54 @@ lang: it
                 Scopri come funziona
             </a>
         </div>
-        <div class="bg-gray-100 dark:bg-neutral-900 rounded-[2.5rem] p-8 lg:p-12">
-            <h3 class="text-2xl font-bold mb-6 text-center">Copilots vs. Action Layer</h3>
-            <div class="space-y-4">
-                <div class="flex justify-between items-center bg-white dark:bg-black p-4 rounded-xl shadow-sm">
-                    <span class="font-bold text-gray-500">Ambito</span>
-                    <div class="flex gap-4 text-sm font-bold">
-                        <span class="text-red-500">App-specifico</span>
-                        <span class="text-green-500">Cross-platform</span>
+
+        <!-- Redesigned Comparison Card -->
+        <div
+            class="bg-gray-50 dark:bg-neutral-900 rounded-[2.5rem] p-8 lg:p-10 border border-gray-100 dark:border-white/5">
+            <h3 class="text-2xl font-bold mb-8 text-center text-gray-800 dark:text-white">Perché i Copilot non bastano
+            </h3>
+
+            <div class="grid grid-cols-2 gap-4">
+                <!-- Left: Copilots -->
+                <div class="space-y-6">
+                    <div class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-4 text-center">Copilot
+                        Standard</div>
+
+                    <div class="bg-white dark:bg-black p-4 rounded-2xl shadow-sm opacity-60">
+                        <div class="text-red-400 text-2xl mb-2"><i class="fas fa-comment-dots"></i></div>
+                        <div class="font-bold text-sm mb-1">Solo Chat</div>
+                        <div class="text-xs text-gray-500">"Ecco un suggerimento..."</div>
+                    </div>
+
+                    <div class="bg-white dark:bg-black p-4 rounded-2xl shadow-sm opacity-60">
+                        <div class="text-red-400 text-2xl mb-2"><i class="fas fa-window-maximize"></i></div>
+                        <div class="font-bold text-sm mb-1">Proprietario</div>
+                        <div class="text-xs text-gray-500">Bloccato nella sidebar</div>
                     </div>
                 </div>
-                <div class="flex justify-between items-center bg-white dark:bg-black p-4 rounded-xl shadow-sm">
-                    <span class="font-bold text-gray-500">Ruolo</span>
-                    <div class="flex gap-4 text-sm font-bold">
-                        <span class="text-red-500">Assiste l'utente</span>
-                        <span class="text-green-500">Esegue il lavoro</span>
+
+                <!-- Right: KineticMCP -->
+                <div class="space-y-6 relative">
+                    <!-- VS Badge -->
+                    <div class="absolute top-1/2 -left-2 md:-left-5 transform -translate-y-1/2 z-10">
+                        <div
+                            class="w-8 h-8 rounded-full bg-brand-blue text-white flex items-center justify-center font-bold text-xs shadow-lg border-2 border-white dark:border-black">
+                            VS</div>
                     </div>
-                </div>
-                <div class="flex justify-between items-center bg-white dark:bg-black p-4 rounded-xl shadow-sm">
-                    <span class="font-bold text-gray-500">Architettura</span>
-                    <div class="flex gap-4 text-sm font-bold">
-                        <span class="text-red-500">Legata alla UI</span>
-                        <span class="text-green-500">Livello Sistema</span>
+
+                    <div class="text-xs font-bold text-brand-blue uppercase tracking-wider mb-4 text-center">KineticMCP
+                    </div>
+
+                    <div class="bg-white dark:bg-neutral-800 p-4 rounded-2xl shadow-md border-2 border-brand-blue/10">
+                        <div class="text-green-500 text-2xl mb-2"><i class="fas fa-hand-holding-magic"></i></div>
+                        <div class="font-bold text-sm mb-1">Azione Reale</div>
+                        <div class="text-xs text-gray-500">"Ho aggiornato il record."</div>
+                    </div>
+
+                    <div class="bg-white dark:bg-neutral-800 p-4 rounded-2xl shadow-md border-2 border-brand-blue/10">
+                        <div class="text-green-500 text-2xl mb-2"><i class="fas fa-network-wired"></i></div>
+                        <div class="font-bold text-sm mb-1">Universale</div>
+                        <div class="text-xs text-gray-500">Funziona con Claude, OpenAI, etc.</div>
                     </div>
                 </div>
             </div>
@@ -311,7 +337,7 @@ lang: it
         </p>
 
         <div class="grid md:grid-cols-2 gap-8">
-            <!-- Card 1 -->
+            <!-- Card 1: Finance -->
             <div
                 class="bg-white dark:bg-neutral-800 p-8 rounded-[2rem] shadow-lg border border-gray-100 dark:border-white/5 hover:-translate-y-2 transition-transform duration-300">
                 <div class="flex items-center gap-4 mb-6">
@@ -322,13 +348,13 @@ lang: it
                     <h3 class="text-2xl font-bold">Finanza e Legale</h3>
                 </div>
                 <p class="text-gray-500 dark:text-gray-400 mb-6">
-                    "Agente, controlla se questa nuova opportunità Chiusa-Vinta ha un contratto firmato corrispondente
-                    in Drive, poi genera la fattura."
+                    "Agente, controlla se questa opportunità Chiusa-Vinta ha un contratto firmato in Drive, poi genera
+                    la fattura."
                 </p>
-                <a href="/it/use-cases/" class="text-brand-blue font-bold hover:underline">Vedi tutti i casi d'uso
-                    -></a>
+                <a href="/it/use-cases/" class="text-brand-blue font-bold hover:underline">Vedi i casi d'uso -></a>
             </div>
-            <!-- Card 2 -->
+
+            <!-- Card 2: Supply Chain -->
             <div
                 class="bg-white dark:bg-neutral-800 p-8 rounded-[2rem] shadow-lg border border-gray-100 dark:border-white/5 hover:-translate-y-2 transition-transform duration-300">
                 <div class="flex items-center gap-4 mb-6">
@@ -339,11 +365,44 @@ lang: it
                     <h3 class="text-2xl font-bold">Supply Chain</h3>
                 </div>
                 <p class="text-gray-500 dark:text-gray-400 mb-6">
-                    "Quando il livello delle scorte in SAP scende sotto la soglia, crea un record Ordine di Acquisto in
-                    Salesforce e avvisa il team."
+                    "Quando le scorte SAP scendono sotto soglia, crea un Ordine di Acquisto in Salesforce e avvisa il
+                    team."
                 </p>
-                <a href="/it/use-cases/" class="text-brand-blue font-bold hover:underline">Vedi tutti i casi d'uso
-                    -></a>
+                <a href="/it/use-cases/" class="text-brand-blue font-bold hover:underline">Vedi i casi d'uso -></a>
+            </div>
+
+            <!-- Card 3: Customer Success -->
+            <div
+                class="bg-white dark:bg-neutral-800 p-8 rounded-[2rem] shadow-lg border border-gray-100 dark:border-white/5 hover:-translate-y-2 transition-transform duration-300">
+                <div class="flex items-center gap-4 mb-6">
+                    <div
+                        class="w-12 h-12 rounded-full bg-purple-100 flex items-center justify-center text-purple-600 font-bold">
+                        <i class="fas fa-heart-pulse"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold">Customer Success</h3>
+                </div>
+                <p class="text-gray-500 dark:text-gray-400 mb-6">
+                    "Analizza gli ultimi 5 ticket. Se il sentiment è negativo, segna l'account 'A Rischio' e avvisa
+                    l'Account Manager."
+                </p>
+                <a href="/it/use-cases/" class="text-brand-blue font-bold hover:underline">Vedi i casi d'uso -></a>
+            </div>
+
+            <!-- Card 4: Sales Ops -->
+            <div
+                class="bg-white dark:bg-neutral-800 p-8 rounded-[2rem] shadow-lg border border-gray-100 dark:border-white/5 hover:-translate-y-2 transition-transform duration-300">
+                <div class="flex items-center gap-4 mb-6">
+                    <div
+                        class="w-12 h-12 rounded-full bg-orange-100 flex items-center justify-center text-orange-600 font-bold">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold">Sales Ops</h3>
+                </div>
+                <p class="text-gray-500 dark:text-gray-400 mb-6">
+                    "Quando arriva un lead da Typeform, arricchiscilo con Clearbit. Se > 500 dipendenti, assegna come
+                    'Enterprise' agli SDR."
+                </p>
+                <a href="/it/use-cases/" class="text-brand-blue font-bold hover:underline">Vedi i casi d'uso -></a>
             </div>
         </div>
     </div>
