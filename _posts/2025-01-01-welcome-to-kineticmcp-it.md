@@ -26,4 +26,4 @@ Il vero potere dell'AI Agentica risiede nei flussi di lavoro cross-applicazione.
 Siamo entusiasti di costruire questo futuro con te.
 **Unisciti al nostro programma Partner Fondatori** per ottenere accesso anticipato e plasmare la roadmap.
 
-[Richiedi Accesso](/it/founding/)
+[Richiedi Accesso](/it/pricing/)

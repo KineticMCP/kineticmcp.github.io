@@ -26,4 +26,4 @@ The true power of Agentic AI lies in cross-application workflows. KineticMCP all
 We are excited to build this future with you.
 **Join our Founding Partners program** to get early access and shape the roadmap.
 
-[Request Access](/en/founding/)
+[Request Access](/en/pricing/)
