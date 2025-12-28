@@ -5,7 +5,7 @@ date: 2025-01-02 10:00:00 +0100
 categories: [use-cases, automation]
 lang: en
 description: "How KineticMCP transforms raw lead lists into qualified opportunities in seconds, saving hours of manual labor for your sales team."
-image: /assets/images/logo/kineticmcp-logo_pro_abstract_transparent_1024x1024.png
+image: /assets/images/blog/lead-qualification.png
 ---
 
 ## The Silent Sales Killer: Dirty Data

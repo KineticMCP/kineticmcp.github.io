@@ -5,7 +5,7 @@ date: 2025-01-07 10:00:00 +0100
 categories: [use-cases, finance]
 lang: en
 description: "How to skip Excel VLOOKUP hell and get complex, calculated financial reports directly from your CRM."
-image: /assets/images/logo/kineticmcp-logo_pro_abstract_transparent_1024x1024.png
+image: /assets/images/blog/data-export.png
 ---
 
 ## The Commission Calculation Nightmare

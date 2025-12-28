@@ -5,7 +5,7 @@ date: 2025-01-02 10:00:00 +0100
 categories: [casi-duso, automazione]
 lang: it
 description: "Come KineticMCP trasforma liste di lead grezzi in opportunità qualificate in secondi, risparmiando ore di lavoro manuale al tuo team sales."
-image: /assets/images/logo/kineticmcp-logo_pro_abstract_transparent_1024x1024.png
+image: /assets/images/blog/lead-qualification.png
 ---
 
 ## Il Killer Silenzioso delle Vendite: I Dati Sporchi

@@ -5,7 +5,7 @@ date: 2025-01-07 10:00:00 +0100
 categories: [casi-duso, finance]
 lang: it
 description: "Come saltare l'inferno dei VLOOKUP su Excel e ottenere report finanziari complessi e calcolati direttamente dal tuo CRM."
-image: /assets/images/logo/kineticmcp-logo_pro_abstract_transparent_1024x1024.png
+image: /assets/images/blog/data-export.png
 ---
 
 ## L'Incubo del Calcolo Commissioni

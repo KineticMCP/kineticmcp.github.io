@@ -5,7 +5,7 @@ date: 2025-01-03 10:00:00 +0100
 categories: [casi-duso, revenue]
 lang: it
 description: "Perché leggere ogni nota cliente è impossibile, e come KineticMCP ti aiuta a individuare i rischi di abbandono prima che sia troppo tardi."
-image: /assets/images/logo/kineticmcp-logo_pro_abstract_transparent_1024x1024.png
+image: /assets/images/blog/renewal-strategy.png
 ---
 
 ## L'Incubo di Fine Trimestre

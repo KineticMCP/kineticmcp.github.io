@@ -5,7 +5,7 @@ date: 2025-01-05 10:00:00 +0100
 categories: [casi-duso, customer-support]
 lang: it
 description: "Come smettere di trattare un 'Reset Password' e un 'Server Down' con la stessa urgenza usando l'AI."
-image: /assets/images/logo/kineticmcp-logo_pro_abstract_transparent_1024x1024.png
+image: /assets/images/blog/support-triage.png
 ---
 
 ## L'Inondazione del Lunedì Mattina

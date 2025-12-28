@@ -5,7 +5,7 @@ date: 2025-01-06 10:00:00 +0100
 categories: [use-cases, competitor-intel]
 lang: en
 description: "How to automatically generate strategic battlecards by analyzing why you lost past deals."
-image: /assets/images/logo/kineticmcp-logo_pro_abstract_transparent_1024x1024.png
+image: /assets/images/blog/competitor-intel.png
 ---
 
 ## The Hidden Treasure in Your Database

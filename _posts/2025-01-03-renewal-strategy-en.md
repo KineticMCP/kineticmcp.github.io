@@ -5,7 +5,7 @@ date: 2025-01-03 10:00:00 +0100
 categories: [use-cases, revenue]
 lang: en
 description: "Why reading every customer note is impossible, and how KineticMCP helps you spot churn risks before it's too late."
-image: /assets/images/logo/kineticmcp-logo_pro_abstract_transparent_1024x1024.png
+image: /assets/images/blog/renewal-strategy.png
 ---
 
 ## The End-of-Quarter Nightmare

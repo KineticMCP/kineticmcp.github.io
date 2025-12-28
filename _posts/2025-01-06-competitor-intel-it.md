@@ -5,7 +5,7 @@ date: 2025-01-06 10:00:00 +0100
 categories: [casi-duso, competitor-intel]
 lang: it
 description: "Come generare automaticamente battlecard strategiche analizzando perché hai perso contratti passati."
-image: /assets/images/logo/kineticmcp-logo_pro_abstract_transparent_1024x1024.png
+image: /assets/images/blog/competitor-intel.png
 ---
 
 ## Il Tesoro Nascosto nel Tuo Database

@@ -5,7 +5,7 @@ date: 2025-01-05 10:00:00 +0100
 categories: [use-cases, customer-support]
 lang: en
 description: "How to stop treating a 'Password Reset' and a 'Server Down' with the same urgency using AI."
-image: /assets/images/logo/kineticmcp-logo_pro_abstract_transparent_1024x1024.png
+image: /assets/images/blog/support-triage.png
 ---
 
 ## The Monday Morning Flood

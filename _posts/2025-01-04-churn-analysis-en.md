@@ -5,7 +5,7 @@ date: 2025-01-04 10:00:00 +0100
 categories: [use-cases, product-strategy]
 lang: en
 description: "How to stop guessing why you lose deals and start building features that actually close revenue."
-image: /assets/images/logo/kineticmcp-logo_pro_abstract_transparent_1024x1024.png
+image: /assets/images/blog/churn-analysis.png
 ---
 
 ## Why are we losing deals?
