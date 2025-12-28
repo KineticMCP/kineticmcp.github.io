@@ -52,102 +52,83 @@ lang: it
                 class="absolute -inset-1 bg-gradient-to-r from-brand-blue to-brand-green rounded-2xl blur opacity-20 animate-pulse">
             </div>
 
-            <!-- Terminal Window -->
+            <!-- Terminal Window / Chat Interface -->
             <div
-                class="relative bg-[#1e1e1e] rounded-2xl shadow-2xl border border-white/5 overflow-hidden transform rotate-1 hover:rotate-0 transition-transform duration-500">
-                <!-- Mac-style Header -->
-                <div class="bg-[#2d2d2d] px-4 py-3 flex items-center gap-2 border-b border-white/5">
-                    <div class="flex gap-2">
+                class="relative bg-white dark:bg-[#1e1e1e] rounded-2xl shadow-2xl border border-gray-200 dark:border-white/5 overflow-hidden transform rotate-1 hover:rotate-0 transition-transform duration-500 font-sans">
+                <!-- Header (Claude style) -->
+                <div
+                    class="bg-[#f0f0f0] dark:bg-[#2d2d2d] px-4 py-3 flex items-center justify-between border-b border-gray-200 dark:border-white/5">
+                    <div class="flex items-center gap-2">
                         <div class="w-3 h-3 rounded-full bg-[#ff5f56]"></div>
                         <div class="w-3 h-3 rounded-full bg-[#ffbd2e]"></div>
                         <div class="w-3 h-3 rounded-full bg-[#27c93f]"></div>
                     </div>
-                    <div class="ml-4 text-xs text-gray-400 font-mono">agent_logic.ts — KineticMCP</div>
+                    <div class="text-xs font-bold text-gray-500 dark:text-gray-400 uppercase tracking-widest">Claude
+                        Enterprise</div>
+                    <div class="w-4"></div>
                 </div>
 
-                <!-- Code Content -->
-                <div class="p-6 font-mono text-sm lg:text-base overflow-x-auto text-gray-300 leading-relaxed">
-                    <div class="flex">
-                        <span class="w-8 text-gray-600 select-none">1</span>
-                        <span class="text-purple-400">import</span> <span class="text-white"> { CRM } </span> <span
-                            class="text-purple-400">from</span> <span class="text-green-400">'@kinetic/sdk'</span>;
+                <!-- Chat Content -->
+                <div class="p-6 h-[400px] overflow-y-auto bg-white dark:bg-[#1e1e1e] flex flex-col gap-6">
+
+                    <!-- User Message -->
+                    <div class="flex gap-4">
+                        <div
+                            class="w-8 h-8 rounded-full bg-gray-200 dark:bg-gray-700 flex-shrink-0 flex items-center justify-center font-bold text-gray-600 dark:text-gray-300">
+                            U</div>
+                        <div
+                            class="bg-gray-100 dark:bg-[#2a2a2a] p-4 rounded-2xl rounded-tl-none text-sm lg:text-base text-gray-800 dark:text-gray-200 shadow-sm max-w-[90%]">
+                            Trova tutte le opportunità in fase "Negotiation" che non contattiamo da 2 settimane.
+                            Controlla se ci sono note rischiose.
+                        </div>
                     </div>
-                    <div class="flex">
-                        <span class="w-8 text-gray-600 select-none">2</span>
-                    </div>
-                    <div class="flex">
-                        <span class="w-8 text-gray-600 select-none">3</span>
-                        <span class="text-gray-500">// Initialize Agent Context</span>
-                    </div>
-                    <div class="flex">
-                        <span class="w-8 text-gray-600 select-none">4</span>
-                        <span class="text-blue-400">const</span> <span class="text-yellow-400">opportunities</span> =
-                        <span class="text-purple-400">await</span> CRM.search({
-                    </div>
-                    <div class="flex">
-                        <span class="w-8 text-gray-600 select-none">5</span>
-                        <span class="ml-4 text-blue-300">stage</span>: <span
-                            class="text-green-400">'Negotiation'</span>,
-                    </div>
-                    <div class="flex">
-                        <span class="w-8 text-gray-600 select-none">6</span>
-                        <span class="ml-4 text-blue-300">lastContact</span>: <span class="text-green-400">'> 14
-                            days'</span>
-                    </div>
-                    <div class="flex">
-                        <span class="w-8 text-gray-600 select-none">7</span>
-                        });
-                    </div>
-                    <div class="flex">
-                        <span class="w-8 text-gray-600 select-none">8</span>
-                    </div>
-                    <div class="flex">
-                        <span class="w-8 text-gray-600 select-none">9</span>
-                        <span class="text-purple-400">for</span> (<span class="text-blue-400">const</span> opp <span
-                            class="text-purple-400">of</span> opportunities) {
-                    </div>
-                    <div class="flex">
-                        <span class="w-8 text-gray-600 select-none">10</span>
-                        <span class="ml-4 text-gray-500">// Semantic Analysis of Notes</span>
-                    </div>
-                    <div class="flex">
-                        <span class="w-8 text-gray-600 select-none">11</span>
-                        <span class="ml-4 text-purple-400">if</span> (opp.churnRisk > <span
-                            class="text-orange-400">0.8</span>) {
-                    </div>
-                    <div class="flex">
-                        <span class="w-8 text-gray-600 select-none">12</span>
-                        <span class="ml-8 text-purple-400">await</span> CRM.actions.createTask({
-                    </div>
-                    <div class="flex">
-                        <span class="w-8 text-gray-600 select-none">13</span>
-                        <span class="ml-12 text-blue-300">priority</span>: <span class="text-red-400">'Urgent'</span>,
-                    </div>
-                    <div class="flex">
-                        <span class="w-8 text-gray-600 select-none">14</span>
-                        <span class="ml-12 text-blue-300">note</span>: <span class="text-green-400">`Churn Risk
-                            Detected: ${opp.summary}`</span>
-                    </div>
-                    <div class="flex">
-                        <span class="w-8 text-gray-600 select-none">15</span>
-                        <span class="ml-8">});</span>
-                    </div>
-                    <div class="flex">
-                        <span class="w-8 text-gray-600 select-none">16</span>
-                        <span class="ml-4">}</span>
-                    </div>
-                    <div class="flex">
-                        <span class="w-8 text-gray-600 select-none">17</span>
-                        }
-                    </div>
-                    <div class="flex mt-2">
-                        <span class="w-8 text-gray-600 select-none">></span>
-                        <span class="animate-pulse text-brand-green">Agent executing... 4 records updated.</span>
+
+                    <!-- AI Tool Use Block -->
+                    <div class="flex gap-4">
+                        <div
+                            class="w-8 h-8 rounded-full bg-[#d97757] flex-shrink-0 flex items-center justify-center text-white font-bold">
+                            <i class="fas fa-robot"></i></div>
+                        <div class="flex-1 space-y-3">
+                            <div class="text-xs text-gray-400 font-mono mb-1">Tool utilizzato: kineticmcp</div>
+                            <div
+                                class="bg-black/5 dark:bg-black/30 border border-black/10 dark:border-white/10 p-3 rounded-lg font-mono text-xs text-gray-600 dark:text-green-400">
+                                <div class="flex items-center gap-2">
+                                    <span class="animate-pulse">⚡</span>
+                                    <span>Eseguendo query su Salesforce...</span>
+                                </div>
+                                <div class="mt-2 pl-4 border-l-2 border-gray-300 dark:border-white/10">
+                                    SELECT Id, Name, LastActivityDate FROM Opportunity <br>
+                                    WHERE StageName='Negotiation' AND LastActivityDate < N_DAYS_AGO:14 </div>
+                                </div>
+
+                                <!-- AI Response -->
+                                <div
+                                    class="bg-brand-blue/5 dark:bg-brand-blue/10 p-4 rounded-2xl rounded-tl-none text-sm lg:text-base text-gray-800 dark:text-gray-200 border border-brand-blue/10">
+                                    Ho trovato <strong>3 opportunità</strong> che corrispondono ai criteri.
+                                    <br><br>
+                                    ⚠️ <strong>Banca Sella</strong> ha una nota: <em>"Il competitor offre il 20% di
+                                        sconto"</em>.
+                                    <br><br>
+                                    Devo aggiornare il campo <strong>Rischio Churn</strong> a "Alto" e avvisare il VP
+                                    Sales?
+                                </div>
+
+                                <!-- Action Buttons -->
+                                <div class="flex gap-2">
+                                    <button
+                                        class="px-3 py-1.5 bg-brand-blue text-white text-xs font-bold rounded-lg hover:bg-brand-blue/90 transition-colors">Sì,
+                                        Aggiorna Salesforce</button>
+                                    <button
+                                        class="px-3 py-1.5 bg-gray-200 text-gray-600 dark:bg-gray-800 dark:text-gray-400 text-xs font-bold rounded-lg hover:bg-gray-300 transition-colors">No,
+                                        mostra dettagli</button>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 </section>
 
 <!-- The Problem Section -->
