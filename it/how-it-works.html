@@ -1,0 +1,99 @@
+---
+layout: default
+title: Come Funziona - KineticMCP
+lang: it
+---
+
+<section class="py-24 px-6 bg-white dark:bg-neutral-950">
+    <div class="max-w-4xl mx-auto text-center reveal">
+        <h1 class="text-5xl lg:text-7xl font-black tracking-tighter mb-8">
+            Un Esercito di Agenti. <br> Un'unica Interfaccia.
+        </h1>
+        <p class="text-xl text-gray-500 mb-16">
+            KineticMCP espone Salesforce come un server Model Context Protocol (MCP) standardizzato. Ciò significa che
+            qualsiasi client AI compatibile può istantaneamente "parlare Salesforce".
+        </p>
+    </div>
+
+    <div class="max-w-7xl mx-auto">
+        <!-- Diagram / Process -->
+        <div class="grid gap-8 reveal">
+            <!-- Step 1 -->
+            <div
+                class="flex flex-col lg:flex-row items-center gap-12 p-12 bg-gray-50 dark:bg-neutral-900 rounded-[3rem] border border-gray-100 dark:border-white/5">
+                <div
+                    class="flex-shrink-0 w-24 h-24 rounded-full bg-brand-black text-white flex items-center justify-center text-4xl font-black">
+                    1</div>
+                <div class="flex-1">
+                    <h3 class="text-3xl font-bold mb-4">L'Agente AI Decide</h3>
+                    <p class="text-xl text-gray-500">
+                        Dai un obiettivo in linguaggio naturale al tuo agente (Claude, OpenAI o LLM locale).
+                        <br><br>
+                        <em>"Trova tutti gli account a Milano che non sono stati contattati da 30 giorni e crea un task
+                            per il proprietario."</em>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div
+                class="flex flex-col lg:flex-row items-center gap-12 p-12 bg-white dark:bg-neutral-950 rounded-[3rem] border border-gray-200 dark:border-white/10 shadow-xl scale-105 z-10">
+                <div
+                    class="flex-shrink-0 w-24 h-24 rounded-full bg-brand-blue text-white flex items-center justify-center text-4xl font-black">
+                    2</div>
+                <div class="flex-1">
+                    <h3 class="text-3xl font-bold mb-4">KineticMCP Traduce</h3>
+                    <p class="text-xl text-gray-500">
+                        Il nostro server riceve l'intento e lo converte in query SOQL e chiamate API ottimizzate.
+                        Controlla:
+                    </p>
+                    <ul class="mt-4 space-y-2 font-bold text-gray-400">
+                        <li><i class="fas fa-shield-alt text-green-500 mr-2"></i> Permessi Utente</li>
+                        <li><i class="fas fa-check-double text-green-500 mr-2"></i> Regole di Validazione</li>
+                        <li><i class="fas fa-database text-green-500 mr-2"></i> Conformità allo Schema</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div
+                class="flex flex-col lg:flex-row items-center gap-12 p-12 bg-gray-50 dark:bg-neutral-900 rounded-[3rem] border border-gray-100 dark:border-white/5">
+                <div
+                    class="flex-shrink-0 w-24 h-24 rounded-full bg-brand-green text-white flex items-center justify-center text-4xl font-black">
+                    3</div>
+                <div class="flex-1">
+                    <h3 class="text-3xl font-bold mb-4">Salesforce Esegue</h3>
+                    <p class="text-xl text-gray-500">
+                        L'azione viene eseguita in Salesforce. I record vengono aggiornati, i task creati e le email
+                        registrate.
+                        Tutto totalmente invisibile all'utente finale, ma completamente auditato.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Technical Details -->
+<section class="py-24 px-6 bg-brand-surface dark:bg-neutral-900">
+    <div class="max-w-7xl mx-auto reveal">
+        <h2 class="text-4xl font-black mb-12 text-center">Sotto il cofano</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="p-8 bg-white dark:bg-neutral-800 rounded-3xl">
+                <h4 class="font-bold text-xl mb-4">Ricerca Semantica</h4>
+                <p class="text-gray-500">Indicizziamo i tuoi metadati in modo che gli agenti sappiano che "Valore
+                    Annuale" significa `Amount` e "Chiuso" significa `StageName = 'Closed Won'`.</p>
+            </div>
+            <div class="p-8 bg-white dark:bg-neutral-800 rounded-3xl">
+                <h4 class="font-bold text-xl mb-4">Gestione Bulk API</h4>
+                <p class="text-gray-500">Devi aggiornare 5.000 record? KineticMCP passa automaticamente alla Bulk API
+                    per evitare di raggiungere i limiti.</p>
+            </div>
+            <div class="p-8 bg-white dark:bg-neutral-800 rounded-3xl">
+                <h4 class="font-bold text-xl mb-4">Dockerizzato</h4>
+                <p class="text-gray-500">Deploy come singolo container. Niente microservizi complessi. Funziona su
+                    qualsiasi cloud o on-prem.</p>
+            </div>
+        </div>
+    </div>
+</section>

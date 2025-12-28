@@ -2,17 +2,20 @@
   <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
 
     <!-- Logo -->
-    <a href="{{ '/' | relative_url }}"
+    <a href="{{ '/' | relative_url }}{% if page.lang == 'it' %}it/{% else %}en/{% endif %}"
       class="text-2xl font-black tracking-tighter hover:scale-105 transition-transform">
-      <!-- Light mode logo (dark logo for light background) -->
-      <img src="/assets/images/logo-light.png" alt="{{ site.title }}" class="h-10 w-auto dark:hidden">
-      <!-- Dark mode logo (light logo for dark background) -->
-      <img src="/assets/images/logo-dark.png" alt="{{ site.title }}" class="h-10 w-auto hidden dark:block">
+      <img src="/assets/images/logo/kineticmcp-logo_pro_abstract_transparent_1024x1024.png" alt="{{ site.title }}"
+        class="h-10 w-auto">
     </a>
 
     <!-- Desktop Menu -->
     <div class="hidden md:flex items-center gap-8">
-      {% for item in site.navigation %}
+      {% assign nav_items = site.data.navigation_en %}
+      {% if page.lang == 'it' %}
+      {% assign nav_items = site.data.navigation_it %}
+      {% endif %}
+
+      {% for item in nav_items %}
       <a href="{{ item.url | relative_url }}"
         class="text-sm font-bold uppercase tracking-wide hover:text-brand-blue transition-colors relative group">
         {{ item.title }}
@@ -43,7 +46,12 @@
     <i class="fas fa-times"></i>
   </button>
 
-  {% for item in site.navigation %}
+  {% assign nav_items = site.data.navigation_en %}
+  {% if page.lang == 'it' %}
+  {% assign nav_items = site.data.navigation_it %}
+  {% endif %}
+
+  {% for item in nav_items %}
   <a href="{{ item.url | relative_url }}" class="text-3xl font-black hover:text-brand-blue transition-colors"
     onclick="toggleMobileMenu()">{{ item.title }}</a>
   {% endfor %}

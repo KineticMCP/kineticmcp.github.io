@@ -1,0 +1,123 @@
+---
+layout: default
+title: Casi d'Uso - KineticMCP
+lang: it
+---
+
+<section class="py-24 px-6 bg-white dark:bg-neutral-950">
+    <div class="max-w-7xl mx-auto text-center reveal">
+        <h1 class="text-5xl lg:text-7xl font-black tracking-tighter mb-8">
+            Impatto nel Mondo Reale
+        </h1>
+        <p class="text-xl text-gray-500 max-w-2xl mx-auto mb-16">
+            KineticMCP non si limita a chattare. Esegue flussi di lavoro complessi che attraversano Salesforce e tutto
+            il tuo stack esterno.
+        </p>
+    </div>
+
+    <div class="max-w-7xl mx-auto space-y-20">
+
+        <!-- Case 1: Sales Ops -->
+        <div class="grid md:grid-cols-2 gap-12 items-center reveal">
+            <div class="bg-gray-100 dark:bg-neutral-900 p-12 rounded-[2.5rem]">
+                <div class="text-4xl mb-6">🧹</div>
+                <h3 class="text-2xl font-bold mb-4">Sales Ops: Igiene della Pipeline</h3>
+                <div class="space-y-4 text-gray-600 dark:text-gray-400">
+                    <p><strong class="text-black dark:text-white">Problema:</strong> I commerciali dimenticano di
+                        aggiornare le date di chiusura o i prossimi passi. I report sono sempre sbagliati.</p>
+                    <p><strong class="text-black dark:text-white">Azione:</strong> L'agente scansiona le opportunità
+                        aperte ogni venerdì. Identifica date vecchie. Legge le email/chiamate recenti per dedurre lo
+                        stato. Aggiorna il record e segnala le trattative "A Rischio".</p>
+                    <p><strong class="text-black dark:text-white">Risultato:</strong> Visibilità della pipeline accurata
+                        al 100%, zero data entry manuale.</p>
+                </div>
+            </div>
+            <div class="order-first md:order-last">
+                <h2 class="text-4xl font-black mb-6">Una pipeline che si pulisce da sola.</h2>
+                <p class="text-xl text-gray-500">
+                    Smetti di stressare i tuoi commerciali. Lascia che l'agente AI gestisca il lavoro amministrativo
+                    noioso così possono concentrarsi sulla vendita.
+                </p>
+            </div>
+        </div>
+
+        <!-- Case 2: Customer Success -->
+        <div class="grid md:grid-cols-2 gap-12 items-center reveal">
+            <div>
+                <h2 class="text-4xl font-black mb-6">Orchestra l'Onboarding.</h2>
+                <p class="text-xl text-gray-500">
+                    Non lasciare che i nuovi clienti cadano nel vuoto. Coordina i passaggi di consegne istantaneamente.
+                </p>
+            </div>
+            <div class="bg-gray-100 dark:bg-neutral-900 p-12 rounded-[2.5rem]">
+                <div class="text-4xl mb-6">🚀</div>
+                <h3 class="text-2xl font-bold mb-4">CS: Passaggio di Consegne</h3>
+                <div class="space-y-4 text-gray-600 dark:text-gray-400">
+                    <p><strong class="text-black dark:text-white">Problema:</strong> Opportunità Chiusa-Vinta, ma il CS
+                        non lo sa fino al sync settimanale.</p>
+                    <p><strong class="text-black dark:text-white">Azione:</strong> L'agente rileva "Chiusa-Vinta". Crea
+                        "Progetto Onboarding" in Asana/Jira. Crea un canale Slack per il cliente. Prepara la bozza
+                        dell'email di benvenuto per il CSM.</p>
+                    <p><strong class="text-black dark:text-white">Risultato:</strong> Time-to-value immediato per il
+                        cliente.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Case 3: RevOps -->
+        <div class="grid md:grid-cols-2 gap-12 items-center reveal">
+            <div class="bg-gray-100 dark:bg-neutral-900 p-12 rounded-[2.5rem]">
+                <div class="text-4xl mb-6">🔧</div>
+                <h3 class="text-2xl font-bold mb-4">RevOps: Sync Cross-Stack</h3>
+                <div class="space-y-4 text-gray-600 dark:text-gray-400">
+                    <p><strong class="text-black dark:text-white">Problema:</strong> Cambiare un livello di prezzo in
+                        Stripe richiede aggiornamenti manuali nei Prodotti Salesforce.</p>
+                    <p><strong class="text-black dark:text-white">Azione:</strong> L'agente monitora il webhook di
+                        Stripe. Quando un prodotto cambia, esegue l'upsert del Pricebook Entry in Salesforce e avvisa il
+                        team Sales.</p>
+                    <p><strong class="text-black dark:text-white">Risultato:</strong> Sincronizzazione perfetta senza
+                        fragili script Zapier.</p>
+                </div>
+            </div>
+            <div class="order-first md:order-last">
+                <h2 class="text-4xl font-black mb-6">Basta integrazioni fragili.</h2>
+                <p class="text-xl text-gray-500">
+                    Sostituisci migliaia di righe di script di manutenzione con istruzioni semantiche per l'agente.
+                </p>
+            </div>
+        </div>
+
+        <!-- Case 4: Finance -->
+        <div class="grid md:grid-cols-2 gap-12 items-center reveal">
+            <div>
+                <h2 class="text-4xl font-black mb-6">Incassi col pilota automatico.</h2>
+                <p class="text-xl text-gray-500">
+                    Riduci il DSO (Days Sales Outstanding) automatizzando il ciclo fattura-incasso.
+                </p>
+            </div>
+            <div class="bg-gray-100 dark:bg-neutral-900 p-12 rounded-[2.5rem]">
+                <div class="text-4xl mb-6">💸</div>
+                <h3 class="text-2xl font-bold mb-4">Finanza: Recupero Crediti</h3>
+                <div class="space-y-4 text-gray-600 dark:text-gray-400">
+                    <p><strong class="text-black dark:text-white">Problema:</strong> Le fatture sono scadute. La finanza
+                        deve inviare manualmente email ai clienti o pingare i commerciali.</p>
+                    <p><strong class="text-black dark:text-white">Azione:</strong> L'agente controlla lo stato
+                        "Scaduto". Controlla Gmail per risposte recenti. Se nessuna risposta, prepara un promemoria
+                        gentile per l'approvazione del Rep.</p>
+                    <p><strong class="text-black dark:text-white">Risultato:</strong> Pagamenti più veloci, meno
+                        attrito.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="py-20 px-6 text-center reveal">
+    <h2 class="text-4xl font-black mb-8">Pronto ad automatizzare?</h2>
+    <a href="https://forms.gle/your-google-form-link"
+        class="inline-block px-12 py-6 bg-brand-blue text-white rounded-full font-bold text-xl shadow-2xl hover:scale-110 transition-transform">
+        Inizia Ora
+    </a>
+</section>

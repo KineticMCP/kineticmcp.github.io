@@ -1,0 +1,52 @@
+---
+layout: default
+title: Security & Trust - KineticMCP
+lang: en
+---
+
+<section class="py-24 px-6 bg-white dark:bg-neutral-950">
+    <div class="max-w-4xl mx-auto text-center reveal">
+        <h1 class="text-5xl lg:text-7xl font-black tracking-tighter mb-8">
+            Secure by Design. <br> Private by Default.
+        </h1>
+        <p class="text-xl text-gray-500 mb-16">
+            We understand that granting AI write access to your System of Record requires a new level of governance.
+        </p>
+    </div>
+
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 reveal">
+        <div class="p-12 bg-gray-50 dark:bg-neutral-900 rounded-[3rem]">
+            <i class="fas fa-lock text-5xl text-brand-blue mb-8"></i>
+            <h3 class="text-2xl font-bold mb-4">Zero Data Retention</h3>
+            <p class="text-gray-500">
+                KineticMCP is a pass-through layer. We do not store your CRM data.
+                The payloads move from Salesforce to your Agent and back. If you host on-prem, data never leaves your
+                VPC.
+            </p>
+        </div>
+        <div class="p-12 bg-gray-50 dark:bg-neutral-900 rounded-[3rem]">
+            <i class="fas fa-user-shield text-5xl text-brand-blue mb-8"></i>
+            <h3 class="text-2xl font-bold mb-4">Permission Passthrough</h3>
+            <p class="text-gray-500">
+                The AI agent inherits the permission set of the integration user.
+                It literally cannot see fields or objects that the user is restricted from accessing.
+            </p>
+        </div>
+        <div class="p-12 bg-gray-50 dark:bg-neutral-900 rounded-[3rem]">
+            <i class="fas fa-list-ol text-5xl text-brand-blue mb-8"></i>
+            <h3 class="text-2xl font-bold mb-4">Immutable Audit Logs</h3>
+            <p class="text-gray-500">
+                Every tool call is logged with the prompt that triggered it, the input parameters, and the result.
+                Trace exactly why an AI decided to update a field.
+            </p>
+        </div>
+        <div class="p-12 bg-gray-50 dark:bg-neutral-900 rounded-[3rem]">
+            <i class="fas fa-server text-5xl text-brand-blue mb-8"></i>
+            <h3 class="text-2xl font-bold mb-4">Air-Gap Ready</h3>
+            <p class="text-gray-500">
+                Run the docker container in your completely isolated environment.
+                Connect it to local LLMs (Llama 3, Mistral) for a 100% offline, sovereign AI stack.
+            </p>
+        </div>
+    </div>
+</section>
