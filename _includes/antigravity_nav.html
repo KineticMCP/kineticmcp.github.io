@@ -23,6 +23,21 @@
       </a>
       {% endfor %}
 
+      <!-- Language Switcher (Desktop) -->
+      <div class="flex items-center gap-2 text-sm font-bold uppercase tracking-wide">
+        {% if page.lang == 'it' %}
+        <span class="text-brand-blue">IT</span>
+        <span class="text-gray-300">|</span>
+        <a href="{{ page.url | replace: '/it/', '/en/' | relative_url }}"
+          class="hover:text-brand-blue transition-colors">EN</a>
+        {% else %}
+        <a href="{{ page.url | replace: '/en/', '/it/' | relative_url }}"
+          class="hover:text-brand-blue transition-colors">IT</a>
+        <span class="text-gray-300">|</span>
+        <span class="text-brand-blue">EN</span>
+        {% endif %}
+      </div>
+
       <!-- Theme Toggle -->
       <button onclick="toggleTheme()"
         class="w-10 h-10 rounded-full bg-gray-100 dark:bg-white/10 flex items-center justify-center hover:bg-gray-200 dark:hover:bg-white/20 transition-colors"
@@ -56,7 +71,20 @@
     onclick="toggleMobileMenu()">{{ item.title }}</a>
   {% endfor %}
 
-  <div class="flex gap-4 mt-8">
+  <div class="flex gap-4 mt-8 flex-col items-center">
+    <!-- Language Switcher (Mobile) -->
+    <div class="flex items-center gap-4 text-xl font-bold uppercase tracking-wide mb-4">
+      {% if page.lang == 'it' %}
+      <span class="text-brand-blue border-b-2 border-brand-blue">Italiano</span>
+      <a href="{{ page.url | replace: '/it/', '/en/' | relative_url }}"
+        class="text-gray-500 hover:text-black dark:hover:text-white transition-colors">English</a>
+      {% else %}
+      <a href="{{ page.url | replace: '/en/', '/it/' | relative_url }}"
+        class="text-gray-500 hover:text-black dark:hover:text-white transition-colors">Italiano</a>
+      <span class="text-brand-blue border-b-2 border-brand-blue">English</span>
+      {% endif %}
+    </div>
+
     <button onclick="toggleTheme()" class="px-6 py-3 rounded-full bg-gray-100 dark:bg-white/10 font-bold">
       Toggle Theme
     </button>
