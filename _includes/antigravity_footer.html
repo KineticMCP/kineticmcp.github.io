@@ -29,9 +29,27 @@
                 <h4 class="font-bold mb-4">{% if page.lang == 'it' %}Prodotto{% else %}Product{% endif %}</h4>
                 <ul class="space-y-3 text-sm text-gray-500 dark:text-gray-400">
                     <li>
-                        <a href="{% if page.lang == 'it' %}/it/use-cases/{% else %}/en/use-cases/{% endif %}"
+                        <a href="{% if page.lang == 'it' %}/it/how-it-works.html{% else %}/en/how-it-works.html{% endif %}"
+                            class="hover:text-black dark:hover:text-white transition-colors">
+                            {% if page.lang == 'it' %}Come Funziona{% else %}How it Works{% endif %}
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{% if page.lang == 'it' %}/it/use-cases.html{% else %}/en/use-cases.html{% endif %}"
                             class="hover:text-black dark:hover:text-white transition-colors">
                             {% if page.lang == 'it' %}Casi d'Uso{% else %}Use Cases{% endif %}
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{% if page.lang == 'it' %}/it/pricing.html{% else %}/en/pricing.html{% endif %}"
+                            class="hover:text-black dark:hover:text-white transition-colors">
+                            {% if page.lang == 'it' %}Prezzi{% else %}Pricing{% endif %}
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{% if page.lang == 'it' %}/it/blog/{% else %}/en/blog/{% endif %}"
+                            class="hover:text-black dark:hover:text-white transition-colors">
+                            Blog
                         </a>
                     </li>
                 </ul>
@@ -63,5 +81,14 @@
         </p>
         &copy; 2025 KineticMCP Team. {% if page.lang == 'it' %}Tutti i diritti riservati.{% else %}All rights
         reserved.{% endif %}
+        <br class="md:hidden">
+        <span class="hidden md:inline mx-2">•</span>
+        <a href="{% if page.lang == 'it' %}/it/privacy.html{% else %}/en/privacy.html{% endif %}"
+            class="hover:text-black dark:hover:text-white transition-colors">{% if page.lang == 'it' %}Privacy{% else
+            %}Privacy{% endif %}</a>
+        <span class="mx-2">•</span>
+        <a href="{% if page.lang == 'it' %}/it/terms.html{% else %}/en/terms.html{% endif %}"
+            class="hover:text-black dark:hover:text-white transition-colors">{% if page.lang == 'it' %}Termini{% else
+            %}Terms{% endif %}</a>
     </div>
 </footer>
