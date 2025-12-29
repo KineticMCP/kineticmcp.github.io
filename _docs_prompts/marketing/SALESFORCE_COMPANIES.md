@@ -4,13 +4,21 @@ Questa lista contiene le principali aziende Enterprise che utilizzano Salesforce
 
 > **Nota Legale & Privacy:** Non è possibile fornire email private o link diretti a profili personali specifici senza violare il GDPR e le policy delle piattaforme. La strategia migliore è utilizzare **LinkedIn Sales Navigator** cercando i "Ruoli Target" indicati per ogni azienda.
 
-## 🎯 Strategia di Contatto
-Per ogni azienda, cerca su LinkedIn i seguenti ruoli chiave. Sono loro che sentono il dolore dei "dati bloccati" e cercano soluzioni di automazione.
+## 🎯 Analisi Target: Chi Decide Davvero? (Power Matrix)
 
-1.  **Head of Revenue Operations (RevOps):** Il target perfetto. Gestisce l'efficienza dei processi.
-2.  **VP of Sales Operations:** Cerca di velocizzare la vendita e ridurre l'admin time.
-3.  **Chief Information Officer (CIO) / CTO:** Interessato alla sicurezza (SOC2) e all'architettura (Docker/Self-hosted).
-4.  **Salesforce Architect / Product Owner:** La persona tecnica che capisce il valore dell'MCP.
+La tua domanda è corretta: **chi ha il potere di acquisto?**
+Nel B2B Enterprise non vende a una sola persona, ma a un "Comitato". Ecco la gerarchia per KineticMCP:
+
+| Ruolo | Pain (Dolore) | Power (Potere) | Strategia |
+| :--- | :---: | :---: | :--- |
+| **1. Head of RevOps**<br>*(Revenue Operations)* | 🔥🔥🔥🔥🔥<br>*(Alto)* | ⭐⭐⭐⭐<br>*(Medio-Alto)* | **IL TUO "CHAMPION".**<br>È il target ideale perché "sanguina" ogni giorno tra fogli Excel e dati disallineati. Ha il budget per i tool operativi ed è tecnico abbastanza da capire MCP. **Parti da lui.** |
+| **2. VP of Sales / CRO**<br>*(Chief Revenue Officer)* | 🔥🔥🔥<br>*(Medio)* | ⭐⭐⭐⭐⭐<br>*(Alto)* | **IL "BUYER".**<br>Non gli interessa la tecnologia, vuole solo *vendere di più*. Non parlargli di Docker o API. Parlagli di "Automated Pipeline" e "Zero Admin Work". Usalo se il RevOps non risponde. |
+| **3. CIO / CISO**<br>*(Chief Info/Security Officer)* | 🔥🔥<br>*(Basso)* | ⭐⭐⭐⭐⭐<br>*(Veto)* | **IL "GATEKEEPER".**<br>Il suo lavoro è dire "NO" ai software insicuri. KineticMCP vince qui perché è **Self-Hosted/Docker**. Non compra per guadagnare, compra per *non rischiare*. |
+| **4. Salesforce Architect**<br>*(Tech Lead)* | 🔥🔥🔥🔥<br>*(Alto)* | ⭐⭐⭐<br>*(Influencer)* | **IL TECNICO.**<br>Odia le integrazioni API fragili. Se gli mostri come KineticMCP rispetta le Validation Rules nativamente, diventerà il tuo sponsor interno presso il CIO. |
+
+### 🏆 Verdetto: Chi Contattare?
+1.  **Approccio "Bottom-Up" (Consigliato):** Contatta il **RevOps**. Fagli vedere la demo. Lui si innamorerà del prodotto e lo porterà al VP Sales per la firma.
+2.  **Approccio "Top-Down":** Contatta il **VP Sales** con un messaggio puro business ("Aumenta il fatturato del 20% eliminando il data entry"). Lui girerà l'email al RevOps dicendo "Guardate questo".
 
 ---
 
@@ -37,19 +45,88 @@ Per ogni azienda, cerca su LinkedIn i seguenti ruoli chiave. Sono loro che sento
 | **Amazon Web Services** | Tech | Gestione sales cycle enterprise globale. | VP Worldwide Sales Ops, Revenue Strategy Lead | Gestione deal complessi e multi-region. |
 | **UChicago Medicine** | Healthcare | Agentforce per scalare l'accesso alle cure. | Chief Medical Information Officer (CMIO), CTO | Scalabilità accesso servizi sanitari. |
 
-## 📧 Template Messaggio "Cold Outreach" (Esempio)
+## 📧 Cold Outreach Templates (By Role)
 
-**Oggetto:** Automating [Company Name] Salesforce workflows without APIs?
+Choose the right template based on who you are contacting.
 
-> Ciao [Nome],
+### 1. Target: Head of RevOps / Sales Ops 🔥🔥🔥🔥🔥 (High Priority)
+**Goal:** Show them you can solve their operational headaches (bad data, manual work).
+
+**Subject:** Automating [Company Name] Salesforce workflows without APIs?
+
+> Hi [Name],
 >
-> Ho visto come [Nome Azienda] sta innovando nel settore [Settore].
+> I see [Company Name] is scaling fast.
 >
-> Molti Head of RevOps con cui parlo hanno lo stesso problema: i dati in Salesforce sono ottimi, ma agire su di essi richiede integrazioni API complesse e fragili.
+> Many RevOps leaders I speak with share a nightmare: Salesforce data is valuable, but acting on it autonomously requires brittle API integrations that break whenever a Validation Rule changes.
 >
-> Con **KineticMCP**, stiamo permettendo agli agenti AI (come Claude Enterprise) di leggere e scrivere su Salesforce in modo semantico, rispettando tutte le Validation Rules, senza costruire una singola API.
+> **KineticMCP** gives your AI agents (like Claude) direct, semantic access to Salesforce. It respects your existing metadata and logic, so you can build autonomous workflows in minutes, not months.
 >
-> Sarebbe interessante mostrarti come potremmo automatizzare [Pain Point Specifico, es. "la riattivazione account"] in 15 minuti?
+> Open to a 15-min demo to see how we automate [Specific Pain Point, e.g., "quote approvals"]?
 >
 > Best,
-> [Tuo Nome]
+> [Your Name]
+
+---
+
+### 2. Target: VP of Sales / CRO 🔥🔥🔥 (Medium Priority)
+**Goal:** Focus on Revenue, Speed, and "Zero Admin". Do not talk about tech.
+
+**Subject:** Increasing [Company Name] rep productivity by 20%
+
+> Hi [Name],
+>
+> Your reps should be selling, not fighting with Salesforce.
+>
+> We help companies like yours build "Autonomous Revenue Engines". Imagine an AI agent that doesn't just "chat", but actually updates opportunities, logs meetings, and qualifies leads inside Salesforce—while your team sleeps.
+>
+> **KineticMCP** turns your CRM into a system of action, removing the admin bottleneck entirely.
+>
+> Do you have 10 minutes next Tuesday to discuss how to give your team 20% of their week back?
+>
+> Best,
+> [Your Name]
+
+---
+
+### 3. Target: CIO / CISO / CTO 🔥🔥 (Gatekeeper)
+**Goal:** Focus on Security, Control, and Architecture.
+
+**Subject:** Secure AI connectivity for [Company Name] Salesforce instance
+
+> Hi [Name],
+>
+> Giving AI agents access to enterprise CRM data usually means "Security Risk".
+>
+> That's why we built **KineticMCP** as a **Self-Hosted, Docker-based** solution.
+> *   **Zero Data Retention:** Data flows through; we store nothing.
+> *   **Full Control:** You run it on your infrastructure (AWS/Azure/On-Prem).
+> *   **SOC 2 Ready:** Designed for enterprise compliance.
+>
+> Unlike SaaS wrappers that act as "black boxes", we give you the Model Context Protocol (MCP) standard to connect Claude Enterprise securely to your Salesforce instance.
+>
+> Can I send you our Architecture Overview?
+>
+> Regards,
+> [Your Name]
+
+---
+
+### 4. Target: Salesforce Architect 🔥🔥🔥🔥 (Tech Champion)
+**Goal:** Technical respect. Semantic access. No brittle APIs.
+
+**Subject:** A better way to integrate LLMs with Salesforce metadata
+
+> Hi [Name],
+>
+> You know the pain of building a custom API endpoint for every new AI use case. It's brittle and hard to maintain.
+>
+> **KineticMCP** solves this by exposing your full Salesforce Schema (semantically optimized) to MCP-compatible agents like Claude.
+> *   **Validation Aware:** It reads your existing Validation Rules before writing.
+> *   **Schema Discovery:** Agents "learn" your custom objects automatically.
+> *   **No Glue Code:** Stop writing middleware for every field change.
+>
+> I'd love to get your technical feedback on our approach.
+>
+> Best,
+> [Your Name]
