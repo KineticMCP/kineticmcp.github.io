@@ -71,8 +71,21 @@ automation."
                         <div class="w-3 h-3 rounded-full bg-[#ffbd2e]"></div>
                         <div class="w-3 h-3 rounded-full bg-[#27c93f]"></div>
                     </div>
-                    <div class="text-xs font-bold text-gray-500 dark:text-gray-400 uppercase tracking-widest">Claude
-                        Enterprise</div>
+                    <div
+                        class="flex items-center gap-2 text-xs font-bold text-gray-500 dark:text-gray-400 uppercase tracking-widest">
+                        <!-- Claude Icon -->
+                        <div class="w-5 h-5 bg-[#d97757] rounded-md flex items-center justify-center text-white p-0.5">
+                            <svg viewBox="0 0 128 128" fill="none" class="w-full h-full">
+                                <path
+                                    d="M64 16C37.5 16 16 37.5 16 64C16 90.5 37.5 112 64 112C90.5 112 112 90.5 112 64C112 37.5 90.5 16 64 16ZM64 100C44.1 100 28 83.9 28 64C28 44.1 44.1 28 64 28C83.9 28 100 44.1 100 64C100 83.9 83.9 100 64 100Z"
+                                    fill="currentColor" fill-opacity="0.3" />
+                                <path
+                                    d="M64 36C48.5 36 36 48.5 36 64C36 79.5 48.5 92 64 92C79.5 92 92 79.5 92 64C92 48.5 79.5 36 64 36ZM64 84C53 84 44 75 44 64C44 53 53 44 64 44C75 44 84 53 84 64C84 75 75 84 64 84Z"
+                                    fill="currentColor" />
+                            </svg>
+                        </div>
+                        Claude Enterprise
+                    </div>
                     <!-- Fake Avatar -->
                     <div class="w-8 h-8 rounded-full bg-gray-300 dark:bg-gray-600"></div>
                 </div>
@@ -147,21 +160,12 @@ automation."
                     <!-- Bot Thinking / Tool Use -->
                     <div class="flex gap-4 msg-anim-2">
                         <div
-                            class="w-10 h-10 rounded-full bg-[#d97757] flex-shrink-0 flex items-center justify-center text-white font-bold text-lg overflow-hidden p-2">
-                            <!-- Claude Icon (Simplified) -->
-                            <svg viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg"
-                                class="w-full h-full text-white">
-                                <path
-                                    d="M64 16C37.5 16 16 37.5 16 64C16 90.5 37.5 112 64 112C90.5 112 112 90.5 112 64C112 37.5 90.5 16 64 16ZM64 100C44.1 100 28 83.9 28 64C28 44.1 44.1 28 64 28C83.9 28 100 44.1 100 64C100 83.9 83.9 100 64 100Z"
-                                    fill="currentColor" fill-opacity="0.3" />
-                                <path
-                                    d="M64 36C48.5 36 36 48.5 36 64C36 79.5 48.5 92 64 92C79.5 92 92 79.5 92 64C92 48.5 79.5 36 64 36ZM64 84C53 84 44 75 44 64C44 53 53 44 64 44C75 44 84 53 84 64C84 75 75 84 64 84Z"
-                                    fill="currentColor" />
-                            </svg>
+                            class="w-10 h-10 rounded-full bg-[#d97757] flex-shrink-0 flex items-center justify-center text-white font-bold text-lg">
+                            <i class="fas fa-robot"></i>
                         </div>
                         <div class="flex-1 space-y-2">
                             <div class="text-xs text-gray-400 font-mono flex items-center gap-2">
-                                <span class="font-bold text-[#d97757]">Claude Enterprise</span> • Connector: <span
+                                <i class="fas fa-bolt text-yellow-400"></i> Connector: <span
                                     class="font-bold">kineticmcp</span>
                             </div>
 
