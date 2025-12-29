@@ -34,8 +34,9 @@
     *   [ ] AWS VPC
     *   [ ] Azure Private Cloud
     *   [ ] Google Cloud Platform
-    *   [ ] On-Premise / Data Center
-    *   [ ] Non lo so / Cerchiamo una soluzione SaaS (Squalificato - "KineticMCP è strettamente self-hosted.")
+    *   [ ] On-Premise / Data Center (Linux/Kubernetes)
+    *   [ ] On-Premise (Windows Server + Docker Desktop)
+    *   [ ] Preferiamo una soluzione SaaS (Lista d'attesa Managed Cloud)
 
 ## 4. Sezione: Caso d'Uso & Urgenza
 *   **Qual è il workflow Agentico primario che volete costruire?** (Paragrafo)
@@ -53,7 +54,11 @@
     *   [ ] 201-1000 dipendenti
     *   [ ] 1000+ dipendenti
 *   **Avete un team tecnico interno (DevOps/Sviluppatori)?** (Sì/No)
-    *   *Contesto: KineticMCP è un tool per sviluppatori. Serve qualcuno che sappia lanciare `docker compose`.*
+    *   *Contesto: KineticMCP è un tool per sviluppatori. Serve qualcuno che sappia lanciare `docker compose` o gestire cluster K8s.*
+*   **Qual è la scala di deployment prevista?** (Scelta multipla)
+    *   [ ] Istanza Singola (Standard)
+    *   [ ] Multi-node / Cluster Kubernetes (Alta Disponibilità/Alto Carico)
+    *   [ ] Multi-tenant (Istanze separate per dipartimenti/permessi diversi)
 
 ## 6. Messaggio di Conferma (Thank You Page)
 > "Grazie per la candidatura. Stiamo revisionando le richieste su base continuativa.

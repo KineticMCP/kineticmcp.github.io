@@ -53,7 +53,7 @@ navigation:
   - title: "Enterprise"
     url: "/enterprise/"
   - title: "Contact"
-    url: "https://forms.gle/your-google-form-link" # TO BE REPLACED WITH USER'S LINK
+    url: "https://forms.gle/TPKyyJAGoyrjy9KH6" # TO BE REPLACED WITH USER'S LINK
 
 faq:
   - question: "How fast is the integration?"
