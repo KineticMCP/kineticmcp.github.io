@@ -70,7 +70,7 @@
                 <h4 class="font-bold mb-4">{% if page.lang == 'it' %}Contatti{% else %}Contact{% endif %}</h4>
                 <ul class="space-y-3 text-sm text-gray-500 dark:text-gray-400">
                     <li>
-                        <a href="https://forms.gle/your-google-form-link"
+                        <a href="{% if page.lang == 'it' %}/it/pricing/{% else %}/en/pricing/{% endif %}"
                             class="hover:text-black dark:hover:text-white transition-colors">
                             {% if page.lang == 'it' %}Richiedi Demo{% else %}Request Demo{% endif %}
                         </a>
