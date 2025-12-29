@@ -4,108 +4,256 @@ title: Casi d'Uso - KineticMCP
 lang: it
 ---
 
-<section class="py-24 px-6 bg-white dark:bg-neutral-950">
-    <div class="max-w-7xl mx-auto text-center reveal">
-        <h1 class="text-5xl lg:text-7xl font-black tracking-tighter mb-8">
-            Impatto nel Mondo Reale
-        </h1>
-        <p class="text-xl text-gray-500 max-w-2xl mx-auto mb-16">
-            KineticMCP non si limita a chattare. Esegue flussi di lavoro complessi che attraversano Salesforce e tutto
-            il tuo stack esterno.
-        </p>
+<!-- Hero Section -->
+<section class="relative pt-32 pb-20 px-6 overflow-hidden">
+    <!-- Background Gradients -->
+    <div
+        class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[500px] bg-brand-blue/10 blur-[120px] rounded-full pointer-events-none">
     </div>
 
-    <div class="max-w-7xl mx-auto space-y-20">
+    <div class="max-w-7xl mx-auto text-center relative z-10 reveal">
+        <div
+            class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-surface/50 dark:bg-white/5 border border-brand-neutral/20 backdrop-blur-sm mb-8">
+            <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+            <span class="text-sm font-medium text-brand-secondary">Pronto per la Produzione</span>
+        </div>
+
+        <h1 class="text-5xl lg:text-7xl font-black tracking-tighter mb-8 text-brand-primary">
+            Impatto nel <span
+                class="bg-clip-text text-transparent bg-gradient-to-r from-brand-blue to-brand-green">Mondo Reale</span>
+        </h1>
+        <p class="text-xl text-brand-secondary max-w-2xl mx-auto">
+            KineticMCP non si limita a chattare. Esegue flussi di lavoro complessi che attraversano Salesforce e tutto
+            il tuo stack esterno, autonomamente.
+        </p>
+    </div>
+</section>
+
+<!-- Use Cases Grid -->
+<section class="py-20 px-6">
+    <div class="max-w-7xl mx-auto space-y-32">
 
         <!-- Case 1: Sales Ops -->
-        <div class="grid md:grid-cols-2 gap-12 items-center reveal">
-            <div class="bg-gray-100 dark:bg-neutral-900 p-12 rounded-[2.5rem]">
-                <div class="text-4xl mb-6">🧹</div>
-                <h3 class="text-2xl font-bold mb-4">Sales Ops: Igiene della Pipeline</h3>
-                <div class="space-y-4 text-gray-600 dark:text-gray-400">
-                    <p><strong class="text-black dark:text-white">Problema:</strong> I commerciali dimenticano di
-                        aggiornare le date di chiusura o i prossimi passi. I report sono sempre sbagliati.</p>
-                    <p><strong class="text-black dark:text-white">Azione:</strong> L'agente scansiona le opportunità
-                        aperte ogni venerdì. Identifica date vecchie. Legge le email/chiamate recenti per dedurre lo
-                        stato. Aggiorna il record e segnala le trattative "A Rischio".</p>
-                    <p><strong class="text-black dark:text-white">Risultato:</strong> Visibilità della pipeline accurata
-                        al 100%, zero data entry manuale.</p>
+        <div class="grid lg:grid-cols-2 gap-16 items-center reveal">
+            <div class="order-2 lg:order-1">
+                <div class="flex items-center gap-4 mb-6">
+                    <div
+                        class="w-12 h-12 rounded-xl bg-orange-100 dark:bg-orange-900/30 flex items-center justify-center text-2xl">
+                        🧹</div>
+                    <span class="text-orange-600 dark:text-orange-400 font-bold tracking-widest uppercase text-sm">Sales
+                        Ops</span>
+                </div>
+                <h2 class="text-4xl font-black mb-6 text-brand-primary">Igiene Pipeline, Automagica.</h2>
+                <div class="space-y-6 text-lg text-brand-secondary">
+                    <p>
+                        <strong class="text-brand-primary">Il Problema:</strong> I commerciali odiano l'admin.
+                        Dimenticano di aggiornare le date di chiusura, i "Next Steps" sono vuoti e le previsioni sono
+                        inutili.
+                    </p>
+                    <p>
+                        <strong class="text-brand-primary">La Soluzione:</strong> Un agente scansiona le opportunità
+                        aperte ogni venerdì. Legge le email recenti per dedurre lo stato, aggiorna il record
+                        automaticamente e segnala le trattative "A Rischio" al management.
+                    </p>
                 </div>
             </div>
-            <div class="order-first md:order-last">
-                <h2 class="text-4xl font-black mb-6">Una pipeline che si pulisce da sola.</h2>
-                <p class="text-xl text-gray-500">
-                    Smetti di stressare i tuoi commerciali. Lascia che l'agente AI gestisca il lavoro amministrativo
-                    noioso così possono concentrarsi sulla vendita.
-                </p>
+
+            <!-- Visual -->
+            <div class="order-1 lg:order-2">
+                <div
+                    class="relative rounded-2xl bg-[#1e1e1e] border border-white/10 shadow-2xl overflow-hidden font-mono text-xs md:text-sm">
+                    <div class="flex items-center justify-between px-4 py-3 border-b border-white/5 bg-white/5">
+                        <span class="text-gray-400">clean_pipeline.py</span>
+                        <div class="flex gap-1.5">
+                            <div class="w-2.5 h-2.5 rounded-full bg-red-500"></div>
+                            <div class="w-2.5 h-2.5 rounded-full bg-yellow-500"></div>
+                            <div class="w-2.5 h-2.5 rounded-full bg-green-500"></div>
+                        </div>
+                    </div>
+                    <div class="p-6 space-y-4 text-gray-300">
+                        <div class="flex gap-2">
+                            <span class="text-green-400">➜</span>
+                            <span>Scansione 142 Opportunità Aperte...</span>
+                        </div>
+                        <div class="flex gap-2 opacity-75">
+                            <span class="text-blue-400">ℹ</span>
+                            <span>Opp: "Espansione Acme Corp"</span>
+                        </div>
+                        <div class="pl-6 border-l-2 border-white/10 space-y-1 text-gray-400">
+                            <p>Current CloseDate: <span class="text-red-400">2023-11-01</span> (Passata)</p>
+                            <p>Last Email Sentiment: "Risertiamoci in Q1"</p>
+                            <p class="text-yellow-400">⚠ Action: Sposto CloseDate a 2024-01-15</p>
+                        </div>
+                        <div class="flex gap-2">
+                            <span class="text-green-400">✔</span>
+                            <span>Record aggiornato. Flaggato come "Stalled".</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
         <!-- Case 2: Customer Success -->
-        <div class="grid md:grid-cols-2 gap-12 items-center reveal">
-            <div>
-                <h2 class="text-4xl font-black mb-6">Orchestra l'Onboarding.</h2>
-                <p class="text-xl text-gray-500">
-                    Non lasciare che i nuovi clienti cadano nel vuoto. Coordina i passaggi di consegne istantaneamente.
-                </p>
+        <div class="grid lg:grid-cols-2 gap-16 items-center reveal">
+            <!-- Visual -->
+            <div class="order-1">
+                <div
+                    class="relative rounded-2xl bg-white dark:bg-[#1e1e1e] border border-gray-200 dark:border-white/10 shadow-2xl overflow-hidden">
+                    <!-- Slack-like Header -->
+                    <div class="bg-[#350d36] text-white px-4 py-3 flex items-center gap-3">
+                        <div class="w-2 h-2 rounded-full bg-green-500"></div>
+                        <span class="font-bold">#nuovi-clienti</span>
+                    </div>
+
+                    <div class="p-6 space-y-6">
+                        <!-- Message -->
+                        <div class="flex gap-4">
+                            <div
+                                class="w-10 h-10 rounded bg-brand-blue flex items-center justify-center text-white font-bold">
+                                K</div>
+                            <div class="space-y-1">
+                                <div class="flex items-center gap-2">
+                                    <span class="font-bold text-brand-primary">Kinetic Bot</span>
+                                    <span
+                                        class="text-xs bg-gray-200 dark:bg-white/10 px-1 rounded text-gray-500">APP</span>
+                                </div>
+                                <div class="text-brand-secondary text-sm">
+                                    <p class="mb-2">🎉 <strong>Nuovo Deal Chiuso: TechStart Inc</strong></p>
+                                    <div class="pl-3 border-l-2 border-brand-blue/30 space-y-1 text-xs">
+                                        <p>✅ Creato Progetto Jira: <a href="#" class="text-blue-500">PROJ-123</a></p>
+                                        <p>✅ Canale Slack: <a href="#" class="text-blue-500">#client-techstart</a></p>
+                                        <p>✅ Email Benvenuto pronta per @Sara_CSM</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="bg-gray-100 dark:bg-neutral-900 p-12 rounded-[2.5rem]">
-                <div class="text-4xl mb-6">🚀</div>
-                <h3 class="text-2xl font-bold mb-4">CS: Passaggio di Consegne</h3>
-                <div class="space-y-4 text-gray-600 dark:text-gray-400">
-                    <p><strong class="text-black dark:text-white">Problema:</strong> Opportunità Chiusa-Vinta, ma il CS
-                        non lo sa fino al sync settimanale.</p>
-                    <p><strong class="text-black dark:text-white">Azione:</strong> L'agente rileva "Chiusa-Vinta". Crea
-                        "Progetto Onboarding" in Asana/Jira. Crea un canale Slack per il cliente. Prepara la bozza
-                        dell'email di benvenuto per il CSM.</p>
-                    <p><strong class="text-black dark:text-white">Risultato:</strong> Time-to-value immediato per il
-                        cliente.</p>
+
+            <div class="order-2">
+                <div class="flex items-center gap-4 mb-6">
+                    <div
+                        class="w-12 h-12 rounded-xl bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center text-2xl">
+                        🚀</div>
+                    <span
+                        class="text-purple-600 dark:text-purple-400 font-bold tracking-widest uppercase text-sm">Customer
+                        Success</span>
+                </div>
+                <h2 class="text-4xl font-black mb-6 text-brand-primary">Passaggi di Consegne Perfetti.</h2>
+                <div class="space-y-6 text-lg text-brand-secondary">
+                    <p>
+                        <strong class="text-brand-primary">Il Problema:</strong> Sales chiude un contratto, ma il CS non
+                        lo sa fino al sync settimanale. I clienti aspettano nel limbo per giorni.
+                    </p>
+                    <p>
+                        <strong class="text-brand-primary">La Soluzione:</strong> L'agente rileva "Chiusa-Vinta". Crea
+                        istantaneamente un Progetto di Onboarding in Asana, apre un canale Slack dedicato e prepara
+                        l'email di benvenuto.
+                    </p>
                 </div>
             </div>
         </div>
 
         <!-- Case 3: RevOps -->
-        <div class="grid md:grid-cols-2 gap-12 items-center reveal">
-            <div class="bg-gray-100 dark:bg-neutral-900 p-12 rounded-[2.5rem]">
-                <div class="text-4xl mb-6">🔧</div>
-                <h3 class="text-2xl font-bold mb-4">RevOps: Sync Cross-Stack</h3>
-                <div class="space-y-4 text-gray-600 dark:text-gray-400">
-                    <p><strong class="text-black dark:text-white">Problema:</strong> Cambiare un livello di prezzo in
-                        Stripe richiede aggiornamenti manuali nei Prodotti Salesforce.</p>
-                    <p><strong class="text-black dark:text-white">Azione:</strong> L'agente monitora il webhook di
-                        Stripe. Quando un prodotto cambia, esegue l'upsert del Pricebook Entry in Salesforce e avvisa il
-                        team Sales.</p>
-                    <p><strong class="text-black dark:text-white">Risultato:</strong> Sincronizzazione perfetta senza
-                        fragili script Zapier.</p>
+        <div class="grid lg:grid-cols-2 gap-16 items-center reveal">
+            <div class="order-2 lg:order-1">
+                <div class="flex items-center gap-4 mb-6">
+                    <div
+                        class="w-12 h-12 rounded-xl bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center text-2xl">
+                        🔧</div>
+                    <span
+                        class="text-blue-600 dark:text-blue-400 font-bold tracking-widest uppercase text-sm">RevOps</span>
+                </div>
+                <h2 class="text-4xl font-black mb-6 text-brand-primary">Sync Cross-Stack.</h2>
+                <div class="space-y-6 text-lg text-brand-secondary">
+                    <p>
+                        <strong class="text-brand-primary">Il Problema:</strong> Cambiare un prezzo su Stripe richiede
+                        aggiornamenti manuali sui prodotti Salesforce. Non succede mai, quindi le quote sono sempre
+                        sbagliate.
+                    </p>
+                    <p>
+                        <strong class="text-brand-primary">La Soluzione:</strong> Un agente che agisce da "middleware".
+                        Monitora i webhook di Stripe e, quando un prodotto cambia, aggiorna il Pricebook Entry in
+                        Salesforce automaticamente.
+                    </p>
                 </div>
             </div>
-            <div class="order-first md:order-last">
-                <h2 class="text-4xl font-black mb-6">Basta integrazioni fragili.</h2>
-                <p class="text-xl text-gray-500">
-                    Sostituisci migliaia di righe di script di manutenzione con istruzioni semantiche per l'agente.
-                </p>
+
+            <!-- Visual -->
+            <div class="order-1 lg:order-2">
+                <div
+                    class="relative rounded-2xl bg-[#0f172a] border border-white/10 shadow-2xl overflow-hidden font-mono text-xs md:text-sm p-6 text-gray-300">
+                    <div class="absolute top-0 right-0 p-4 opacity-50">JSON Diff</div>
+
+                    <div class="space-y-2">
+                        <div class="text-purple-400">object: "Product" {</div>
+                        <div class="pl-4">
+                            <span class="text-blue-400">"name"</span>: "Enterprise License",
+                        </div>
+                        <div class="pl-4 bg-red-500/10 border-l-2 border-red-500">
+                            <span class="text-red-400">- "price": 499.00</span>
+                        </div>
+                        <div class="pl-4 bg-green-500/10 border-l-2 border-green-500">
+                            <span class="text-green-400">+ "price": 599.00</span>
+                        </div>
+                        <div class="text-purple-400">}</div>
+                    </div>
+
+                    <div class="mt-6 pt-4 border-t border-white/10 text-xs">
+                        <span class="text-green-400">✔ Syncing to Salesforce Pricebook... Success.</span>
+                    </div>
+                </div>
             </div>
         </div>
 
         <!-- Case 4: Finance -->
-        <div class="grid md:grid-cols-2 gap-12 items-center reveal">
-            <div>
-                <h2 class="text-4xl font-black mb-6">Incassi col pilota automatico.</h2>
-                <p class="text-xl text-gray-500">
-                    Riduci il DSO (Days Sales Outstanding) automatizzando il ciclo fattura-incasso.
-                </p>
+        <div class="grid lg:grid-cols-2 gap-16 items-center reveal">
+            <!-- Visual -->
+            <div class="order-1">
+                <div
+                    class="relative rounded-2xl bg-white dark:bg-[#1e1e1e] border border-gray-200 dark:border-white/10 shadow-2xl overflow-hidden">
+                    <div
+                        class="border-b border-gray-100 dark:border-white/5 p-4 flex justify-between items-center bg-gray-50 dark:bg-white/5">
+                        <span class="font-bold text-sm text-brand-primary">Bozza: Sollecito Pagamento</span>
+                        <span class="text-xs text-orange-500 bg-orange-100 dark:bg-orange-900/30 px-2 py-1 rounded">In
+                            Attesa Approvazione</span>
+                    </div>
+                    <div class="p-6 text-sm text-brand-secondary space-y-4">
+                        <p>Ciao Giulia,</p>
+                        <p>Ho notato che la fattura <strong>#INV-2024-001</strong> (€15,000) è scaduta da 15 giorni. Non
+                            vedendo risposte alla mia ultima nota, volevo riportarlo alla tua attenzione.</p>
+                        <p>Puoi controllare lo stato?</p>
+                        <div class="flex gap-2 mt-4 pt-4 border-t border-gray-100 dark:border-white/5">
+                            <button
+                                class="px-3 py-1.5 bg-brand-blue text-white rounded text-xs font-bold shadow-lg shadow-brand-blue/20">Approva
+                                e Invia</button>
+                            <button
+                                class="px-3 py-1.5 border border-gray-200 dark:border-white/10 rounded text-xs">Modifica</button>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="bg-gray-100 dark:bg-neutral-900 p-12 rounded-[2.5rem]">
-                <div class="text-4xl mb-6">💸</div>
-                <h3 class="text-2xl font-bold mb-4">Finanza: Recupero Crediti</h3>
-                <div class="space-y-4 text-gray-600 dark:text-gray-400">
-                    <p><strong class="text-black dark:text-white">Problema:</strong> Le fatture sono scadute. La finanza
-                        deve inviare manualmente email ai clienti o pingare i commerciali.</p>
-                    <p><strong class="text-black dark:text-white">Azione:</strong> L'agente controlla lo stato
-                        "Scaduto". Controlla Gmail per risposte recenti. Se nessuna risposta, prepara un promemoria
-                        gentile per l'approvazione del Rep.</p>
-                    <p><strong class="text-black dark:text-white">Risultato:</strong> Pagamenti più veloci, meno
-                        attrito.</p>
+
+            <div class="order-2">
+                <div class="flex items-center gap-4 mb-6">
+                    <div
+                        class="w-12 h-12 rounded-xl bg-green-100 dark:bg-green-900/30 flex items-center justify-center text-2xl">
+                        💸</div>
+                    <span
+                        class="text-green-600 dark:text-green-400 font-bold tracking-widest uppercase text-sm">Finanza</span>
+                </div>
+                <h2 class="text-4xl font-black mb-6 text-brand-primary">Recupero Crediti automatico.</h2>
+                <div class="space-y-6 text-lg text-brand-secondary">
+                    <p>
+                        <strong class="text-brand-primary">Il Problema:</strong> Inseguire le fatture è imbarazzante e
+                        fa perdere tempo. I team finanziari sprecano ore a inviare email manuali.
+                    </p>
+                    <p>
+                        <strong class="text-brand-primary">La Soluzione:</strong> L'agente monitora lo stato "Scaduto" e
+                        controlla Gmail per risposte recenti. Se c'è silenzio, prepara un promemoria gentile e
+                        contestuale, pronto per l'approvazione dell'Account Manager.
+                    </p>
                 </div>
             </div>
         </div>
@@ -114,10 +262,21 @@ lang: it
 </section>
 
 <!-- CTA -->
-<section class="py-20 px-6 text-center reveal">
-    <h2 class="text-4xl font-black mb-8">Pronto ad automatizzare?</h2>
-    <a href="https://forms.gle/your-google-form-link"
-        class="inline-block px-12 py-6 bg-brand-blue text-white rounded-full font-bold text-xl shadow-2xl hover:scale-110 transition-transform">
-        Inizia Ora
-    </a>
+<section class="py-32 px-6 text-center reveal relative overflow-hidden">
+    <div
+        class="absolute inset-0 bg-brand-surface dark:bg-white/5 -z-10 skew-y-3 transform origin-bottom-left scale-110">
+    </div>
+
+    <h2 class="text-4xl md:text-5xl font-black mb-8 text-brand-primary">Pronto ad automatizzare la noia?</h2>
+
+    <div class="flex flex-col md:flex-row gap-4 justify-center items-center">
+        <a href="https://forms.gle/your-google-form-link"
+            class="px-8 py-4 bg-brand-blue text-white rounded-xl font-bold text-lg shadow-lg hover:shadow-brand-blue/20 hover:scale-105 transition-all">
+            Inizia Ora
+        </a>
+        <a href="/it/how-it-works.html"
+            class="px-8 py-4 bg-transparent border border-gray-200 dark:border-white/10 text-brand-primary rounded-xl font-bold text-lg hover:bg-gray-50 dark:hover:bg-white/5 transition-all">
+            Scopri Come Funziona
+        </a>
+    </div>
 </section>

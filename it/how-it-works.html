@@ -4,72 +4,159 @@ title: Come Funziona - KineticMCP
 lang: it
 ---
 
-<section class="py-24 px-6 bg-white dark:bg-neutral-950">
-    <div class="max-w-4xl mx-auto text-center reveal">
-        <h1 class="text-5xl lg:text-7xl font-black tracking-tighter mb-8">
-            Un Esercito di Agenti. <br> Un'unica Interfaccia.
-        </h1>
-        <p class="text-xl text-gray-500 mb-16">
-            KineticMCP espone Salesforce come un server Model Context Protocol (MCP) standardizzato. Ciò significa che
-            qualsiasi client AI compatibile può istantaneamente "parlare Salesforce".
-        </p>
+<!-- Hero Section -->
+<section class="relative pt-32 pb-20 px-6 overflow-hidden">
+    <div
+        class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[500px] bg-brand-green/10 blur-[120px] rounded-full pointer-events-none">
     </div>
 
-    <div class="max-w-7xl mx-auto">
-        <!-- Diagram / Process -->
-        <div class="grid gap-8 reveal">
+    <div class="max-w-4xl mx-auto text-center relative z-10 reveal">
+        <div
+            class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-surface/50 dark:bg-white/5 border border-brand-neutral/20 backdrop-blur-sm mb-8">
+            <span class="w-2 h-2 rounded-full bg-blue-500 animate-pulse"></span>
+            <span class="text-sm font-medium text-brand-secondary">Panoramica Architettura</span>
+        </div>
+
+        <h1 class="text-5xl lg:text-7xl font-black tracking-tighter mb-8 text-brand-primary">
+            Un Esercito di Agenti. <br> <span
+                class="bg-clip-text text-transparent bg-gradient-to-r from-brand-green to-brand-blue">Un'unica
+                Interfaccia.</span>
+        </h1>
+        <p class="text-xl text-brand-secondary mb-16 max-w-2xl mx-auto">
+            KineticMCP espone Salesforce come un server Model Context Protocol (MCP) standardizzato. Qualsiasi client AI
+            ora può "parlare Salesforce" fluentemente.
+        </p>
+    </div>
+</section>
+
+<!-- Process Flow -->
+<section class="py-20 px-6">
+    <div class="max-w-5xl mx-auto relative">
+        <!-- Connecting Line -->
+        <div
+            class="absolute left-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-transparent via-brand-blue/20 to-transparent -translate-x-1/2 hidden lg:block">
+        </div>
+
+        <div class="space-y-32">
+
             <!-- Step 1 -->
-            <div
-                class="flex flex-col lg:flex-row items-center gap-12 p-12 bg-gray-50 dark:bg-neutral-900 rounded-[3rem] border border-gray-100 dark:border-white/5">
+            <div class="relative grid lg:grid-cols-2 gap-12 items-center reveal">
+                <!-- Connector Dot -->
                 <div
-                    class="flex-shrink-0 w-24 h-24 rounded-full bg-brand-black text-white flex items-center justify-center text-4xl font-black">
-                    1</div>
-                <div class="flex-1">
-                    <h3 class="text-3xl font-bold mb-4">L'Agente AI Decide</h3>
-                    <p class="text-xl text-gray-500">
-                        Dai un obiettivo in linguaggio naturale al tuo agente (Claude, OpenAI o LLM locale).
-                        <br><br>
-                        <em>"Trova tutti gli account a Milano che non sono stati contattati da 30 giorni e crea un task
-                            per il proprietario."</em>
+                    class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-brand-blue border-4 border-white dark:border-black z-10 hidden lg:block">
+                </div>
+
+                <div class="lg:text-right">
+                    <div class="text-6xl font-black text-brand-surface opacity-50 dark:opacity-10 mb-2">01</div>
+                    <h3 class="text-3xl font-bold mb-4 text-brand-primary">L'Agente Decide</h3>
+                    <p class="text-lg text-brand-secondary">
+                        Dai un obiettivo in linguaggio naturale al tuo agente (Claude, OpenAI o LLM locale). Lui capisce
+                        il contesto e decide che deve recuperare dei dati.
                     </p>
+                </div>
+
+                <!-- Visual -->
+                <div
+                    class="bg-[#1e1e1e] rounded-2xl border border-white/10 shadow-2xl p-6 font-mono text-sm overflow-hidden">
+                    <div class="flex items-center gap-2 mb-4 text-gray-400 text-xs border-b border-white/5 pb-2">
+                        <span>PROMPT UTENTE</span>
+                    </div>
+                    <div class="text-green-400 mb-2">> Trova tutti gli account a Milano inattivi da 30gg.</div>
+                    <div class="text-gray-400 italic">// Analisi Agente...</div>
+                    <div class="text-blue-400 mt-2">
+                        Need tool: <span class="text-white">kineticmcp</span><br>
+                        Function: <span class="text-white">semantic_search</span><br>
+                        Parameters: <span class="text-yellow-300">{ "query": "accounts Milano inactive 30 days" }</span>
+                    </div>
                 </div>
             </div>
 
             <!-- Step 2 -->
-            <div
-                class="flex flex-col lg:flex-row items-center gap-12 p-12 bg-white dark:bg-neutral-950 rounded-[3rem] border border-gray-200 dark:border-white/10 shadow-xl scale-105 z-10">
+            <div class="relative grid lg:grid-cols-2 gap-12 items-center reveal">
                 <div
-                    class="flex-shrink-0 w-24 h-24 rounded-full bg-brand-blue text-white flex items-center justify-center text-4xl font-black">
-                    2</div>
-                <div class="flex-1">
-                    <h3 class="text-3xl font-bold mb-4">KineticMCP Traduce</h3>
-                    <p class="text-xl text-gray-500">
-                        Il nostro server riceve l'intento e lo converte in query SOQL e chiamate API ottimizzate.
-                        Controlla:
+                    class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-brand-green border-4 border-white dark:border-black z-10 hidden lg:block">
+                </div>
+
+                <!-- Visual (Left on Desktop) -->
+                <div
+                    class="order-2 lg:order-1 bg-[#0f172a] rounded-2xl border border-white/10 shadow-2xl p-6 font-mono text-xs overflow-hidden">
+                    <div class="flex items-center gap-2 mb-4 text-xs border-b border-white/5 pb-2">
+                        <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+                        <span class="text-gray-400">SERVER LOGS</span>
+                    </div>
+                    <div class="space-y-2 font-mono">
+                        <div class="flex gap-2">
+                            <span class="text-gray-500">[10:42:01]</span>
+                            <span class="text-blue-400">INFO</span>
+                            <span class="text-gray-300">Received intent from Agent.</span>
+                        </div>
+                        <div class="flex gap-2">
+                            <span class="text-gray-500">[10:42:02]</span>
+                            <span class="text-purple-400">DEBUG</span>
+                            <span class="text-gray-300">Mapping "Milano" -> BillingCity</span>
+                        </div>
+                        <div class="flex gap-2">
+                            <span class="text-gray-500">[10:42:02]</span>
+                            <span class="text-purple-400">DEBUG</span>
+                            <span class="text-gray-300">Mapping "30gg" -> LastActivityDate < N_DAYS:30</span>
+                        </div>
+                        <div class="flex gap-2 bg-white/5 p-2 rounded">
+                            <span class="text-green-400">GENERATED SOQL:</span>
+                            <span class="text-gray-300 break-all">SELECT Id, Name FROM Account WHERE BillingCity =
+                                'Milano' AND LastActivityDate < 2024-05-15</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="order-1 lg:order-2">
+                    <div class="text-6xl font-black text-brand-surface opacity-50 dark:opacity-10 mb-2">02</div>
+                    <h3 class="text-3xl font-bold mb-4 text-brand-primary">KineticMCP Traduce</h3>
+                    <p class="text-lg text-brand-secondary">
+                        Il nostro server riceve l'intento e lo converte in query SOQL e chiamate API ottimizzate e
+                        sicure. Controlla permessi, schema e limiti prima dell'esecuzione.
                     </p>
-                    <ul class="mt-4 space-y-2 font-bold text-gray-400">
-                        <li><i class="fas fa-shield-alt text-green-500 mr-2"></i> Permessi Utente</li>
-                        <li><i class="fas fa-check-double text-green-500 mr-2"></i> Regole di Validazione</li>
-                        <li><i class="fas fa-database text-green-500 mr-2"></i> Conformità allo Schema</li>
-                    </ul>
                 </div>
             </div>
 
             <!-- Step 3 -->
-            <div
-                class="flex flex-col lg:flex-row items-center gap-12 p-12 bg-gray-50 dark:bg-neutral-900 rounded-[3rem] border border-gray-100 dark:border-white/5">
+            <div class="relative grid lg:grid-cols-2 gap-12 items-center reveal">
                 <div
-                    class="flex-shrink-0 w-24 h-24 rounded-full bg-brand-green text-white flex items-center justify-center text-4xl font-black">
-                    3</div>
-                <div class="flex-1">
-                    <h3 class="text-3xl font-bold mb-4">Salesforce Esegue</h3>
-                    <p class="text-xl text-gray-500">
-                        L'azione viene eseguita in Salesforce. I record vengono aggiornati, i task creati e le email
-                        registrate.
-                        Tutto totalmente invisibile all'utente finale, ma completamente auditato.
+                    class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-brand-purple border-4 border-white dark:border-black z-10 hidden lg:block">
+                </div>
+
+                <div class="lg:text-right">
+                    <div class="text-6xl font-black text-brand-surface opacity-50 dark:opacity-10 mb-2">03</div>
+                    <h3 class="text-3xl font-bold mb-4 text-brand-primary">Salesforce Esegue</h3>
+                    <p class="text-lg text-brand-secondary">
+                        L'azione viene eseguita tramite l'API ufficiale di Salesforce. I record vengono aggiornati, i
+                        task creati e tutto viene registrato. Invisibile all'utente, completamente auditato.
                     </p>
                 </div>
+
+                <!-- Visual -->
+                <div
+                    class="bg-white dark:bg-[#1e1e1e] rounded-2xl border border-gray-200 dark:border-white/10 shadow-2xl p-6 relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-green-500"></div>
+                    <div class="flex items-center gap-4 mb-4">
+                        <div
+                            class="w-10 h-10 rounded-full bg-green-100 dark:bg-green-900/30 flex items-center justify-center text-green-600 dark:text-green-400 font-bold text-xl">
+                            ✓</div>
+                        <div>
+                            <div class="font-bold text-brand-primary">Operazione Completata</div>
+                            <div class="text-xs text-brand-secondary">200 OK • 1.2s latenza</div>
+                        </div>
+                    </div>
+                    <div
+                        class="text-sm text-brand-secondary bg-gray-50 dark:bg-black/20 p-4 rounded-xl border border-gray-100 dark:border-white/5">
+                        <p class="mb-2"><strong>Output:</strong></p>
+                        <p>Trovati 12 Account.</p>
+                        <p>Creati 12 Task per Proprietari: <span
+                                class="font-mono text-xs bg-gray-200 dark:bg-white/10 px-1 rounded">"Ricontattare
+                                Cliente"</span></p>
+                    </div>
+                </div>
             </div>
+
         </div>
     </div>
 </section>
@@ -77,22 +164,40 @@ lang: it
 <!-- Technical Details -->
 <section class="py-24 px-6 bg-brand-surface dark:bg-neutral-900">
     <div class="max-w-7xl mx-auto reveal">
-        <h2 class="text-4xl font-black mb-12 text-center">Sotto il cofano</h2>
+        <h2 class="text-4xl font-black mb-12 text-center text-brand-primary">Sotto il cofano</h2>
         <div class="grid md:grid-cols-3 gap-8">
-            <div class="p-8 bg-white dark:bg-neutral-800 rounded-3xl">
-                <h4 class="font-bold text-xl mb-4">Ricerca Semantica</h4>
-                <p class="text-gray-500">Indicizziamo i tuoi metadati in modo che gli agenti sappiano che "Valore
-                    Annuale" significa `Amount` e "Chiuso" significa `StageName = 'Closed Won'`.</p>
+            <!-- Card 1 -->
+            <div
+                class="p-8 bg-white dark:bg-[#1e1e1e] rounded-[2rem] border border-gray-100 dark:border-white/5 hover:border-brand-blue/30 transition-colors shadow-lg">
+                <div
+                    class="w-12 h-12 bg-blue-100 dark:bg-blue-900/20 rounded-xl flex items-center justify-center text-2xl mb-6">
+                    🔍</div>
+                <h4 class="font-bold text-xl mb-4 text-brand-primary">Ricerca Semantica</h4>
+                <p class="text-brand-secondary">Indicizziamo i tuoi metadati. Gli agenti sanno che "Valore Annuale"
+                    mappa su `Amount` e "Chiuso" significa `StageName = 'Closed Won'`, senza bisogno di addestramento.
+                </p>
             </div>
-            <div class="p-8 bg-white dark:bg-neutral-800 rounded-3xl">
-                <h4 class="font-bold text-xl mb-4">Gestione Bulk API</h4>
-                <p class="text-gray-500">Devi aggiornare 5.000 record? KineticMCP passa automaticamente alla Bulk API
-                    per evitare di raggiungere i limiti.</p>
+
+            <!-- Card 2 -->
+            <div
+                class="p-8 bg-white dark:bg-[#1e1e1e] rounded-[2rem] border border-gray-100 dark:border-white/5 hover:border-brand-purple/30 transition-colors shadow-lg">
+                <div
+                    class="w-12 h-12 bg-purple-100 dark:bg-purple-900/20 rounded-xl flex items-center justify-center text-2xl mb-6">
+                    📦</div>
+                <h4 class="font-bold text-xl mb-4 text-brand-primary">API Bulk Intelligente</h4>
+                <p class="text-brand-secondary">Devi aggiornare 5.000 record? KineticMCP passa automaticamente da REST a
+                    Bulk API per gestire il carico in modo efficiente ed evitare blocchi.</p>
             </div>
-            <div class="p-8 bg-white dark:bg-neutral-800 rounded-3xl">
-                <h4 class="font-bold text-xl mb-4">Dockerizzato</h4>
-                <p class="text-gray-500">Deploy come singolo container. Niente microservizi complessi. Funziona su
-                    qualsiasi cloud o on-prem.</p>
+
+            <!-- Card 3 -->
+            <div
+                class="p-8 bg-white dark:bg-[#1e1e1e] rounded-[2rem] border border-gray-100 dark:border-white/5 hover:border-brand-green/30 transition-colors shadow-lg">
+                <div
+                    class="w-12 h-12 bg-green-100 dark:bg-green-900/20 rounded-xl flex items-center justify-center text-2xl mb-6">
+                    🐳</div>
+                <h4 class="font-bold text-xl mb-4 text-brand-primary">Docker Nativo</h4>
+                <p class="text-brand-secondary">Si deploya come un singolo container autonomo. Niente microservizi
+                    complessi. Funziona su qualsiasi cloud (AWS, Azure, GCP) o on-premise.</p>
             </div>
         </div>
     </div>
