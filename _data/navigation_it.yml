@@ -7,6 +7,8 @@
   url: "/it/how-it-works/"
 - title: "Blog"
   url: "/it/blog/"
+- title: "Docs"
+  url: "/it/docs.html"
 - title: "Prezzi"
   url: "/it/pricing/"
 
