@@ -9,6 +9,8 @@
   url: "/it/blog/"
 - title: "Docs"
   url: "/it/docs/"
+- title: "Sicurezza"
+  url: "/it/security/"
 - title: "Prezzi"
   url: "/it/pricing/"
 

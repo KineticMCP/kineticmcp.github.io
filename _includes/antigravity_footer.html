@@ -58,6 +58,12 @@
                         </a>
                     </li>
                     <li>
+                        <a href="{% if page.lang == 'it' %}/it/security/{% else %}/en/security/{% endif %}"
+                            class="hover:text-black dark:hover:text-white transition-colors">
+                            {% if page.lang == 'it' %}Sicurezza{% else %}Security{% endif %}
+                        </a>
+                    </li>
+                    <li>
                         <a href="{% if page.lang == 'it' %}/it/blog/{% else %}/en/blog/{% endif %}"
                             class="hover:text-black dark:hover:text-white transition-colors">
                             Blog
