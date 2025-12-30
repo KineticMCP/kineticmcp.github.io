@@ -416,9 +416,11 @@ automation."
                 <div class="relative flex justify-center py-12 lg:py-0">
                     <div
                         class="w-48 h-48 rounded-full border border-white/20 bg-black/50 backdrop-blur-xl flex items-center justify-center relative z-20 shadow-[0_0_100px_rgba(59,130,246,0.5)]">
-                        <div class="text-center">
+                        <div class="text-center flex flex-col items-center justify-center">
                             <img src="/assets/images/logo/kineticmcp-logo_192x192.png" alt="KineticMCP Logo"
-                                class="w-24 h-24 mb-2 object-contain mx-auto animate-luminous-pulse">
+                                class="w-24 h-24 mb-1 object-contain mx-auto animate-luminous-pulse">
+                            <span
+                                class="text-sm font-bold text-white tracking-widest uppercase drop-shadow-lg">KineticMCP</span>
                         </div>
                     </div>
                     <!-- Orbiting Dots -->
@@ -594,31 +596,125 @@ automation."
 </section>
 
 <!-- Enterprise Ready Teaser -->
-<section class="py-20 px-6 bg-white dark:bg-neutral-950">
-    <div class="max-w-7xl mx-auto reveal">
-        <div class="bg-black dark:bg-neutral-900 text-white rounded-[3rem] p-12 lg:p-20 text-center">
-            <h2 class="text-4xl font-black mb-6">Enterprise Grade. Day 1.</h2>
-            <p class="text-gray-400 text-xl mb-12 max-w-3xl mx-auto">
-                We know that exposing your CRM to AI feels risky. That's why we built KineticMCP with a "Security First"
-                architecture.
-            </p>
-            <div class="grid md:grid-cols-3 gap-8 text-left mb-8">
-                <div class="p-6 bg-white/5 rounded-2xl">
-                    <h3 class="font-bold text-lg mb-2 text-brand-blue">SOC 2 Compliant</h3>
-                    <p class="text-sm text-gray-400">Strict security controls and audits.</p>
+<!-- Enterprise Ready Teaser -->
+<section class="py-24 px-6 bg-white dark:bg-neutral-950 relative overflow-hidden">
+    <!-- Background Decor -->
+    <div class="absolute inset-0 bg-brand-surface dark:bg-neutral-950 opacity-50"></div>
+    <div
+        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-brand-blue/5 rounded-full blur-[120px] pointer-events-none">
+    </div>
+
+    <div class="max-w-7xl mx-auto relative z-10 reveal">
+        <div
+            class="bg-black dark:bg-neutral-900 text-white rounded-[3rem] p-8 lg:p-20 overflow-hidden relative border border-white/10 shadow-2xl">
+            <!-- Inner Glow -->
+            <div
+                class="absolute top-0 right-0 w-[500px] h-[500px] bg-brand-blue/10 blur-[100px] rounded-full pointer-events-none">
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <!-- Text Content -->
+                <div class="text-left relative z-10">
+                    <div
+                        class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/10 text-xs font-bold tracking-wide uppercase mb-8 text-brand-blue">
+                        <i class="fas fa-shield-alt"></i> Security First
+                    </div>
+                    <h2 class="text-4xl lg:text-5xl font-black mb-6 leading-tight">Enterprise Grade.<br>Day 1.</h2>
+                    <p class="text-gray-400 text-lg lg:text-xl mb-10 leading-relaxed">
+                        Don't ask for permission to innovate. KineticMCP is built to pass the strictest security
+                        reviews.
+                        Zero-trust architecture, private deployment, and immutable audit logs.
+                    </p>
+
+                    <div class="flex flex-col gap-4">
+                        <div
+                            class="flex items-center gap-4 p-4 rounded-xl bg-white/5 border border-white/5 hover:bg-white/10 transition-colors">
+                            <div
+                                class="w-12 h-12 rounded-full bg-green-500/20 text-green-400 flex items-center justify-center text-xl flex-shrink-0">
+                                <i class="fas fa-check-shield"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-white">SOC 2 Type II Ready</h3>
+                                <p class="text-sm text-gray-400">Certified controls and continuous monitoring.</p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex items-center gap-4 p-4 rounded-xl bg-white/5 border border-white/5 hover:bg-white/10 transition-colors">
+                            <div
+                                class="w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 flex items-center justify-center text-xl flex-shrink-0">
+                                <i class="fas fa-server"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-white">On-Premise & Air-Gapped</h3>
+                                <p class="text-sm text-gray-400">Your data never leaves your infrastructure.</p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex items-center gap-4 p-4 rounded-xl bg-white/5 border border-white/5 hover:bg-white/10 transition-colors">
+                            <div
+                                class="w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 flex items-center justify-center text-xl flex-shrink-0">
+                                <i class="fas fa-fingerprint"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-white">Granular Audit Trail</h3>
+                                <p class="text-sm text-gray-400">Who did what, when, and why.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-12">
+                        <a href="/en/security/"
+                            class="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-white text-black font-bold hover:bg-gray-200 transition-colors text-lg">
+                            <span>Explore Security</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
                 </div>
-                <div class="p-6 bg-white/5 rounded-2xl">
-                    <h3 class="font-bold text-lg mb-2 text-brand-blue">Private Deployment</h3>
-                    <p class="text-sm text-gray-400">Ready for air-gapped deployments.</p>
-                </div>
-                <div class="p-6 bg-white/5 rounded-2xl">
-                    <h3 class="font-bold text-lg mb-2 text-brand-blue">Full Audit Logs</h3>
-                    <p class="text-sm text-gray-400">Every action is traced.</p>
+
+                <!-- Visual Content (New) -->
+                <div class="relative mt-12 lg:mt-0 z-10">
+                    <!-- Abstract Security Visual -->
+                    <div class="relative bg-neutral-800/50 rounded-3xl p-8 border border-white/10 backdrop-blur-md">
+                        <!-- Mockup of a Security Dashboard or Terminal -->
+                        <div class="font-mono text-xs text-green-400 mb-4 flex justify-between">
+                            <span><i class="fas fa-circle text-green-500 text-[8px] mr-2 animate-pulse"></i>SYSTEM
+                                SECURE</span>
+                            <span class="opacity-50">ID: SEC-9921</span>
+                        </div>
+                        <div class="space-y-3">
+                            <div class="h-2 bg-white/5 rounded w-3/4"></div>
+                            <div class="h-2 bg-white/5 rounded w-1/2"></div>
+                            <div class="h-2 bg-white/5 rounded w-full"></div>
+                            <div class="my-6 border-t border-white/5"></div>
+                            <div class="flex items-center gap-3">
+                                <div
+                                    class="w-10 h-10 bg-green-500/20 rounded-lg flex items-center justify-center text-green-500">
+                                    <i class="fas fa-lock"></i></div>
+                                <div>
+                                    <div class="text-white font-bold text-sm">Encryption At Rest</div>
+                                    <div class="text-xs text-gray-500">AES-256 Validated</div>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-3 mt-4">
+                                <div
+                                    class="w-10 h-10 bg-blue-500/20 rounded-lg flex items-center justify-center text-blue-500">
+                                    <i class="fas fa-user-shield"></i></div>
+                                <div>
+                                    <div class="text-white font-bold text-sm">RBAC Enforced</div>
+                                    <div class="text-xs text-gray-500">Policy: strict-least-privilege</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Floating Badge -->
+                        <div
+                            class="absolute -top-6 -right-6 bg-brand-blue text-white p-4 rounded-2xl shadow-xl border border-white/10 animate-bounce-slow">
+                            <div class="text-3xl mb-1 text-center"><i class="fas fa-check-circle"></i></div>
+                            <div class="font-bold text-xs text-center uppercase tracking-wide">100%<br>Compliant</div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <a href="/en/security/"
-                class="px-8 py-4 rounded-full bg-white text-black font-bold hover:bg-gray-200 transition-colors">Learn
-                about Security</a>
         </div>
     </div>
 </section>
