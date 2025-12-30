@@ -181,22 +181,151 @@ description: "Sicurezza Enterprise-grade. Architettura SOC 2 compliant, zero dat
     </div>
 </section>
 
-<!-- Bottom CTA -->
-<section class="py-24 px-6 border-t border-gray-100 dark:border-white/5">
-    <div class="max-w-4xl mx-auto text-center reveal">
-        <h2 class="text-4xl font-bold mb-8 text-brand-primary">Pronto per la Security Review?</h2>
-        <p class="text-xl text-brand-secondary mb-12">
-            Scarica il nostro Security Architecture Whitepaper per velocizzare l'approvazione interna.
+</div>
+</div>
+</section>
+
+<!-- SaaS vs Self-Hosted Comparison "Majestic" Block -->
+<section class="py-24 px-6 bg-gray-50 dark:bg-neutral-900/50">
+    <div class="max-w-7xl mx-auto reveal">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold mb-4 text-brand-primary">Perché l'Architettura Conta</h2>
+            <p class="text-xl text-brand-secondary max-w-2xl mx-auto">
+                La maggior parte degli "AI Agents" sono wrapper SaaS che esigono le tue chiavi API Salesforce. Noi siamo
+                diversi.
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8 lg:gap-16">
+            <!-- The Risky Way -->
+            <div class="relative group">
+                <div
+                    class="absolute inset-0 bg-red-500/5 blur-3xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-700">
+                </div>
+                <div
+                    class="relative p-10 rounded-3xl border-2 border-dashed border-red-200 dark:border-red-900/30 bg-white/50 dark:bg-black/20 backdrop-blur-sm">
+                    <div class="flex items-center gap-4 mb-8">
+                        <div
+                            class="w-12 h-12 rounded-full bg-red-100 dark:bg-red-900/20 flex items-center justify-center text-2xl">
+                            🚫</div>
+                        <h3 class="text-2xl font-bold text-gray-400">Il Tipico Wrapper SaaS</h3>
+                    </div>
+                    <ul class="space-y-6">
+                        <li class="flex items-start gap-4 opacity-50">
+                            <i class="fas fa-times text-red-400 mt-1"></i>
+                            <div>
+                                <strong class="block text-gray-500 font-bold">Data Exfiltration</strong>
+                                <span class="text-sm">I dati del CRM lasciano il tuo cloud per essere processati sui
+                                    loro server.</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4 opacity-50">
+                            <i class="fas fa-times text-red-400 mt-1"></i>
+                            <div>
+                                <strong class="block text-gray-500 font-bold">Chiavi Condivise</strong>
+                                <span class="text-sm">Devi consegnare chiavi API ad alto privilegio a un vendor
+                                    esterno.</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4 opacity-50">
+                            <i class="fas fa-times text-red-400 mt-1"></i>
+                            <div>
+                                <strong class="block text-gray-500 font-bold">Logica "Black Box"</strong>
+                                <span class="text-sm">Non puoi verificare perché l'agente ha preso una decisione o
+                                    vedere il codice.</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- The Kinetic Way -->
+            <div class="relative group">
+                <div
+                    class="absolute inset-0 bg-brand-green/10 blur-3xl rounded-full opacity-20 group-hover:opacity-100 transition-opacity duration-700">
+                </div>
+                <div
+                    class="relative p-10 rounded-3xl border border-brand-green/30 bg-white dark:bg-[#0a0a0a] shadow-2xl shadow-brand-green/10">
+                    <div
+                        class="absolute -top-4 -right-4 bg-brand-green text-black text-xs font-bold px-3 py-1 rounded-full uppercase tracking-widest">
+                        Raccomandato</div>
+                    <div class="flex items-center gap-4 mb-8">
+                        <div class="w-12 h-12 rounded-full bg-brand-green/10 flex items-center justify-center text-2xl">
+                            🛡️</div>
+                        <h3 class="text-2xl font-bold text-brand-primary">KineticMCP Container</h3>
+                    </div>
+                    <ul class="space-y-6">
+                        <li class="flex items-start gap-4">
+                            <i class="fas fa-check text-brand-green mt-1"></i>
+                            <div>
+                                <strong class="block text-brand-primary font-bold">Zero Trust Networking</strong>
+                                <span class="text-brand-secondary text-sm">Il traffico resta nel tuo VPC. Nessun dato
+                                    tocca mai i nostri server.</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <i class="fas fa-check text-brand-green mt-1"></i>
+                            <div>
+                                <strong class="block text-brand-primary font-bold">Le tue Chiavi, le tue Regole</strong>
+                                <span class="text-brand-secondary text-sm">Le API key sono Environment Variables a
+                                    runtime. Noi non le vediamo mai.</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <i class="fas fa-check text-brand-green mt-1"></i>
+                            <div>
+                                <strong class="block text-brand-primary font-bold">Open Core Audit</strong>
+                                <span class="text-brand-secondary text-sm">Il tuo team di security può ispezionare il
+                                    100% del codice sorgente dell'adapter.</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Bottom CTA (Majestic Upgrade) -->
+<section class="relative py-32 px-6 overflow-hidden">
+    <!-- Background Splashes -->
+    <div
+        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-tr from-brand-blue/20 to-brand-green/20 rounded-full blur-[100px] opacity-50 pointer-events-none animate-pulse">
+    </div>
+    <div
+        class="absolute bottom-0 right-0 w-[500px] h-[500px] bg-brand-blue/10 rounded-full blur-[80px] pointer-events-none">
+    </div>
+
+    <div class="max-w-5xl mx-auto text-center relative z-10 reveal">
+        <h2 class="text-5xl lg:text-7xl font-black mb-8 tracking-tighter text-brand-primary">
+            Smetti di scendere a compromessi <br> sulla <span
+                class="bg-clip-text text-transparent bg-gradient-to-r from-brand-blue to-purple-500">Sovranità dei
+                Dati.</span>
+        </h2>
+        <p class="text-xl lg:text-2xl text-brand-secondary mb-12 max-w-3xl mx-auto font-light leading-relaxed">
+            Scarica il Whitepaper sull'Architettura di Sicurezza e dai al tuo CISO la tranquillità che merita.
         </p>
-        <div class="flex flex-col sm:flex-row justify-center gap-4">
+
+        <div class="flex flex-col sm:flex-row justify-center gap-6">
             <a href="/it/pricing/"
-                class="px-8 py-4 rounded-full bg-brand-primary text-brand-surface font-bold hover:bg-brand-blue transition-colors">
-                Inizia il Deployment Sicuro
+                class="group relative px-8 py-5 rounded-2xl bg-brand-primary text-brand-surface font-bold text-lg overflow-hidden transition-all hover:scale-105 shadow-xl hover:shadow-2xl hover:shadow-brand-blue/20">
+                <div
+                    class="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700">
+                </div>
+                <span class="relative flex items-center gap-3">
+                    Inizia il Deployment Sicuro <i class="fas fa-rocket"></i>
+                </span>
             </a>
             <a href="#"
-                class="px-8 py-4 rounded-full border border-gray-200 dark:border-white/10 font-bold hover:bg-gray-50 dark:hover:bg-white/5 transition-colors">
-                Leggi la Documentazione
+                class="px-8 py-5 rounded-2xl border-2 border-gray-200 dark:border-white/10 font-bold text-lg text-brand-primary hover:bg-gray-50 dark:hover:bg-white/5 transition-colors">
+                Leggi Docs Sicurezza
             </a>
+        </div>
+
+        <div class="mt-12 flex items-center justify-center gap-6 text-sm font-mono text-gray-400 opacity-75">
+            <span class="flex items-center gap-2"><i class="fas fa-shield-alt"></i> SOC 2 Compliant</span>
+            <span class="flex items-center gap-2"><i class="fas fa-user-secret"></i> GDPR Ready</span>
+            <span class="flex items-center gap-2"><i class="fas fa-lock"></i> End-to-End Encrypted</span>
         </div>
     </div>
 </section>
