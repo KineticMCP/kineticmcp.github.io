@@ -6,7 +6,7 @@
 *   **Header Image:** Use a clean, dark-themed image with the KineticMCP logo.
 *   **Title:** KineticMCP - Founding Partners Application
 *   **Description:**
-    > "We are accepting 30 visionary organizations to shape the roadmap of KineticMCP Enterprise in Q1 2025.
+    > "We are accepting 30 visionary organizations to shape the roadmap of KineticMCP Enterprise in Q2 2025.
     >
     > **The Offer:**
     > - 50% Lifetime Discount on Enterprise Licensing
@@ -42,7 +42,7 @@
 *   **What is the primary Agentic workflow you want to build?** (Paragraph)
     *   *Prompt: "e.g., An agent that reads support emails, checks Salesforce Service Cloud for SLA status, and drafts a reply."*
 *   **What is your target deployment timeline?** (Multiple Choice)
-    *   [ ] Immediately / Q1 2025 (High Priority)
+    *   [ ] Immediately / Q2 2025 (High Priority)
     *   [ ] Q2 2025
     *   [ ] Just researching / No active project (Low Priority)
 

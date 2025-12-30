@@ -6,7 +6,7 @@
 *   **Immagine Intestazione:** Usa un'immagine pulita, tema scuro, con logo KineticMCP.
 *   **Titolo:** Candidatura Partner Fondatori - KineticMCP
 *   **Descrizione:**
-    > "Stiamo selezionando 30 organizzazioni visionarie per plasmare la roadmap di KineticMCP Enterprise nel Q1 2025.
+    > "Stiamo selezionando 30 organizzazioni visionarie per plasmare la roadmap di KineticMCP Enterprise nel Q2 2025.
     >
     > **L'Offerta:**
     > - 50% di Sconto a Vita sulla Licenza Enterprise
@@ -42,7 +42,7 @@
 *   **Qual è il workflow Agentico primario che volete costruire?** (Paragrafo)
     *   *Prompt: "es. Un agente che legge email di supporto, controlla lo stato SLA su Salesforce Service Cloud e bozza una risposta."*
 *   **Qual è la timeline di deployment target?** (Scelta multipla)
-    *   [ ] Immediatamente / Q1 2025 (Alta Priorità)
+    *   [ ] Immediatamente / Q2 2025 (Alta Priorità)
     *   [ ] Q2 2025
     *   [ ] Solo ricerca / Nessun progetto attivo (Bassa Priorità)
 
