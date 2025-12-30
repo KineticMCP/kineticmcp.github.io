@@ -6,114 +6,95 @@ locale: it_IT
 description: "Programma Partner Fondatori. Ottieni accesso anticipato alla Beta Enterprise di KineticMCP."
 ---
 
-<!-- Section 1: Limited Availability Hero -->
-<section
-    class="min-h-screen flex flex-col justify-center items-center py-24 px-6 bg-brand-black text-white relative overflow-hidden">
+<section class="py-24 px-6 bg-brand-black text-white min-h-screen relative overflow-hidden">
     <!-- Abstract Background -->
     <div class="absolute inset-0 z-0 opacity-20">
         <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-brand-blue rounded-full blur-[100px]"></div>
         <div class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-brand-green rounded-full blur-[100px]"></div>
     </div>
 
-    <div class="max-w-4xl mx-auto text-center relative z-10 reveal flex-grow flex flex-col justify-center">
+    <div class="max-w-4xl mx-auto text-center relative z-10 reveal">
         <div
-            class="inline-block px-4 py-1.5 rounded-full bg-white/10 border border-white/20 text-xs font-bold tracking-wide uppercase mb-6 text-brand-blue mx-auto">
+            class="inline-block px-4 py-1.5 rounded-full bg-white/10 border border-white/20 text-xs font-bold tracking-wide uppercase mb-6 text-brand-blue">
             Disponibilità Limitata
         </div>
-        <h1 class="text-5xl lg:text-8xl font-black tracking-tighter mb-8 leading-tight">
-            Costruisci il <br> Futuro con Noi.
+        <h1 class="text-5xl lg:text-7xl font-black tracking-tighter mb-8">
+            Costruisci il Futuro con Noi.
         </h1>
-        <p class="text-xl lg:text-2xl text-gray-400 mb-12 max-w-2xl mx-auto">
+        <p class="text-xl text-gray-400 mb-16 max-w-2xl mx-auto">
             Accettiamo 30 organizzazioni visionarie per plasmare la roadmap di KineticMCP Enterprise.
         </p>
 
         <!-- Slots Counter -->
         <div
-            class="mb-8 inline-flex flex-col items-center bg-white/5 p-8 rounded-3xl backdrop-blur-md border border-white/10 mx-auto">
+            class="mb-16 inline-flex flex-col items-center bg-white/5 p-8 rounded-3xl backdrop-blur-md border border-white/10">
             <div
-                class="text-6xl lg:text-7xl font-black bg-clip-text text-transparent bg-gradient-to-r from-brand-blue to-brand-green">
+                class="text-6xl font-black bg-clip-text text-transparent bg-gradient-to-r from-brand-blue to-brand-green">
                 25 / 30
             </div>
             <div class="text-sm font-bold tracking-widest uppercase text-gray-500 mt-2">Posti Rimanenti</div>
         </div>
     </div>
 
-    <!-- Scroll & Arrow -->
-    <div class="absolute bottom-12 left-1/2 -translate-x-1/2 animate-bounce cursor-pointer z-20">
-        <a href="#founding-offer" class="text-white opacity-50 hover:opacity-100 transition-opacity">
-            <i class="fas fa-arrow-down text-3xl"></i>
-        </a>
-    </div>
-</section>
+    <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-8 relative z-10 reveal">
+        <div class="p-10 bg-white/5 rounded-[2.5rem] border border-white/10 backdrop-blur-sm">
+            <h3 class="text-2xl font-bold mb-6">L'Offerta Founding</h3>
+            <ul class="space-y-6">
+                <li class="flex items-start gap-4">
+                    <div
+                        class="w-8 h-8 rounded-full bg-brand-blue flex items-center justify-center font-bold text-sm flex-shrink-0">
+                        1
+                    </div>
+                    <div>
+                        <h4 class="font-bold">50% Sconto a Vita</h4>
+                        <p class="text-sm text-gray-400">Blocca il prezzo early-bird per la tua licenza Enterprise per
+                            sempre.</p>
+                    </div>
+                </li>
+                <li class="flex items-start gap-4">
+                    <div
+                        class="w-8 h-8 rounded-full bg-brand-blue flex items-center justify-center font-bold text-sm flex-shrink-0">
+                        2
+                    </div>
+                    <div>
+                        <h4 class="font-bold">Onboarding White-Glove</h4>
+                        <p class="text-sm text-gray-400">I nostri ingegneri ti aiuteranno personalmente a fare il deploy
+                            e configurare il server nella tua infrastruttura.</p>
+                    </div>
+                </li>
+                <li class="flex items-start gap-4">
+                    <div
+                        class="w-8 h-8 rounded-full bg-brand-blue flex items-center justify-center font-bold text-sm flex-shrink-0">
+                        3
+                    </div>
+                    <div>
+                        <h4 class="font-bold">Accesso al Board</h4>
+                        <p class="text-sm text-gray-400">Call mensili sulla roadmap con i fondatori per dare priorità
+                            alle tue richieste di funzionalità.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
 
-<!-- Section 2: The Founding Offer -->
-<section id="founding-offer"
-    class="min-h-screen flex items-center py-24 px-6 bg-neutral-950 text-white relative border-t border-white/5">
-
-    <div class="max-w-6xl mx-auto w-full reveal">
-        <div class="grid md:grid-cols-2 gap-12 lg:gap-24 items-center">
-
-            <!-- Context/Benefits -->
-            <div>
-                <h2 class="text-4xl lg:text-5xl font-black mb-12">L'Offerta Founding</h2>
-                <ul class="space-y-10">
-                    <li class="flex items-start gap-6">
-                        <div
-                            class="w-12 h-12 rounded-full bg-brand-blue flex items-center justify-center font-bold text-lg flex-shrink-0 shadow-lg shadow-brand-blue/20">
-                            1
-                        </div>
-                        <div>
-                            <h4 class="text-2xl font-bold mb-2">50% Sconto a Vita</h4>
-                            <p class="text-gray-400 leading-relaxed">Blocca il prezzo early-bird per la tua licenza
-                                Enterprise per sempre. Nessun aumento futuro garantito.</p>
-                        </div>
-                    </li>
-                    <li class="flex items-start gap-6">
-                        <div
-                            class="w-12 h-12 rounded-full bg-brand-blue flex items-center justify-center font-bold text-lg flex-shrink-0 shadow-lg shadow-brand-blue/20">
-                            2
-                        </div>
-                        <div>
-                            <h4 class="text-2xl font-bold mb-2">Onboarding White-Glove</h4>
-                            <p class="text-gray-400 leading-relaxed">I nostri ingegneri ti aiuteranno personalmente a
-                                fare il deploy e configurare il server nella tua infrastruttura sicura.</p>
-                        </div>
-                    </li>
-                    <li class="flex items-start gap-6">
-                        <div
-                            class="w-12 h-12 rounded-full bg-brand-blue flex items-center justify-center font-bold text-lg flex-shrink-0 shadow-lg shadow-brand-blue/20">
-                            3
-                        </div>
-                        <div>
-                            <h4 class="text-2xl font-bold mb-2">Accesso al Board</h4>
-                            <p class="text-gray-400 leading-relaxed">Call mensili sulla roadmap con i fondatori per dare
-                                priorità alle tue richieste di funzionalità critiche.</p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-
-            <!-- Application Card -->
-            <div class="bg-white text-black p-10 lg:p-14 rounded-[3rem] shadow-2xl relative overflow-hidden">
-                <h3 class="text-3xl font-bold mb-6">Candidati per l'Accesso</h3>
-                <p class="mb-10 text-gray-600 text-lg">
-                    Cerchiamo partner pronti a fare il deploy di agenti AI in produzione nel Q1 2025.
+        <div class="p-10 bg-white text-black rounded-[2.5rem]">
+            <h3 class="text-2xl font-bold mb-6">Candidati per l'Accesso</h3>
+            <p class="mb-8 text-gray-500">
+                Cerchiamo partner pronti a fare il deploy di agenti AI in produzione nel Q1 2025.
+            </p>
+            <form action="https://forms.gle/TPKyyJAGoyrjy9KH6" class="space-y-4">
+                <a href="https://forms.gle/TPKyyJAGoyrjy9KH6"
+                    class="block w-full py-5 bg-black text-white font-bold rounded-xl text-center hover:bg-gray-800 transition-colors">
+                    Candidati Ora
+                </a>
+                <p class="text-xs text-center text-gray-400">
+                    Nessuna carta di credito richiesta. Candidatura soggetta a revisione.
                 </p>
-                <form action="https://forms.gle/TPKyyJAGoyrjy9KH6" class="space-y-4">
-                    <a href="https://forms.gle/TPKyyJAGoyrjy9KH6"
-                        class="block w-full py-5 bg-black text-white font-bold text-xl rounded-2xl text-center hover:bg-gray-800 transition-colors shadow-xl hover:shadow-2xl transform hover:-translate-y-1">
-                        Candidati Ora
-                    </a>
-                    <p class="text-sm text-center text-gray-400 mt-4">
-                        Nessuna carta di credito richiesta. Candidatura soggetta a revisione.
-                    </p>
-                </form>
-            </div>
+            </form>
         </div>
     </div>
 </section>
 
-<!-- Section 3: The ROI Equation -->
+<!-- Section 2: The ROI Equation -->
 <section class="py-24 px-6 bg-white dark:bg-neutral-950">
     <div class="max-w-7xl mx-auto reveal">
         <div class="text-center mb-16">
@@ -181,7 +162,7 @@ description: "Programma Partner Fondatori. Ottieni accesso anticipato alla Beta 
     </div>
 </section>
 
-<!-- Section 4: Unleash the Full Stack -->
+<!-- Section 3: Unleash the Full Stack -->
 <section class="py-24 px-6 bg-brand-surface dark:bg-neutral-900">
     <div class="max-w-7xl mx-auto reveal">
         <h2 class="text-4xl font-black mb-16 text-center">La Tua Infrastruttura AI Privata</h2>
@@ -232,7 +213,7 @@ description: "Programma Partner Fondatori. Ottieni accesso anticipato alla Beta 
     </div>
 </section>
 
-<!-- Section 5: Roadmap Teaser -->
+<!-- Section 4: Roadmap Teaser -->
 <section class="py-24 px-6 bg-black text-white border-t border-white/10">
     <div class="max-w-4xl mx-auto text-center reveal">
         <h2 class="text-4xl font-black mb-12">Il Futuro è Agentico.</h2>
@@ -269,9 +250,9 @@ description: "Programma Partner Fondatori. Ottieni accesso anticipato alla Beta 
         </div>
 
         <div class="mt-20">
-            <a href="#founding-offer"
+            <a href="https://forms.gle/TPKyyJAGoyrjy9KH6"
                 class="inline-flex items-center gap-3 px-8 py-4 bg-brand-blue text-white rounded-full font-bold text-lg hover:bg-blue-600 transition-all">
-                Candidati Ora <i class="fas fa-arrow-up"></i>
+                Diventa Partner Fondatore <i class="fas fa-arrow-right"></i>
             </a>
         </div>
     </div>
