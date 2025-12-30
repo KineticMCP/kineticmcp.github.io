@@ -19,27 +19,57 @@ Nel mercato italiano B2B Enterprise, le dinamiche sono simili a quelle globali m
 
 ## 🇮🇹 Lista Aziende Target Italia
 
-| Azienda | Settore | Uso Salesforce (Case Study/Info) | Ruolo Target (Cerca su LinkedIn) | Pain Point Probabile |
-| :--- | :--- | :--- | :--- | :--- |
-| **Enel / enel X** | Utility / Energy | Service Cloud & Field Service per gestione operativa globale. | Head of Digital Solutions, CISO, Responsabile Customer Care | Efficienza operativa e gestione interventi sul campo su larga scala. |
-| **Ferrari** | Automotive / Luxury | Marketing Cloud per personalizzazione estrema ed eventi. | Chief Marketing Officer (CMO), Head of Digital, CRM Manager | Mantenere l'esclusività e l'iper-personalizzazione su canali digitali. |
-| **Amplifon** | Healthcare / Retail | "Symphony" project (Service & Sales Cloud) per gestione store globali. | Chief Retail Officer, CIO, Global CRM Manager | Standardizzazione dell'esperienza cliente in migliaia di punti vendita. |
-| **Luxottica (EssilorLuxottica)** | Fashion / Retail | Omnichannel & Commerce Cloud. Integrazione fisico/digitale. | Global Head of CRM, eCommerce Director, IT Director Retail | Silos di dati tra e-commerce e negozi fisici; visione unica del cliente. |
-| **BPER Banca** | Banking / Finance | Financial Services Cloud. Modernizzazione servizi bancari. | Head of Digital Banking, CIO, Responsabile Canali Diretti | Integrazione sistemi legacy bancari con frontend moderni e AI. |
-| **Lavazza** | Food & Bev. | Marketing & Data Cloud. Attivazione dati consumatori. | Global Digital Director, IT Director, Head of Data | Unificare i dati dei consumatori da molteplici canali (Horeca, Retail, Online). |
-| **Pirelli** | Manufacturing | Sales Cloud B2B & B2C. Previsione domanda. | Head of Sales Operations, CIO, Digital Supply Chain Manager | Previsione accurata della domanda B2B e gestione complessa della supply chain. |
-| **Brunello Cucinelli** | Fashion / Luxury | Commerce Cloud. Esperienza "Umanistica" digitale. | Digital Director, IT Manager, Brand Experience Lead | Trasferire l'artigianalità e il tocco umano nel digitale senza "freddezza". |
-| **Comune di Genova / INPS** | Pubblica Amm. | Service Cloud / Public Sector. Digitalizzazione cittadino. | Dirigente Sistemi Informativi, Resp. Transizione Digitale | Gestione picchi di richieste, code agli sportelli e burocrazia manuale. |
-| **Sky Italia** | Media / Telco | Service Cloud. Gestione churn e retention. | Customer Care Director, Head of Retention, CTO | Ridurre il tasso di abbandono (churn) e gestire pratiche complesse automaticamente. |
-| **Furla** | Fashion | Commerce & Marketing Cloud. Omnichannel. | Global E-commerce Manager, CRM Manager | Gestione stock globale e coerenza tra online e boutique. |
-| **A2A / Iren** | Utility | Service Cloud. Gestione clienti multi-utility. | Head of Customer Operations, Digital Utility Manager | Unificare la vista cliente su diversi servizi (Luce, Gas, Acqua, Rifiuti). |
-| **Sara Assicurazioni** | Insurance | Financial Services. Gestione rete agenziale. | Head of Distribution, CIO, Marketing Director | Supportare la rete di agenti con dati aggiornati e meno burocrazia. |
-| **Italgas** | Energy / Infra | Service & Field Service. Trasformazione digitale asset. | CIO, Head of Asset Management, Digital Factory Lead | Manutenzione predittiva e gestione della forza lavoro sul territorio. |
-| **Campari Group** | Food & Bev. | Marketing & Sales Cloud. Gestione brand globali. | Group CIO, Global Head of Marketing IT | Coordinamento globale dei brand e delle campagne marketing locali. |
+| Azienda | Settore | Uso Salesforce (Case Study/Info) | Ruolo Target (Cerca su LinkedIn) | Nomi Chiave (Info Pubbliche*) | LinkedIn (Accesso Rapido) |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Enel / enel X** | Utility / Energy | Service Cloud & Field Service per gestione operativa globale. | Head of Digital Solutions, CISO, CIO | **Carlo Bozzoli** (Global CIO) | [Apri Profilo ➜](https://www.linkedin.com/search/results/people/?keywords=Carlo%20Bozzoli%20Enel) |
+| **Ferrari** | Automotive / Luxury | Marketing Cloud per personalizzazione estrema. | Chief Digital & Data Officer, CMO | **Silvia Gabrielli** (Chief Digital Officer), **Enrico Galliera** (CMO) | [Apri Profilo ➜](https://www.linkedin.com/search/results/people/?keywords=Silvia%20Gabrielli%20Ferrari) |
+| **Amplifon** | Healthcare / Retail | "Symphony" project (Service & Sales Cloud). | CIO, Chief Retail Excellence Officer | **Andrea Ciccolini** (CIO), **Federico Bardelli** (Chief Retail Officer) | [Apri Profilo ➜](https://www.linkedin.com/search/results/people/?keywords=Andrea%20Ciccolini%20Amplifon) |
+| **Luxottica** | Fashion / Retail | Omnichannel & Commerce Cloud. | Global Head of CRM, IT Director Retail | *Cerca: "CRM Manager EssilorLuxottica"* | [Identifica Profilo ➜](https://www.linkedin.com/search/results/people/?keywords=CRM%20Manager%20EssilorLuxottica) |
+| **BPER Banca** | Banking / Finance | Financial Services Cloud. | CIO, Head of Digital Business | **Massimiliano Baga** (CIO), **Maurice Lisi** (Head of Digital Business) | [Apri Profilo ➜](https://www.linkedin.com/search/results/people/?keywords=Massimiliano%20Baga%20BPER) |
+| **Lavazza** | Food & Bev. | Marketing & Data Cloud. | Global Digital Director, IT Director | *Cerca: "Digital Director Lavazza"* | [Identifica Profilo ➜](https://www.linkedin.com/search/results/people/?keywords=Digital%20Director%20Lavazza) |
+| **Pirelli** | Manufacturing | Sales Cloud B2B & B2C. | Head of Sales Operations, CIO | **Dalila Cosimi** (Head of Digital*) / *Cerca CIO* | [Apri/Cerca Profilo ➜](https://www.linkedin.com/search/results/people/?keywords=Dalila%20Cosimi%20Pirelli) |
+| **Brunello Cucinelli** | Fashion / Luxury | Commerce Cloud. Esperienza "Umanistica". | Digital Director, IT Manager | *Cerca: "Digital Manager Cucinelli"* | [Identifica Profilo ➜](https://www.linkedin.com/search/results/people/?keywords=Digital%20Manager%20Brunello%20Cucinelli) |
+| **Comune di Genova** | Pubblica Amm. | Service Cloud / Public Sector. | Dirigente Sistemi Informativi | *Cerca: "Direttore Sistemi Informativi Genova"* | [Identifica Profilo ➜](https://www.linkedin.com/search/results/people/?keywords=Direttore%20Sistemi%20Informativi%20Comune%20Genova) |
+| **Sky Italia** | Media / Telco | Service Cloud. Gestione churn. | Customer Care Director, CTO | *Cerca: "Customer Operations Director Sky"* | [Identifica Profilo ➜](https://www.linkedin.com/search/results/people/?keywords=Customer%20Operations%20Director%20Sky%20Italia) |
+| **Furla** | Fashion | Commerce & Marketing Cloud. | Global E-commerce Manager | *Cerca: "E-commerce Director Furla"* | [Identifica Profilo ➜](https://www.linkedin.com/search/results/people/?keywords=Ecommerce%20Director%20Furla) |
+| **A2A** | Utility | Service Cloud. Gestione clienti. | Head of Customer Operations | *Cerca: "Responsabile Customer Care A2A"* | [Identifica Profilo ➜](https://www.linkedin.com/search/results/people/?keywords=Responsabile%20Customer%20Care%20A2A) |
+| **Sara Assicurazioni** | Insurance | Financial Services. | CIO, Marketing Director | *Cerca: "Direttore Sistemi Informativi Sara"* | [Identifica Profilo ➜](https://www.linkedin.com/search/results/people/?keywords=CIO%20Sara%20Assicurazioni) |
+| **Italgas** | Energy / Infra | Service & Field Service. | CIO, Head of Asset Management | *Cerca: "CIO Italgas"* | [Identifica Profilo ➜](https://www.linkedin.com/search/results/people/?keywords=CIO%20Italgas) |
+| **Campari Group** | Food & Bev. | Marketing & Sales Cloud. | Group CIO, Global Head of Marketing IT | *Cerca: "Group CIO Campari"* | [Identifica Profilo ➜](https://www.linkedin.com/search/results/people/?keywords=Group%20CIO%20Campari) |
+
+*\*Nota: I nomi indicati sono basati su informazioni pubbliche. I link "Apri Profilo" utilizzano la ricerca intelligente di LinkedIn per portarti direttamente alla persona corretta.*
 
 ---
 
-## 📧 Template per Cold Outreach (In Italiano)
+## � Strategia LinkedIn: Gratis vs A Pagamento
+
+Dipende dal tuo account LinkedIn di partenza. Ecco le opzioni per contattare questi profili Executive.
+
+### 🟢 Opzione A: Account GRATIS (Strategica)
+Non puoi mandare messaggi diretti a chi non è tuo collegamento, ma puoi aggirare il problema con eleganza:
+
+1.  **Richiesta di Collegamento (Connection Request):**
+    *   È gratis.
+    *   Hai **300 caratteri** per aggiungere una nota.
+    *   **Tattica:** Non vendere subito. Incuriosisci.
+    *   *Esempio Nota:* "Buongiorno [Nome], ho letto del vostro progetto [Nome Progetto, es. Symphony]. Mi occupo di integrazioni AI/Salesforce sicure (Docker) per Enterprise. Mi piacerebbe collegarmi per seguire i vostri aggiornamenti tech."
+
+2.  **Segui (Follow) + Interazione:**
+    *   Invece di collegarti subito, clicca "Segui".
+    *   Commenta i loro post pubblici con valore aggiunto. Dopo 2-3 commenti intelligenti, la tua richiesta di collegamento sarà accettata quasi sicuramente.
+
+### 🟡 Opzione B: LinkedIn PREMIUM (Career/Business)
+*   Hai **5 InMail** al mese. Usale solo per i "Gatekeeper" più difficili (es. il CIO di Enel).
+*   Puoi vedere chi visita il tuo profilo (utile se visiti il loro e loro ricambiano la visita).
+
+### 🔴 Opzione C: Sales Navigator (Pro)
+*   Se fai questo seriamente, è l'investimento migliore.
+*   InMail illimitati (o quasi).
+*   Filtri avanzati per trovare i pari grado nelle aziende controllate.
+
+---
+
+## �📧 Template per Cold Outreach (In Italiano)
 
 Scegli il template in base al ruolo che stai contattando.
 
