@@ -70,5 +70,19 @@ KineticMCP - Turn Static Data into Active Revenue.
 3.  **Visuale:** Ho usato citazioni e grassetti per rendere il README "scansionabile" (proprio come abbiamo detto della Wiki).
 4.  **Il Memo:** L'ho messo in una sezione "Urgent" ben visibile così appena apri il repo ti ricordi del popup.
 
-Ti sembra abbastanza completo ora o vuoi aggiungere qualche specifica sulle gemme (plugin) che usi?
+---
+
+## ⚖️ Legal & Compliance Todo (Priorità Enterprise)
+
+In vista della vendita ai Partner e dell'integrazione con dati sensibili Salesforce, è necessario aggiornare la sezione legale con i seguenti punti:
+
+- [ ] **AI Disclaimer:** Inserire nei *Terms of Service* una clausola di limitazione di responsabilità per le "allucinazioni" o output imprecisi generati dagli LLM.
+- [ ] **Data Processing Agreement (DPA):** Predisporre un documento che specifichi il ruolo di KineticMCP come *Data Processor* e descriva tecnicamente il flusso "stateless" dei dati.
+- [ ] **Zero Data Retention Clause:** Rendere la dichiarazione di non-conservazione dei dati vincolante a livello contrattuale, specificando che il middleware agisce solo come tunnel crittografato.
+- [ ] **Salesforce API Disclaimer:** Proteggersi da eventuali modifiche unilaterali delle policy o dei costi delle API di Salesforce Inc.
+- [ ] **GDPR & Popup:** Integrare nel popup del blog una checkbox esplicita per il consenso al marketing (indispensabile per la raccolta email/lead generation).
+- [ ] **Definizione Giurisdizione:** Specificare il foro competente e la legislazione applicabile (fondamentale per trattative internazionali).
+
+---
+
 
