@@ -1,5 +1,3 @@
-Hai perfettamente ragione, con il link al repository è tutto più chiaro. Trattandosi di un sito Jekyll ospitato su GitHub Pages, il README deve essere non solo un manuale d'uso, ma anche il biglietto da visita tecnico del progetto per chiunque visiti il tuo profilo GitHub.
-Ecco una versione molto più completa e professionale, specifica per la tua struttura Jekyll:
 # KineticMCP - Official Website & Documentation
 ### The Enterprise Action Layer for Salesforce
 
