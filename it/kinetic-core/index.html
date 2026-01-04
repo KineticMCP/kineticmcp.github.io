@@ -3,8 +3,8 @@ layout: default
 title: Kinetic Core - Il Motore Python Open Source per Salesforce
 lang: it
 locale: it_IT
-description: "Kinetic Core è la libreria Python open-source per l'integrazione Salesforce enterprise. Documentazione
-completa, Bulk API v2 e Metadata API."
+description: "Kinetic Core è la libreria Python open-source per l'integrazione Salesforce enterprise. ETL Pipelines,
+Smart Mapping, Bulk API v2 e Metadata API."
 ---
 
 <!-- Hero Section -->
@@ -19,14 +19,14 @@ completa, Bulk API v2 e Metadata API."
 
             <h1
                 class="text-6xl lg:text-8xl font-black tracking-tighter mb-8 text-neutral-900 dark:text-white leading-[0.9]">
-                Integrazione Salesforce <br>
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-blue to-cyan-400">Pura e
-                    Potente.</span>
+                Tutto lo Stack Salesforce <br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-blue to-cyan-400">In una
+                    Libreria.</span>
             </h1>
 
             <p class="text-xl lg:text-2xl text-gray-500 dark:text-gray-400 mb-12 leading-relaxed max-w-3xl mx-auto">
-                La libreria Python definitiva per sviluppatori enterprise.
-                Niente astrazioni inutili, solo prestazioni pure per le tue pipeline ETL e i tuoi Agenti AI.
+                Non solo API wrapper. Kinetic Core è un framework completo per costruire <strong>ETL Pipelines</strong>,
+                gestire <strong>Mapping complessi</strong> e orchestrare automazioni enterprise in Python puro.
             </p>
 
             <!-- Install Block -->
@@ -58,8 +58,109 @@ completa, Bulk API v2 e Metadata API."
     </div>
 </section>
 
+<!-- CORE FEATURES GRID: The "Missing" Parts -->
+<section class="py-24 px-6 bg-brand-surface dark:bg-neutral-900">
+    <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl lg:text-5xl font-black mb-6 text-neutral-900 dark:text-white">Molto più di un Client
+                API.</h2>
+            <p class="text-xl text-gray-500 dark:text-gray-400 max-w-2xl mx-auto">
+                Abbiamo risolto i problemi noiosi dell'integrazione Salesforce - mapping, trasformazione dati, logging e
+                retry - così tu puoi concentrarti sulla logica.
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Feature: ETL Pipeline -->
+            <div
+                class="bg-white dark:bg-neutral-800 p-8 rounded-3xl shadow-sm hover:shadow-xl transition-shadow border border-gray-100 dark:border-white/5">
+                <div
+                    class="w-14 h-14 rounded-2xl bg-orange-100 dark:bg-orange-900/30 text-orange-600 dark:text-orange-400 flex items-center justify-center text-2xl mb-6">
+                    <i class="fas fa-random"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3 text-neutral-900 dark:text-white">ETL Pipelines</h3>
+                <p class="text-gray-500 dark:text-gray-400 leading-relaxed">
+                    Framework di sincronizzazione dichiarativa. Definisci la sorgente, la destinazione e la modalità
+                    (Insert, Update, Upsert, Delete) e lascia che il motore gestisca i batch.
+                </p>
+            </div>
+
+            <!-- Feature: Smart Mapping -->
+            <div
+                class="bg-white dark:bg-neutral-800 p-8 rounded-3xl shadow-sm hover:shadow-xl transition-shadow border border-gray-100 dark:border-white/5">
+                <div
+                    class="w-14 h-14 rounded-2xl bg-pink-100 dark:bg-pink-900/30 text-pink-600 dark:text-pink-400 flex items-center justify-center text-2xl mb-6">
+                    <i class="fas fa-map-signs"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3 text-neutral-900 dark:text-white">Smart Mapping</h3>
+                <p class="text-gray-500 dark:text-gray-400 leading-relaxed">
+                    Trasforma i dati al volo con funzioni Lambda Python. Gestisci rinominazione campi, valori di default
+                    dinamici e lookup nested in poche righe di codice.
+                </p>
+            </div>
+
+            <!-- Feature: Logging -->
+            <div
+                class="bg-white dark:bg-neutral-800 p-8 rounded-3xl shadow-sm hover:shadow-xl transition-shadow border border-gray-100 dark:border-white/5">
+                <div
+                    class="w-14 h-14 rounded-2xl bg-cyan-100 dark:bg-cyan-900/30 text-cyan-600 dark:text-cyan-400 flex items-center justify-center text-2xl mb-6">
+                    <i class="fas fa-file-medical-alt"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3 text-neutral-900 dark:text-white">Enterprise Logging</h3>
+                <p class="text-gray-500 dark:text-gray-400 leading-relaxed">
+                    Non perdere mai una traccia. Logging strutturato con context-injection per record ID, rotazione file
+                    automatica e output console colorato per debug rapido.
+                </p>
+            </div>
+
+            <!-- Feature: CLI -->
+            <div
+                class="bg-white dark:bg-neutral-800 p-8 rounded-3xl shadow-sm hover:shadow-xl transition-shadow border border-gray-100 dark:border-white/5">
+                <div
+                    class="w-14 h-14 rounded-2xl bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 flex items-center justify-center text-2xl mb-6">
+                    <i class="fas fa-terminal"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3 text-neutral-900 dark:text-white">Toolkit CLI</h3>
+                <p class="text-gray-500 dark:text-gray-400 leading-relaxed">
+                    Include <code>sf-toolkit</code> per ispezionare org, testare query SOQL al volo e lanciare pipeline
+                    di sync senza scrivere script Python.
+                </p>
+            </div>
+
+            <!-- Feature: Auth Manager -->
+            <div
+                class="bg-white dark:bg-neutral-800 p-8 rounded-3xl shadow-sm hover:shadow-xl transition-shadow border border-gray-100 dark:border-white/5">
+                <div
+                    class="w-14 h-14 rounded-2xl bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 flex items-center justify-center text-2xl mb-6">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3 text-neutral-900 dark:text-white">Gestione Auth</h3>
+                <p class="text-gray-500 dark:text-gray-400 leading-relaxed">
+                    Supporto nativo per JWT Bearer Flow (Prod) e Username/Password (Dev). Gestione automatica del
+                    rinnovo token e sessioni persistenti.
+                </p>
+            </div>
+
+            <!-- Feature: Universal Client -->
+            <div
+                class="bg-white dark:bg-neutral-800 p-8 rounded-3xl shadow-sm hover:shadow-xl transition-shadow border border-gray-100 dark:border-white/5">
+                <div
+                    class="w-14 h-14 rounded-2xl bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 flex items-center justify-center text-2xl mb-6">
+                    <i class="fas fa-globe"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3 text-neutral-900 dark:text-white">Client Universale</h3>
+                <p class="text-gray-500 dark:text-gray-400 leading-relaxed">
+                    CRUD completo su qualsiasi oggetto (Standard o Custom). Gestione intelligente di chiamate Composite
+                    API per massimizzare il throughput.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- MAJESTIC: Documentation Spotlight -->
-<section class="py-24 px-6 bg-brand-surface dark:bg-neutral-900 relative overflow-hidden">
+<section
+    class="py-24 px-6 bg-white dark:bg-neutral-950 relative overflow-hidden border-t border-gray-100 dark:border-white/5">
     <div class="max-w-7xl mx-auto relative z-10">
         <div class="grid lg:grid-cols-2 gap-16 items-center">
             <div class="order-2 lg:order-1">
@@ -69,12 +170,12 @@ completa, Bulk API v2 e Metadata API."
                 </h2>
                 <p class="text-xl text-gray-500 dark:text-gray-400 mb-8 leading-relaxed">
                     Non indovinare mai come usare un'API. Abbiamo documentato ogni singola classe, metodo e parametro.
-                    Guide passo-passo per Bulk API, Metadata deployment e authentication flows.
+                    Guide passo-passo per ETL Pipelines, Bulk API, Metadata deployment e authentication flows.
                 </p>
 
                 <div class="flex flex-col gap-4">
                     <a href="https://kineticmcp.com/kinetic-core" target="_blank"
-                        class="flex items-center justify-between p-6 bg-white dark:bg-black rounded-2xl shadow-lg border border-gray-100 dark:border-white/10 hover:border-brand-blue transition-all group">
+                        class="flex items-center justify-between p-6 bg-gray-50 dark:bg-neutral-900 rounded-2xl shadow-lg border border-gray-100 dark:border-white/10 hover:border-brand-blue transition-all group">
                         <div class="flex items-center gap-4">
                             <div
                                 class="w-12 h-12 rounded-full bg-blue-100 dark:bg-blue-900/30 text-brand-blue flex items-center justify-center text-xl">
@@ -125,10 +226,12 @@ completa, Bulk API v2 e Metadata API."
                                     <div class="h-3 bg-gray-100 dark:bg-white/5 rounded w-full"></div>
                                     <div class="h-3 bg-gray-100 dark:bg-white/5 rounded w-4/5"></div>
                                 </div>
-                                <div class="bg-[#1e1e1e] p-4 rounded-lg border-l-4 border-green-500 mt-6">
+                                <div
+                                    class="bg-white dark:bg-[#1e1e1e] p-4 rounded-lg border-l-4 border-green-500 mt-6 shadow-sm">
                                     <div class="flex items-center gap-2 mb-2">
                                         <div class="w-2 h-2 rounded-full bg-green-500"></div>
-                                        <span class="text-xs text-green-400 font-mono">bulk_api_v2.py</span>
+                                        <span
+                                            class="text-xs text-green-600 dark:text-green-400 font-mono">pipeline.py</span>
                                     </div>
                                     <div class="space-y-1">
                                         <div class="h-1.5 bg-purple-400/50 rounded w-1/3"></div>
@@ -146,14 +249,13 @@ completa, Bulk API v2 e Metadata API."
 </section>
 
 <!-- MAJESTIC: Metadata API -->
-<section class="py-32 px-6 bg-white dark:bg-neutral-950">
+<section class="py-32 px-6 bg-brand-surface dark:bg-neutral-900 border-t border-gray-100 dark:border-white/5">
     <div class="max-w-7xl mx-auto">
         <div class="text-center mb-20">
             <h2 class="text-4xl lg:text-6xl font-black mb-6 tracking-tight text-neutral-900 dark:text-white">Il Codice è
                 la Verità.</h2>
             <p class="text-xl text-gray-500 max-w-3xl mx-auto">
-                Dimentica i Change Sets e le interfacce point-and-click. Con Kinetic Core, la struttura del tuo CRM vive
-                nel repository Git.
+                Gestisci lo schema della tua Org Salesforce (Campi Custom, Oggetti) direttamente da Python.
             </p>
         </div>
 
@@ -196,17 +298,6 @@ client.metadata.deploy(ai_score)
                                 Python tipizzati.</p>
                         </div>
                     </div>
-                    <div class="flex items-start gap-6">
-                        <div
-                            class="w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center text-white text-3xl shadow-lg shrink-0">
-                            <i class="fas fa-code-branch"></i>
-                        </div>
-                        <div>
-                            <h3 class="text-2xl font-bold text-white mb-2">Version Control Nativo</h3>
-                            <p class="text-gray-400">Traccia le modifiche allo schema del DB come tracci il codice
-                                applicativo. Rollback e Audit log inclusi.</p>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -214,68 +305,39 @@ client.metadata.deploy(ai_score)
 </section>
 
 <!-- MAJESTIC: Bulk API -->
-<section class="py-32 px-6 bg-brand-surface dark:bg-neutral-900 border-t border-gray-100 dark:border-white/5">
+<section class="py-32 px-6 bg-white dark:bg-neutral-950 border-t border-gray-100 dark:border-white/5">
     <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-20 items-center">
         <div>
             <div
                 class="inline-block px-4 py-2 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400 rounded-full font-bold text-xs uppercase tracking-wide mb-6">
-                High Performance</div>
+                Bulk API v2</div>
             <h2 class="text-4xl lg:text-6xl font-black mb-8 text-neutral-900 dark:text-white">Milioni di Record.<br>Zero
                 Stress.</h2>
             <p class="text-xl text-gray-500 dark:text-gray-400 mb-8">
-                L'implementazione Bulk API v2 più robusta sul mercato. Gestisce automaticamente la complessità
-                dell'elaborazione asincrona.
+                Caricamenti massivi gestiti automaticamente. Kinetic Core si occupa dello splitting dei file CSV, del
+                polling asincrono e dei retry.
             </p>
-            <ul class="space-y-6">
-                <li class="flex items-center gap-4">
-                    <div
-                        class="w-10 h-10 rounded-full bg-black dark:bg-white text-white dark:text-black flex items-center justify-center font-bold">
-                        1</div>
-                    <span class="text-lg font-medium dark:text-gray-300">Chunking automatico dei CSV</span>
-                </li>
-                <li class="flex items-center gap-4">
-                    <div
-                        class="w-10 h-10 rounded-full bg-black dark:bg-white text-white dark:text-black flex items-center justify-center font-bold">
-                        2</div>
-                    <span class="text-lg font-medium dark:text-gray-300">Smart Polling con Exponential Backoff</span>
-                </li>
-                <li class="flex items-center gap-4">
-                    <div
-                        class="w-10 h-10 rounded-full bg-black dark:bg-white text-white dark:text-black flex items-center justify-center font-bold">
-                        3</div>
-                    <span class="text-lg font-medium dark:text-gray-300">Report errori riga per riga</span>
-                </li>
-            </ul>
         </div>
 
         <!-- Stats Visual -->
         <div class="grid grid-cols-2 gap-6">
             <div
-                class="bg-white dark:bg-neutral-800 p-8 rounded-3xl shadow-xl flex flex-col items-center justify-center text-center hover:-translate-y-2 transition-transform">
+                class="bg-gray-50 dark:bg-neutral-800 p-8 rounded-3xl shadow-xl flex flex-col items-center justify-center text-center hover:-translate-y-2 transition-transform">
                 <span class="text-4xl lg:text-5xl font-black text-brand-blue mb-2">100M+</span>
                 <span class="text-sm font-bold uppercase text-gray-400">Record Testati</span>
             </div>
             <div
-                class="bg-white dark:bg-neutral-800 p-8 rounded-3xl shadow-xl flex flex-col items-center justify-center text-center hover:-translate-y-2 transition-transform mt-8">
+                class="bg-gray-50 dark:bg-neutral-800 p-8 rounded-3xl shadow-xl flex flex-col items-center justify-center text-center hover:-translate-y-2 transition-transform mt-8">
                 <span class="text-4xl lg:text-5xl font-black text-brand-green mb-2">5x</span>
                 <span class="text-sm font-bold uppercase text-gray-400">Più Veloce di REST</span>
-            </div>
-            <div
-                class="bg-white dark:bg-neutral-800 p-8 rounded-3xl shadow-xl flex flex-col items-center justify-center text-center hover:-translate-y-2 transition-transform">
-                <span class="text-4xl lg:text-5xl font-black text-purple-500 mb-2">0</span>
-                <span class="text-sm font-bold uppercase text-gray-400">Timeout Errors</span>
-            </div>
-            <div
-                class="bg-white dark:bg-neutral-800 p-8 rounded-3xl shadow-xl flex flex-col items-center justify-center text-center hover:-translate-y-2 transition-transform mt-8">
-                <span class="text-4xl lg:text-5xl font-black text-orange-500 mb-2">100%</span>
-                <span class="text-sm font-bold uppercase text-gray-400">Type Save</span>
             </div>
         </div>
     </div>
 </section>
 
 <!-- Community & Funding -->
-<section class="py-24 px-6 bg-white dark:bg-black relative overflow-hidden">
+<section
+    class="py-24 px-6 bg-brand-surface dark:bg-black relative overflow-hidden border-t border-gray-100 dark:border-white/5">
     <!-- Gradient Lines -->
     <div class="absolute inset-0 bg-[url('/assets/images/grid.svg')] opacity-5"></div>
 
@@ -301,7 +363,7 @@ client.metadata.deploy(ai_score)
             </a>
 
             <a href="https://opencollective.com/kineticmcp"
-                class="group relative px-8 py-5 bg-neutral-100 dark:bg-neutral-800 hover:bg-neutral-200 dark:hover:bg-neutral-700 text-neutral-900 dark:text-white rounded-2xl font-bold transition-all hover:scale-105 shadow-xl overflow-hidden">
+                class="group relative px-8 py-5 bg-white dark:bg-neutral-800 hover:bg-gray-100 dark:hover:bg-neutral-700 text-neutral-900 dark:text-white rounded-2xl font-bold transition-all hover:scale-105 shadow-xl overflow-hidden border border-gray-200 dark:border-white/5">
                 <div class="flex items-center gap-3 relative z-10">
                     <i class="fas fa-users text-2xl text-blue-500"></i>
                     <span class="text-lg">Open Collective</span>
@@ -314,7 +376,6 @@ client.metadata.deploy(ai_score)
 <!-- Version Fetch Script -->
 <script>
     document.addEventListener('DOMContentLoaded', function () {
-        const span = document.querySelector('.select-all'); // Simple target for visual check
         fetch('https://api.github.com/repos/KineticMCP/kinetic-core/releases/latest')
             .then(response => response.json())
             .then(data => {
