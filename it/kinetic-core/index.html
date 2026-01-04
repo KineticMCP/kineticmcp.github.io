@@ -1,0 +1,325 @@
+---
+layout: default
+title: Kinetic Core - Il Motore Python Open Source per Salesforce
+lang: it
+locale: it_IT
+description: "Kinetic Core è la libreria Python open-source per l'integrazione Salesforce enterprise. Documentazione
+completa, Bulk API v2 e Metadata API."
+---
+
+<!-- Hero Section -->
+<section class="relative pt-32 pb-20 lg:pt-40 lg:pb-32 overflow-hidden bg-white dark:bg-neutral-950">
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
+        <div class="text-center max-w-5xl mx-auto">
+            <div
+                class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-blue/10 dark:bg-brand-blue/20 text-brand-blue dark:text-blue-400 text-xs font-bold tracking-wide uppercase mb-8 border border-brand-blue/20">
+                <span class="w-2 h-2 rounded-full bg-brand-blue animate-pulse"></span>
+                Open Source Library v2.2+
+            </div>
+
+            <h1
+                class="text-6xl lg:text-8xl font-black tracking-tighter mb-8 text-neutral-900 dark:text-white leading-[0.9]">
+                Integrazione Salesforce <br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-blue to-cyan-400">Pura e
+                    Potente.</span>
+            </h1>
+
+            <p class="text-xl lg:text-2xl text-gray-500 dark:text-gray-400 mb-12 leading-relaxed max-w-3xl mx-auto">
+                La libreria Python definitiva per sviluppatori enterprise.
+                Niente astrazioni inutili, solo prestazioni pure per le tue pipeline ETL e i tuoi Agenti AI.
+            </p>
+
+            <!-- Install Block -->
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-6 mb-16">
+                <div
+                    class="bg-[#1e1e1e] text-gray-300 font-mono text-lg px-8 py-5 rounded-2xl flex items-center gap-4 shadow-2xl border border-white/10 hover:border-brand-blue/50 transition-colors group">
+                    <span class="text-green-400 font-bold">$</span>
+                    <span class="select-all text-white">pip install kinetic-core</span>
+                    <button onclick="navigator.clipboard.writeText('pip install kinetic-core')"
+                        class="text-gray-500 hover:text-white transition-colors opacity-0 group-hover:opacity-100"
+                        title="Copia">
+                        <i class="far fa-copy"></i>
+                    </button>
+                </div>
+
+                <div class="flex items-center gap-4">
+                    <a href="https://github.com/KineticMCP/kinetic-core"
+                        class="px-8 py-5 rounded-2xl bg-gray-100 dark:bg-white/10 text-neutral-900 dark:text-white font-bold hover:bg-gray-200 dark:hover:bg-white/20 transition-all flex items-center gap-3 text-lg">
+                        <i class="fab fa-github text-2xl"></i> GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Background Decor -->
+    <div
+        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[1000px] bg-brand-blue/5 rounded-full blur-[120px] pointer-events-none">
+    </div>
+</section>
+
+<!-- MAJESTIC: Documentation Spotlight -->
+<section class="py-24 px-6 bg-brand-surface dark:bg-neutral-900 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto relative z-10">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+            <div class="order-2 lg:order-1">
+                <h2 class="text-4xl lg:text-5xl font-black mb-6 text-neutral-900 dark:text-white tracking-tight">
+                    Documentazione <br>
+                    <span class="text-brand-blue">Di Classe Mondiale.</span>
+                </h2>
+                <p class="text-xl text-gray-500 dark:text-gray-400 mb-8 leading-relaxed">
+                    Non indovinare mai come usare un'API. Abbiamo documentato ogni singola classe, metodo e parametro.
+                    Guide passo-passo per Bulk API, Metadata deployment e authentication flows.
+                </p>
+
+                <div class="flex flex-col gap-4">
+                    <a href="https://kineticmcp.com/kinetic-core" target="_blank"
+                        class="flex items-center justify-between p-6 bg-white dark:bg-black rounded-2xl shadow-lg border border-gray-100 dark:border-white/10 hover:border-brand-blue transition-all group">
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="w-12 h-12 rounded-full bg-blue-100 dark:bg-blue-900/30 text-brand-blue flex items-center justify-center text-xl">
+                                <i class="fas fa-book"></i>
+                            </div>
+                            <div>
+                                <h3
+                                    class="font-bold text-lg text-neutral-900 dark:text-white group-hover:text-brand-blue transition-colors">
+                                    Leggi la Documentazione</h3>
+                                <p class="text-sm text-gray-500">kineticmcp.com/kinetic-core</p>
+                            </div>
+                        </div>
+                        <i class="fas fa-external-link-alt text-gray-300 group-hover:text-brand-blue"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Visual Mockup of Docs -->
+            <div class="order-1 lg:order-2 relative">
+                <div
+                    class="absolute -inset-4 bg-gradient-to-tr from-brand-blue to-purple-500 rounded-[2rem] blur-2xl opacity-20 animate-pulse">
+                </div>
+                <div
+                    class="relative rounded-2xl overflow-hidden shadow-2xl border border-gray-200 dark:border-white/10 bg-white dark:bg-[#0f0f0f] transform rotate-2 hover:rotate-0 transition-transform duration-500">
+                    <div
+                        class="bg-gray-100 dark:bg-white/5 px-4 py-3 border-b border-gray-200 dark:border-white/10 flex items-center gap-2">
+                        <div class="flex gap-1.5">
+                            <div class="w-3 h-3 rounded-full bg-red-400"></div>
+                            <div class="w-3 h-3 rounded-full bg-yellow-400"></div>
+                            <div class="w-3 h-3 rounded-full bg-green-400"></div>
+                        </div>
+                        <div class="ml-4 text-xs font-mono text-gray-400 flex-1 text-center">kineticmcp.com/kinetic-core
+                        </div>
+                    </div>
+                    <!-- Minimal Docs UI Repr -->
+                    <div class="p-8 space-y-6">
+                        <div class="flex gap-8">
+                            <div class="w-1/4 space-y-3 hidden sm:block">
+                                <div class="h-2 bg-gray-200 dark:bg-white/10 rounded w-3/4"></div>
+                                <div class="h-2 bg-gray-200 dark:bg-white/10 rounded w-1/2"></div>
+                                <div class="h-2 bg-brand-blue rounded w-full"></div>
+                                <div class="h-2 bg-gray-200 dark:bg-white/10 rounded w-2/3"></div>
+                            </div>
+                            <div class="flex-1 space-y-4">
+                                <div class="h-8 bg-gray-200 dark:bg-white/10 rounded w-2/3 mb-6"></div>
+                                <div class="space-y-2">
+                                    <div class="h-3 bg-gray-100 dark:bg-white/5 rounded w-full"></div>
+                                    <div class="h-3 bg-gray-100 dark:bg-white/5 rounded w-full"></div>
+                                    <div class="h-3 bg-gray-100 dark:bg-white/5 rounded w-4/5"></div>
+                                </div>
+                                <div class="bg-[#1e1e1e] p-4 rounded-lg border-l-4 border-green-500 mt-6">
+                                    <div class="flex items-center gap-2 mb-2">
+                                        <div class="w-2 h-2 rounded-full bg-green-500"></div>
+                                        <span class="text-xs text-green-400 font-mono">bulk_api_v2.py</span>
+                                    </div>
+                                    <div class="space-y-1">
+                                        <div class="h-1.5 bg-purple-400/50 rounded w-1/3"></div>
+                                        <div class="h-1.5 bg-blue-400/50 rounded w-1/2"></div>
+                                        <div class="h-1.5 bg-gray-600 rounded w-1/4"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- MAJESTIC: Metadata API -->
+<section class="py-32 px-6 bg-white dark:bg-neutral-950">
+    <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-20">
+            <h2 class="text-4xl lg:text-6xl font-black mb-6 tracking-tight text-neutral-900 dark:text-white">Il Codice è
+                la Verità.</h2>
+            <p class="text-xl text-gray-500 max-w-3xl mx-auto">
+                Dimentica i Change Sets e le interfacce point-and-click. Con Kinetic Core, la struttura del tuo CRM vive
+                nel repository Git.
+            </p>
+        </div>
+
+        <div
+            class="bg-[#1e1e1e] rounded-[2.5rem] p-8 lg:p-12 shadow-2xl overflow-hidden relative border border-white/5">
+            <!-- Glow -->
+            <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-purple-500/10 blur-[150px] pointer-events-none">
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 lg:gap-24 relative z-10">
+                <div class="font-mono text-sm leading-relaxed text-gray-300 overflow-x-auto">
+                    <pre>
+<span class="text-gray-500"># Definizione Schema in Python</span>
+<span class="text-pink-400">from</span> kinetic_core.metadata <span class="text-pink-400">import</span> CustomField
+
+<span class="text-gray-500"># Creo il campo "Livello AI"</span>
+ai_score = CustomField(
+    sobject=<span class="text-yellow-300">"Account"</span>,
+    name=<span class="text-yellow-300">"AI_Score__c"</span>,
+    type=<span class="text-yellow-300">"Number"</span>,
+    precision=18,
+    scale=2,
+    description=<span class="text-yellow-300">"Punteggio generato dal modello predittivo"</span>
+)
+
+<span class="text-gray-500"># Deploy in Org</span>
+client.metadata.deploy(ai_score)
+</pre>
+                </div>
+
+                <div class="flex flex-col justify-center">
+                    <div class="flex items-start gap-6 mb-8">
+                        <div
+                            class="w-16 h-16 rounded-2xl bg-gradient-to-br from-purple-500 to-indigo-600 flex items-center justify-center text-white text-3xl shadow-lg shrink-0">
+                            <i class="fas fa-magic"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-white mb-2">Deploy Immediato</h3>
+                            <p class="text-gray-400">Nessun file XML da manipolare a mano. Le definizioni sono oggetti
+                                Python tipizzati.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-6">
+                        <div
+                            class="w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center text-white text-3xl shadow-lg shrink-0">
+                            <i class="fas fa-code-branch"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-white mb-2">Version Control Nativo</h3>
+                            <p class="text-gray-400">Traccia le modifiche allo schema del DB come tracci il codice
+                                applicativo. Rollback e Audit log inclusi.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- MAJESTIC: Bulk API -->
+<section class="py-32 px-6 bg-brand-surface dark:bg-neutral-900 border-t border-gray-100 dark:border-white/5">
+    <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-20 items-center">
+        <div>
+            <div
+                class="inline-block px-4 py-2 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400 rounded-full font-bold text-xs uppercase tracking-wide mb-6">
+                High Performance</div>
+            <h2 class="text-4xl lg:text-6xl font-black mb-8 text-neutral-900 dark:text-white">Milioni di Record.<br>Zero
+                Stress.</h2>
+            <p class="text-xl text-gray-500 dark:text-gray-400 mb-8">
+                L'implementazione Bulk API v2 più robusta sul mercato. Gestisce automaticamente la complessità
+                dell'elaborazione asincrona.
+            </p>
+            <ul class="space-y-6">
+                <li class="flex items-center gap-4">
+                    <div
+                        class="w-10 h-10 rounded-full bg-black dark:bg-white text-white dark:text-black flex items-center justify-center font-bold">
+                        1</div>
+                    <span class="text-lg font-medium dark:text-gray-300">Chunking automatico dei CSV</span>
+                </li>
+                <li class="flex items-center gap-4">
+                    <div
+                        class="w-10 h-10 rounded-full bg-black dark:bg-white text-white dark:text-black flex items-center justify-center font-bold">
+                        2</div>
+                    <span class="text-lg font-medium dark:text-gray-300">Smart Polling con Exponential Backoff</span>
+                </li>
+                <li class="flex items-center gap-4">
+                    <div
+                        class="w-10 h-10 rounded-full bg-black dark:bg-white text-white dark:text-black flex items-center justify-center font-bold">
+                        3</div>
+                    <span class="text-lg font-medium dark:text-gray-300">Report errori riga per riga</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Stats Visual -->
+        <div class="grid grid-cols-2 gap-6">
+            <div
+                class="bg-white dark:bg-neutral-800 p-8 rounded-3xl shadow-xl flex flex-col items-center justify-center text-center hover:-translate-y-2 transition-transform">
+                <span class="text-4xl lg:text-5xl font-black text-brand-blue mb-2">100M+</span>
+                <span class="text-sm font-bold uppercase text-gray-400">Record Testati</span>
+            </div>
+            <div
+                class="bg-white dark:bg-neutral-800 p-8 rounded-3xl shadow-xl flex flex-col items-center justify-center text-center hover:-translate-y-2 transition-transform mt-8">
+                <span class="text-4xl lg:text-5xl font-black text-brand-green mb-2">5x</span>
+                <span class="text-sm font-bold uppercase text-gray-400">Più Veloce di REST</span>
+            </div>
+            <div
+                class="bg-white dark:bg-neutral-800 p-8 rounded-3xl shadow-xl flex flex-col items-center justify-center text-center hover:-translate-y-2 transition-transform">
+                <span class="text-4xl lg:text-5xl font-black text-purple-500 mb-2">0</span>
+                <span class="text-sm font-bold uppercase text-gray-400">Timeout Errors</span>
+            </div>
+            <div
+                class="bg-white dark:bg-neutral-800 p-8 rounded-3xl shadow-xl flex flex-col items-center justify-center text-center hover:-translate-y-2 transition-transform mt-8">
+                <span class="text-4xl lg:text-5xl font-black text-orange-500 mb-2">100%</span>
+                <span class="text-sm font-bold uppercase text-gray-400">Type Save</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Community & Funding -->
+<section class="py-24 px-6 bg-white dark:bg-black relative overflow-hidden">
+    <!-- Gradient Lines -->
+    <div class="absolute inset-0 bg-[url('/assets/images/grid.svg')] opacity-5"></div>
+
+    <div class="max-w-4xl mx-auto text-center relative z-10">
+        <h2 class="text-3xl lg:text-5xl font-black mb-8 text-neutral-900 dark:text-white">Mantenuto dalla Community per
+            la Community</h2>
+        <p class="text-xl text-gray-500 dark:text-gray-400 mb-12">
+            Kinetic Core è il fondamento del nostro stack commerciale, ma crediamo che gli strumenti di base debbano
+            essere liberi.
+            Sostieni lo sviluppo per garantire aggiornamenti costanti e supporto LTS.
+        </p>
+
+        <div class="flex flex-wrap justify-center gap-6">
+            <a href="https://github.com/sponsors/antoniotrento"
+                class="group relative px-8 py-5 bg-pink-600 hover:bg-pink-500 text-white rounded-2xl font-bold transition-all hover:scale-105 shadow-xl shadow-pink-600/20 overflow-hidden">
+                <div
+                    class="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                </div>
+                <div class="flex items-center gap-3 relative z-10">
+                    <i class="fas fa-heart text-2xl animate-pulse"></i>
+                    <span class="text-lg">GitHub Sponsors</span>
+                </div>
+            </a>
+
+            <a href="https://opencollective.com/kineticmcp"
+                class="group relative px-8 py-5 bg-neutral-100 dark:bg-neutral-800 hover:bg-neutral-200 dark:hover:bg-neutral-700 text-neutral-900 dark:text-white rounded-2xl font-bold transition-all hover:scale-105 shadow-xl overflow-hidden">
+                <div class="flex items-center gap-3 relative z-10">
+                    <i class="fas fa-users text-2xl text-blue-500"></i>
+                    <span class="text-lg">Open Collective</span>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Version Fetch Script -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const span = document.querySelector('.select-all'); // Simple target for visual check
+        fetch('https://api.github.com/repos/KineticMCP/kinetic-core/releases/latest')
+            .then(response => response.json())
+            .then(data => {
+                // Optional: update version number in UI if we had a badge
+            })
+            .catch(console.error);
+    });
+</script>

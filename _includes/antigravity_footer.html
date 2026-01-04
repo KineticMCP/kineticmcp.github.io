@@ -35,7 +35,7 @@
             </div>
         </div>
 
-        <div class="grid grid-cols-2 md:grid-cols-3 gap-12 lg:gap-20 w-full lg:w-auto">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-12 lg:gap-12 w-full lg:w-auto">
             <div>
                 <h4 class="font-bold mb-4">{% if page.lang == 'it' %}Prodotto{% else %}Product{% endif %}</h4>
                 <ul class="space-y-3 text-sm text-gray-500 dark:text-gray-400">
@@ -63,17 +63,28 @@
                             {% if page.lang == 'it' %}Sicurezza{% else %}Security{% endif %}
                         </a>
                     </li>
-                    <li>
-                        <a href="{% if page.lang == 'it' %}/it/kinetic-core.html{% else %}/en/kinetic-core.html{% endif %}"
-                            class="hover:text-black dark:hover:text-white transition-colors">
-                            Kinetic Core <span
-                                class="text-xs bg-gray-100 dark:bg-white/10 px-1.5 py-0.5 rounded text-gray-500">OSS</span>
-                        </a>
-                    </li>
+
                     <li>
                         <a href="{% if page.lang == 'it' %}/it/blog/{% else %}/en/blog/{% endif %}"
                             class="hover:text-black dark:hover:text-white transition-colors">
                             Blog
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold mb-4">Open Source</h4>
+                <ul class="space-y-3 text-sm text-gray-500 dark:text-gray-400">
+                    <li>
+                        <a href="{% if page.lang == 'it' %}/it/kinetic-core/{% else %}/en/kinetic-core/{% endif %}"
+                            class="hover:text-black dark:hover:text-white transition-colors">
+                            Kinetic Core
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://kineticmcp.com/kinetic-core" target="_blank"
+                            class="hover:text-black dark:hover:text-white transition-colors">
+                            {% if page.lang == 'it' %}Documentazione{% else %}Docs{% endif %}
                         </a>
                     </li>
                 </ul>
