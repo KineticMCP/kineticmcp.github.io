@@ -43,7 +43,11 @@
 
     if (!hasClosed) {
       window.addEventListener("scroll", function () {
-        if (window.scrollY > 800) {
+        const docHeight = document.documentElement.scrollHeight;
+        const scrollPos = window.scrollY + window.innerHeight;
+        const scrollPercent = (scrollPos / docHeight) * 100;
+
+        if (scrollPercent > 50) {
           cta.classList.remove('hidden');
           // Small delay to allow display:block to apply before opacity transition
           setTimeout(() => {

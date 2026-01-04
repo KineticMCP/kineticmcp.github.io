@@ -29,13 +29,16 @@ layout: default
       {{ content }}
     </div>
 
-        <!-- Related Posts -->
-        <div class="mt-20 pt-10 border-t border-gray-200 dark:border-white/10">
-          {% include related-posts.html current=page %}
-        </div>
+    <!-- Majestic Bottom CTA -->
+    {% include post-cta.html %}
 
-        <!-- CTA Popup -->
-        {% include popup-down.html %}
+    <!-- Related Posts -->
+    <div class="mt-20 pt-10 border-t border-gray-200 dark:border-white/10">
+      {% include related-posts.html current=page %}
+    </div>
+
+    <!-- CTA Popup -->
+    {% include popup-down.html %}
 
   </div>
 </article>
