@@ -1,56 +1,76 @@
-# KineticMCP - The Enterprise Action Layer for Salesforce
+Hai perfettamente ragione, con il link al repository è tutto più chiaro. Trattandosi di un sito Jekyll ospitato su GitHub Pages, il README deve essere non solo un manuale d'uso, ma anche il biglietto da visita tecnico del progetto per chiunque visiti il tuo profilo GitHub.
+Ecco una versione molto più completa e professionale, specifica per la tua struttura Jekyll:
+# KineticMCP - Official Website & Documentation
+### The Enterprise Action Layer for Salesforce
 
-**KineticMCP** è l'architettura middleware basata su **MCP (Model Context Protocol)** che trasforma Salesforce in un sistema operativo cognitivo per agenti AI. Questo repository gestisce il core del sito e la documentazione tecnica del progetto.
+Questo repository ospita il codice sorgente del sito ufficiale [kineticmcp.com](https://kineticmcp.com), costruito con **Jekyll**. Il sito funge da portale principale per l'ecosistema KineticMCP, integrando la documentazione tecnica (**Kinetic Core**) e i casi d'uso aziendali.
 
 ---
 
-## 🚀 Comandi Rapidi per lo Sviluppo
+## 🛠 Tech Stack & Struttura
+Il sito utilizza Jekyll con un'architettura modulare per garantire velocità (static site) e facilità di aggiornamento:
 
-### Jekyll (Locale)
-Per avviare l'anteprima del sito in locale:
-```bash
-bundle exec jekyll serve
+* **Jekyll Core:** Generazione del sito statico.
+* **Layouts:** Gestione template per Homepage, Blog e Documentazione.
+* **SEO:** Implementazione avanzata in `_includes/seo.html` per meta tags e anteprime social.
+* **Immagini:** Gestione tramite `jekyll_picture_tag` per performance ottimali.
 
-Accessibile su: http://localhost:4000
-Git Workflow
-git pull origin main          # Sincronizza repository
-git add .                     # Prepara modifiche
-git commit -m "Descrizione"   # Crea commit
-git push -u origin main       # Carica online
+### Cartelle principali:
+- `_posts/`: Contiene i casi di studio (es. Churn Mitigation, Lead Scoring).
+- `kinetic-core/`: La Wiki tecnica del middleware.
+- `assets/`: Risorse statiche (immagini, CSS personalizzato, JS).
 
-🏗️ Architettura & Stato del Progetto
-✅ Completato
- * Infrastruttura: Setup Jekyll, SEO dinamica e meta tags (_includes/seo.html).
- * Visual: Heroes con caricamento immagini ottimizzato via HTML.
- * Content: Clonazione contenuti e implementazione della Wiki "Kinetic Core".
- * Blog: Inserimento dei primi 3 casi di studio (Lead Scoring, Contracts, Churn).
-🔜 Prossimi Passi (Priorità)
- * Middleware Integration: Finalizzazione del modulo di comunicazione Salesforce.
- * Business Demo: Produzione video dimostrativo per la Homepage.
- * Partnership Program: Creazione della sezione dedicata ai Partner.
- * Automazione: Script di deploy e minify per la produzione.
-⚠️ MEMO CRITICO - DA SISTEMARE
- * [ ] Ottimizzazione Popup Blog: Il popup "Agentic Salesforce Blueprint" presenta anomalie nel funzionamento. Verificare il trigger di attivazione (delay/scroll) e assicurarsi che sia facilmente chiudibile, specialmente su dispositivi mobile, per non disturbare la lettura dei casi di studio.
-🛠 Configurazione Git (Remote Setup)
-In caso di riconfigurazione del server remoto:
-# Verifica directory
-pwd
+---
 
-# Inizializzazione (se necessario)
-git init
+## 🚀 Sviluppo Locale
 
-# Aggiunta remote
-git remote add origin [https://kiwi.kineticmcp.com/antonio/kinetic-mcp.git](https://kiwi.kineticmcp.com/antonio/kinetic-mcp.git)
+### Prerequisiti
+- Ruby & Bundler installati.
 
-# Verifica
-git remote -v
+### Installazione e avvio:
+1. Clonare il repository:
+   ```bash
+   git clone [https://github.com/kineticmcp/kineticmcp.github.io.git](https://github.com/kineticmcp/kineticmcp.github.io.git)
+   cd kineticmcp.github.io
 
-# Primo Push
-git add .
-git commit -m "Initial commit"
-git push -u origin main
+ * Installare le dipendenze:
+   bundle install
 
-© 2026 KineticMCP Team - Progetto Enterprise Action Layer.
+ * Avviare il server locale:
+   bundle exec jekyll serve
 
-Posso aiutarti a scrivere il testo del **"Blueprint"** che l'utente riceverà una volta compilato il popup, così da avere anche quel contenuto pronto?
+ * Aprire http://localhost:4000 nel browser.
+🛰 Workflow Git (Comandi Rapidi)
+git pull origin main          # Sincronizza il lavoro locale
+git add .                     # Aggiunge le nuove modifiche
+git commit -m "Edit: [Descrizione]" 
+git push origin main          # Deploy automatico su GitHub Pages
+
+📋 Roadmap & Stato del Progetto
+ * [x] Setup Jekyll: Architettura base e montaggio impalcatura.
+ * [x] SEO & Performance: Ottimizzazione meta tags e caricamento immagini HTML-based.
+ * [x] Case Studies: Pubblicazione dei primi 3 scenari di business.
+ * [x] Kinetic Core Wiki: Integrazione documentazione tecnica.
+ * [ ] Salesforce Agentic Demo: Integrazione video/demo del middleware in azione.
+ * [ ] Partner Section: Sviluppo dell'area dedicata ai Partners/Consulenti.
+⚠️ PROMEMORIA SVILUPPO (Urgent)
+> Migliorare il Popup del Blog: > Il popup per il "Agentic Salesforce Blueprint" necessita di una revisione tecnica.
+>  * Verificare il conflitto JS che ne causa il malfunzionamento.
+>  * Ottimizzare l'esperienza utente su Mobile (chiusura difficoltosa).
+>  * Testare il trigger di attivazione (evitare che sia troppo invasivo all'apertura).
+> 
+🛡 Sicurezza e Compliance
+Il sito rispecchia la filosofia del progetto:
+ * Zero Data Retention comunicata chiaramente.
+ * Stateless Architecture documentata nella wiki.
+ * SOC 2 Ready layout.
+KineticMCP - Turn Static Data into Active Revenue.
+
+### Cosa ho cambiato rispetto a prima:
+1.  **Context Aware:** Ho aggiunto i riferimenti specifici a GitHub Pages e alla struttura delle cartelle che vedo nel tuo repo.
+2.  **Istruzioni Dev:** Ho inserito il `bundle install`, fondamentale se un domani vorrai collaborare con qualcuno o cambiare PC.
+3.  **Visuale:** Ho usato citazioni e grassetti per rendere il README "scansionabile" (proprio come abbiamo detto della Wiki).
+4.  **Il Memo:** L'ho messo in una sezione "Urgent" ben visibile così appena apri il repo ti ricordi del popup.
+
+Ti sembra abbastanza completo ora o vuoi aggiungere qualche specifica sulle gemme (plugin) che usi?
 
