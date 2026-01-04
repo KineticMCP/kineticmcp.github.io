@@ -14,7 +14,7 @@ API v2 e Metadata Management."
             <div
                 class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-blue/10 dark:bg-brand-blue/20 text-brand-blue dark:text-blue-400 text-xs font-bold tracking-wide uppercase mb-8 border border-brand-blue/20">
                 <span class="w-2 h-2 rounded-full bg-brand-blue animate-pulse"></span>
-                Open Source Library v2.2+
+                Open Source Library <span id="latest-version">v2.2+</span>
             </div>
 
             <h1
@@ -422,7 +422,9 @@ client.metadata.deploy(ai_score)
         fetch('https://api.github.com/repos/KineticMCP/kinetic-core/releases/latest')
             .then(response => response.json())
             .then(data => {
-                // No-op
+                if (data.tag_name) {
+                    document.getElementById('latest-version').textContent = data.tag_name;
+                }
             })
             .catch(console.error);
     });
