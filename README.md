@@ -1,4 +1,3 @@
-Ecco il testo completo del README aggiornato. L'ho ripulito dai vecchi riferimenti obsoleti e ho inserito il promemoria per il popup in una sezione dedicata alle attività prioritarie, così lo avrai sempre sott'occhio nel repository.
 # KineticMCP - The Enterprise Action Layer for Salesforce
 
 **KineticMCP** è l'architettura middleware basata su **MCP (Model Context Protocol)** che trasforma Salesforce in un sistema operativo cognitivo per agenti AI. Questo repository gestisce il core del sito e la documentazione tecnica del progetto.
