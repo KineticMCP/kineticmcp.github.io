@@ -1,77 +1,57 @@
-# Readme
+Ecco il testo completo del README aggiornato. L'ho ripulito dai vecchi riferimenti obsoleti e ho inserito il promemoria per il popup in una sezione dedicata alle attività prioritarie, così lo avrai sempre sott'occhio nel repository.
+# KineticMCP - The Enterprise Action Layer for Salesforce
 
-## Git commands
+**KineticMCP** è l'architettura middleware basata su **MCP (Model Context Protocol)** che trasforma Salesforce in un sistema operativo cognitivo per agenti AI. Questo repository gestisce il core del sito e la documentazione tecnica del progetto.
 
-```bash
-git pull origin main
-git add .
-git commit -m "Edit"
-git push -u origin main
-```
-## Jekyll commands
+---
+
+## 🚀 Comandi Rapidi per lo Sviluppo
+
+### Jekyll (Locale)
+Per avviare l'anteprima del sito in locale:
 ```bash
 bundle exec jekyll serve
-```
 
- 
-## TO DO
+Accessibile su: http://localhost:4000
+Git Workflow
+git pull origin main          # Sincronizza repository
+git add .                     # Prepara modifiche
+git commit -m "Descrizione"   # Crea commit
+git push -u origin main       # Carica online
 
-- ✅ Implementazione di jekyll in locale, connessione a git motaggio prima 'impalcatura' del progetto
-- ✅ Creare heroes con immagine bg caricata in html no in css
-- ✅ implementare jekyll_picture_tag
-- ✅ SEO strutturare la seo del sito, attenzione ai meta tags e alle immagini di anteprima '_incudes/seo.html'
-- ✅ Completare la clonazione dei contenuti del sito
-- 🔜 Editing di menu e footer per rispecchiare l'originale --> quasi fatto
-- 🔜 analizzare e creare lo script di deploy [https://kiwi.Franco Trento.com/antonio/jekyll-Franco Trento/wiki/script-di-deploy](wiki)
-- 🔜 Ideare uno script per effettuare il minify del sito di produzione [https://kiwi.Franco Trento.com/antonio/jekyll-Franco Trento/wiki/script-di-deploy](wiki)
-
-### 1. Verifica se sei nella directory corretta
-Assicurati di essere nella directory del progetto dove intendi configurare il repository Git. Usa il comando:
-```bash
+🏗️ Architettura & Stato del Progetto
+✅ Completato
+ * Infrastruttura: Setup Jekyll, SEO dinamica e meta tags (_includes/seo.html).
+ * Visual: Heroes con caricamento immagini ottimizzato via HTML.
+ * Content: Clonazione contenuti e implementazione della Wiki "Kinetic Core".
+ * Blog: Inserimento dei primi 3 casi di studio (Lead Scoring, Contracts, Churn).
+🔜 Prossimi Passi (Priorità)
+ * Middleware Integration: Finalizzazione del modulo di comunicazione Salesforce.
+ * Business Demo: Produzione video dimostrativo per la Homepage.
+ * Partnership Program: Creazione della sezione dedicata ai Partner.
+ * Automazione: Script di deploy e minify per la produzione.
+⚠️ MEMO CRITICO - DA SISTEMARE
+ * [ ] Ottimizzazione Popup Blog: Il popup "Agentic Salesforce Blueprint" presenta anomalie nel funzionamento. Verificare il trigger di attivazione (delay/scroll) e assicurarsi che sia facilmente chiudibile, specialmente su dispositivi mobile, per non disturbare la lettura dei casi di studio.
+🛠 Configurazione Git (Remote Setup)
+In caso di riconfigurazione del server remoto:
+# Verifica directory
 pwd
-```
-Questo comando mostrerà il percorso corrente. Assicurati che sia il percorso del tuo progetto.
 
-### 2. Inizializza un repository Git
-Se non hai ancora inizializzato Git nella directory, fallo con:
-```bash
+# Inizializzazione (se necessario)
 git init
-```
-Questo creerà una directory `.git` nel tuo progetto, rendendolo un repository Git.
 
-### 3. Aggiungi il remote
-Dopo aver inizializzato il repository, aggiungi il remote:
-```bash
-git remote add origin https://kiwi.Franco Trento.com/antonio/jekyll-Franco Trento.git
-```
+# Aggiunta remote
+git remote add origin [https://kiwi.kineticmcp.com/antonio/kinetic-mcp.git](https://kiwi.kineticmcp.com/antonio/kinetic-mcp.git)
 
-### 4. Conferma l'operazione
-Per verificare che il remote sia stato aggiunto correttamente, usa:
-```bash
+# Verifica
 git remote -v
-```
-Dovresti vedere qualcosa come:
-```
-origin  https://kiwi.Franco Trento.com/antonio/jekyll-Franco Trento.git (fetch)
-origin  https://kiwi.Franco Trento.com/antonio/jekyll-Franco Trento.git (push)
-```
 
-### 5. Aggiungi file e fai il primo commit (se necessario)
-Se è la prima configurazione del repository:
-```bash
+# Primo Push
 git add .
 git commit -m "Initial commit"
-```
-
-### 6. Pusha al repository remoto
-Infine, puoi caricare i tuoi file al repository remoto con:
-```bash
 git push -u origin main
-```
-### 7. recupera modifiche dal repository remoto
 
-```bash
-git pull origin main
-```
+© 2026 KineticMCP Team - Progetto Enterprise Action Layer.
 
-Sostituisci `main` con il nome del branch principale se utilizzi un altro branch (es. `master`).
+Posso aiutarti a scrivere il testo del **"Blueprint"** che l'utente riceverà una volta compilato il popup, così da avere anche quel contenuto pronto?
+
