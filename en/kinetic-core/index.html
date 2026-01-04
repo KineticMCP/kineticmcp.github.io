@@ -74,14 +74,14 @@ API v2, and Metadata Management."
         <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <!-- Code Visual -->
             <div
-                class="bg-[#1e1e1e] rounded-[2rem] shadow-2xl border border-white/5 font-mono text-sm leading-relaxed text-gray-300 relative group overflow-hidden">
+                class="bg-[#1e1e1e] rounded-[2rem] shadow-2xl border border-white/5 font-mono text-sm leading-relaxed text-gray-300 relative group overflow-hidden w-full min-w-0">
                 <div class="absolute top-4 right-4 flex gap-2 z-20">
                     <div class="w-3 h-3 rounded-full bg-red-500"></div>
                     <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
                     <div class="w-3 h-3 rounded-full bg-green-500"></div>
                 </div>
-                <div class="p-4 md:p-6 lg:p-10 overflow-x-auto relative z-10">
-                    <pre class="mt-4">
+                <div class="p-4 md:p-6 lg:p-10 overflow-x-auto relative z-10 max-w-full">
+                    <pre>
 <span class="text-pink-400">from</span> kinetic_core <span class="text-pink-400">import</span> SyncPipeline, SyncMode
 
 <span class="text-gray-500"># Real-time monitoring callback</span>
@@ -109,7 +109,7 @@ print(<span class="text-green-300">f"Success Rate: {result.success_rate}%"</span
             </div>
 
             <!-- Features List -->
-            <div class="space-y-12">
+            <div class="space-y-12 w-full min-w-0">
                 <div class="flex gap-6">
                     <div
                         class="w-16 h-16 rounded-2xl bg-blue-100 dark:bg-blue-900/30 text-brand-blue flex items-center justify-center text-3xl shrink-0">
@@ -161,7 +161,7 @@ print(<span class="text-green-300">f"Success Rate: {result.success_rate}%"</span
 <section class="py-24 lg:py-32 px-6 bg-white dark:bg-neutral-950 border-t border-gray-100 dark:border-white/5">
     <div class="max-w-7xl mx-auto">
         <div class="grid lg:grid-cols-2 gap-20 items-center">
-            <div class="order-2 lg:order-1">
+            <div class="order-2 lg:order-1 w-full min-w-0">
                 <h2 class="text-4xl lg:text-6xl font-black mb-8 text-neutral-900 dark:text-white tracking-tight">
                     Conditional and Functional Mapping.</h2>
                 <p class="text-xl text-gray-500 dark:text-gray-400 mb-8">
@@ -194,12 +194,13 @@ print(<span class="text-green-300">f"Success Rate: {result.success_rate}%"</span
                 </div>
             </div>
 
-            <div class="order-1 lg:order-2">
+            <div class="order-1 lg:order-2 w-full min-w-0">
                 <div class="bg-[#1e1e1e] rounded-[2rem] shadow-2xl relative overflow-hidden group">
                     <div
                         class="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity">
                     </div>
-                    <div class="p-4 md:p-8 font-mono text-sm text-gray-300 relative z-10 overflow-x-auto">
+                    <div
+                        class="p-4 md:p-8 font-mono text-xs md:text-sm text-gray-300 relative z-10 overflow-x-auto max-w-full">
                         <pre>
 <span class="text-gray-500"># Mapping Configuration</span>
 mapper = ConditionalFieldMapper(
