@@ -59,7 +59,9 @@
   document.addEventListener("DOMContentLoaded", function () {
     const cta = document.getElementById("cta-popup");
     const closeBtn = document.getElementById("cta-close-btn");
-    const hasClosed = localStorage.getItem('cta_popup_closed');
+
+    // Internal state to prevent reappearance in same session
+    let isDismissed = localStorage.getItem('cta_popup_closed') === 'true';
 
     // Checkbox Logic
     const checkboxIt = document.getElementById('marketing-consent');
@@ -83,8 +85,12 @@
     toggleButton(checkboxIt, btnIt);
     toggleButton(checkboxEn, btnEn);
 
-    if (!hasClosed) {
+    // Only add scroll listener if not already dismissed globally
+    if (!isDismissed) {
       window.addEventListener("scroll", function () {
+        // Double check state inside listener
+        if (isDismissed) return;
+
         const docHeight = document.documentElement.scrollHeight;
         const scrollPos = window.scrollY + window.innerHeight;
         const scrollPercent = (scrollPos / docHeight) * 100;
@@ -100,11 +106,14 @@
     }
 
     closeBtn.addEventListener("click", function () {
+      // Set state immediately to block scroll listener
+      isDismissed = true;
+      localStorage.setItem('cta_popup_closed', 'true');
+
       cta.classList.add('translate-y-10', 'opacity-0');
       setTimeout(() => {
         cta.classList.add('hidden');
       }, 500);
-      localStorage.setItem('cta_popup_closed', 'true');
     });
   });
 </script>
