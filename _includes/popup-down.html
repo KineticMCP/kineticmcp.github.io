@@ -15,20 +15,40 @@
 
     {% if page.lang == 'it' %}
     <h4 class="text-lg font-bold mb-2 text-neutral-900 dark:text-white">Costruisci il tuo Agente</h4>
-    <p class="text-sm text-gray-500 dark:text-gray-400 mb-6">
+    <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">
       Non aspettare i competitor. Trasforma Salesforce in un motore autonomo oggi stesso.
     </p>
-    <a href="/it/pricing/"
-      class="block w-full py-3 rounded-xl bg-black dark:bg-white text-white dark:text-black font-bold text-center hover:bg-brand-blue dark:hover:bg-brand-blue dark:hover:text-white transition-colors">
+
+    <div class="flex items-start gap-3 mb-4">
+      <input type="checkbox" id="marketing-consent"
+        class="mt-1 w-4 h-4 rounded border-gray-300 text-brand-blue focus:ring-brand-blue">
+      <label for="marketing-consent" class="text-xs text-gray-500 dark:text-gray-400 leading-tight">
+        Acconsento a ricevere comunicazioni su aggiornamenti e offerte Enterprise. (<a href="/it/privacy/"
+          class="underline hover:text-brand-blue">Privacy Policy</a>)
+      </label>
+    </div>
+
+    <a href="/it/pricing/" id="popup-cta-btn"
+      class="block w-full py-3 rounded-xl bg-black dark:bg-white text-white dark:text-black font-bold text-center transition-all opacity-50 pointer-events-none cursor-not-allowed">
       Diventa Partner Fondatore
     </a>
     {% else %}
     <h4 class="text-lg font-bold mb-2 text-neutral-900 dark:text-white">Build Your First Agent</h4>
-    <p class="text-sm text-gray-500 dark:text-gray-400 mb-6">
+    <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">
       Don't let competitors get ahead. Turn Salesforce into an autonomous engine today.
     </p>
-    <a href="/en/pricing/"
-      class="block w-full py-3 rounded-xl bg-black dark:bg-white text-white dark:text-black font-bold text-center hover:bg-brand-blue dark:hover:bg-brand-blue dark:hover:text-white transition-colors">
+
+    <div class="flex items-start gap-3 mb-4">
+      <input type="checkbox" id="marketing-consent-en"
+        class="mt-1 w-4 h-4 rounded border-gray-300 text-brand-blue focus:ring-brand-blue">
+      <label for="marketing-consent-en" class="text-xs text-gray-500 dark:text-gray-400 leading-tight">
+        I agree to receive updates and Enterprise offers. (<a href="/en/privacy/"
+          class="underline hover:text-brand-blue">Privacy Policy</a>)
+      </label>
+    </div>
+
+    <a href="/en/pricing/" id="popup-cta-btn-en"
+      class="block w-full py-3 rounded-xl bg-black dark:bg-white text-white dark:text-black font-bold text-center transition-all opacity-50 pointer-events-none cursor-not-allowed">
       Become a Founding Partner
     </a>
     {% endif %}
@@ -40,6 +60,28 @@
     const cta = document.getElementById("cta-popup");
     const closeBtn = document.getElementById("cta-close-btn");
     const hasClosed = localStorage.getItem('cta_popup_closed');
+
+    // Checkbox Logic
+    const checkboxIt = document.getElementById('marketing-consent');
+    const btnIt = document.getElementById('popup-cta-btn');
+    const checkboxEn = document.getElementById('marketing-consent-en');
+    const btnEn = document.getElementById('popup-cta-btn-en');
+
+    function toggleButton(checkbox, btn) {
+      if (!checkbox || !btn) return;
+      checkbox.addEventListener('change', function () {
+        if (this.checked) {
+          btn.classList.remove('opacity-50', 'pointer-events-none', 'cursor-not-allowed');
+          btn.classList.add('hover:bg-brand-blue', 'dark:hover:bg-brand-blue', 'dark:hover:text-white');
+        } else {
+          btn.classList.add('opacity-50', 'pointer-events-none', 'cursor-not-allowed');
+          btn.classList.remove('hover:bg-brand-blue', 'dark:hover:bg-brand-blue', 'dark:hover:text-white');
+        }
+      });
+    }
+
+    toggleButton(checkboxIt, btnIt);
+    toggleButton(checkboxEn, btnEn);
 
     if (!hasClosed) {
       window.addEventListener("scroll", function () {
