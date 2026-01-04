@@ -63,6 +63,12 @@
                             {% if page.lang == 'it' %}Sicurezza{% else %}Security{% endif %}
                         </a>
                     </li>
+                    <li>
+                        <a href="{% if page.lang == 'it' %}/it/dpa/{% else %}/en/dpa/{% endif %}"
+                            class="hover:text-black dark:hover:text-white transition-colors">
+                            DPA
+                        </a>
+                    </li>
 
                     <li>
                         <a href="{% if page.lang == 'it' %}/it/blog/{% else %}/en/blog/{% endif %}"

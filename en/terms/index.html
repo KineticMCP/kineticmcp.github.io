@@ -39,25 +39,41 @@ description: "Commercial Terms of Service for KineticMCP Enterprise Edition."
         <p>The Software facilitates connections between Salesforce and Third-Party AI Models. You acknowledge that:</p>
         <ol>
             <li><strong>AI Hallucinations:</strong> AI models can be unpredictable and may generate incorrect or harmful
-                output ("Hallucinations").</li>
+                output ("Hallucinations"). Licensor is not responsible for the nature, quality, or accuracy of the
+                generated
+                outputs.</li>
             <li><strong>Human in the Loop:</strong> You are solely responsible for reviewing and verifying any actions
                 (e.g., database writes, emails sent) proposed or taken by the Software.</li>
-            <li><strong>No Liability:</strong> Licensor shall NOT be liable for any data loss, business interruption, or
+            <li><strong>No Liability:</strong> Licensor shall NOT be liable for data loss, business interruption, or
                 damages resulting from actions taken by AI agents connected via the Software.</li>
         </ol>
 
-        <h3>5. Enterprise Liability Limitation</h3>
+        <h3>5. Zero Data Retention & Security</h3>
+        <p>The Software is designed as a <strong>Stateless</strong> architecture. It acts exclusively as an encrypted
+            tunnel
+            for data transit between your Salesforce instance and LLM providers.
+            Licensor guarantees that:</p>
+        <ul>
+            <li>It does not store, record, or persist any business data (Customer Data) on its own servers.</li>
+            <li>It does not use customer data for training its own models.</li>
+            <li>All API keys and credentials reside exclusively on the Customer's infrastructure.</li>
+        </ul>
+
+        <h3>6. Enterprise Liability Limitation</h3>
         <p>TO THE MAXIMUM EXTENT PERMITTED BY LAW, IN NO EVENT SHALL LICENSOR BE LIABLE FOR ANY INDIRECT, CONSEQUENTIAL,
             INCIDENTAL, OR SPECIAL DAMAGES (INCLUDING LOSS OF REVENUE OR DATA). LICENSOR'S TOTAL CUMULATIVE LIABILITY
             SHALL NOT EXCEED THE TOTAL FEES PAID BY LICENSEE TO LICENSOR IN THE TWELVE (12) MONTHS PRECEDING THE CLAIM.
         </p>
 
-        <h3>6. Salesforce Integration Disclaimer</h3>
+        <h3>7. Salesforce Integration Disclaimer</h3>
         <p>The Software is an independent tool. "Salesforce" is a trademark of Salesforce, Inc. This Software is not
             endorsed by, affiliated with, or supported by Salesforce, Inc. Licensee represents that it has the necessary
             rights and permissions to access the Salesforce instances connected to the Software.</p>
+        <p>Licensor is not responsible for unilateral changes to Salesforce APIs, rate limits, or
+            changes to license costs imposed by Salesforce Inc. that may impact the functionality of the
+            Software.</p>
 
-        <h3>7. Governing Law</h3>
+        <h3>8. Governing Law and Jurisdiction</h3>
         <p>These Terms shall be governed by the laws of the jurisdiction specified in your Order Form or invoices. Any
             disputes related to intellectual property theft or reverse engineering will be pursued to the fullest extent
             of the law globally.</p>
