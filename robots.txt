@@ -24,4 +24,4 @@ Disallow: /*?*ref=
 Disallow: /*?*s=
 
 # Sitemap
-Sitemap: https://antoniotrento.net/sitemap.xml
+Sitemap: https://kineticmcp.com/sitemap.xml
