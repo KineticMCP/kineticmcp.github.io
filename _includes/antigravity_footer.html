@@ -97,6 +97,12 @@
                             {% if page.lang == 'it' %}Richiedi Demo{% else %}Request Demo{% endif %}
                         </a>
                     </li>
+                    <li>
+                        <a href="{% if page.lang == 'it' %}/it/cofounder/{% else %}/en/cofounder/{% endif %}"
+                            class="hover:text-black dark:hover:text-white transition-colors">
+                            {% if page.lang == 'it' %}Cerchiamo Cofounder{% else %}Join as Co-Founder{% endif %}
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
