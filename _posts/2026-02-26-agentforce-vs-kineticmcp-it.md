@@ -6,6 +6,13 @@ categories: [strategy, market]
 lang: it
 description: "Salesforce e Anthropic stanno costruendo Agentforce + MCP. Non è una minaccia — è la prova più grande che il nostro mercato è reale. Ecco il messaggio che stiamo portando al cofounder giusto."
 image: /assets/images/blog/agentforce-vs-kineticmcp.png
+cta_url: /it/cofounder/
+cta_title: "Il Prodotto Esiste. Tu sei il Pezzo Mancante."
+cta_desc: "Cerchiamo un cofounder commerciale per portare KineticMCP sul mercato. Equity reale. Prodotto funzionante. Vantaggio first-mover."
+cta_label: "Scopri l'Opportunità Cofounder"
+popup_title: "Questo è anche il tuo mercato"
+popup_desc: "Un prodotto funzionante, zero competitor commerciali, equity reale da cofounder."
+popup_label: "Unisciti come Cofounder"
 ---
 
 ## L'Elefante nella Stanza

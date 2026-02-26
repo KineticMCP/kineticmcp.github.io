@@ -14,24 +14,22 @@
     </div>
 
     {% if page.lang == 'it' %}
-    <h4 class="text-lg font-bold mb-2 text-neutral-900 dark:text-white">Costruisci il tuo Agente</h4>
+    <h4 class="text-lg font-bold mb-2 text-neutral-900 dark:text-white">{% if page.popup_title %}{{ page.popup_title }}{% else %}Costruisci il tuo Agente{% endif %}</h4>
     <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">
-      Non aspettare i competitor. Trasforma Salesforce in un motore autonomo oggi stesso.
+      {% if page.popup_desc %}{{ page.popup_desc }}{% else %}Non aspettare i competitor. Trasforma Salesforce in un motore autonomo oggi stesso.{% endif %}
     </p>
-
-    <a href="/it/pricing/"
+    <a href="{% if page.cta_url %}{{ page.cta_url }}{% else %}/it/pricing/{% endif %}"
       class="block w-full py-3 rounded-xl bg-black dark:bg-white text-white dark:text-black font-bold text-center hover:bg-brand-blue dark:hover:bg-brand-blue dark:hover:text-white transition-colors">
-      Diventa Partner Fondatore
+      {% if page.popup_label %}{{ page.popup_label }}{% else %}Diventa Partner Fondatore{% endif %}
     </a>
     {% else %}
-    <h4 class="text-lg font-bold mb-2 text-neutral-900 dark:text-white">Build Your First Agent</h4>
+    <h4 class="text-lg font-bold mb-2 text-neutral-900 dark:text-white">{% if page.popup_title %}{{ page.popup_title }}{% else %}Build Your First Agent{% endif %}</h4>
     <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">
-      Don't let competitors get ahead. Turn Salesforce into an autonomous engine today.
+      {% if page.popup_desc %}{{ page.popup_desc }}{% else %}Don't let competitors get ahead. Turn Salesforce into an autonomous engine today.{% endif %}
     </p>
-
-    <a href="/en/pricing/"
+    <a href="{% if page.cta_url %}{{ page.cta_url }}{% else %}/en/pricing/{% endif %}"
       class="block w-full py-3 rounded-xl bg-black dark:bg-white text-white dark:text-black font-bold text-center hover:bg-brand-blue dark:hover:bg-brand-blue dark:hover:text-white transition-colors">
-      Become a Founding Partner
+      {% if page.popup_label %}{{ page.popup_label }}{% else %}Become a Founding Partner{% endif %}
     </a>
     {% endif %}
   </div>
