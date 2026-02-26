@@ -90,7 +90,3 @@ Un prodotto funzionante. Un mercato validato. Un gap di prezzo in cui ci passi d
 Non stiamo cercando qualcuno che ci "aiuti con le vendite". Stiamo cercando un cofounder che costruisca il motore commerciale di questa azienda da zero.
 
 L'annuncio Salesforce + Anthropic non ha chiuso una porta. Ha aperto la conversazione per noi.
-
----
-
-[Costruiscilo con noi. Scopri l'opportunità cofounder →](/it/cofounder/)

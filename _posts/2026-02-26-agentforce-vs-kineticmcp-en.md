@@ -90,7 +90,3 @@ A working product. A validated market. A pricing gap you could drive a truck thr
 We are not looking for someone to "help with sales." We are looking for a co-founder who builds the commercial engine of this company from the ground up.
 
 The Salesforce + Anthropic announcement didn't close a door. It opened the conversation for us.
-
----
-
-[Build this with us. See the co-founder opportunity →](/en/cofounder/)
