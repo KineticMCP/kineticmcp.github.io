@@ -1,0 +1,32 @@
+# KineticMCP
+
+> KineticMCP is the enterprise action layer for Salesforce — an AI middleware that connects large language models (Claude, OpenAI, local LLMs) to Salesforce via the Model Context Protocol (MCP), enabling AI agents to execute complex sales, operations, and revenue workflows autonomously.
+
+## Overview
+
+KineticMCP turns Salesforce from a static database into an agentic operating system. Instead of human operators manually updating records, routing leads, or chasing invoices, AI agents handle these workflows 24/7 — reading context, making decisions, and writing back to Salesforce with full audit trails and zero data retention.
+
+The product is a self-hosted Docker container with 15 enterprise-grade MCP tools, JWT authentication, session-isolated multi-tenancy, and support for Bulk API v2 (capable of processing millions of records 20–50x faster than the standard API).
+
+## Main Pages
+
+- [Home](https://kineticmcp.com/en/): Value proposition, CLI demo, and founding partner CTA
+- [How It Works](https://kineticmcp.com/en/how-it-works/): Technical architecture — Agent decides, KineticMCP translates, Salesforce executes
+- [Use Cases](https://kineticmcp.com/en/use-cases/): Automation scenarios for Sales Ops, Customer Success, RevOps, Finance, and Strategy
+- [Pricing](https://kineticmcp.com/en/pricing/): Founding Partners program — 30 slots, 50% lifetime discount
+- [Security](https://kineticmcp.com/en/security/): SOC 2 Type II, HIPAA, ISO 27001 ready — stateless, self-hosted architecture
+- [Documentation](https://kineticmcp.com/en/docs/): Kinetic Core Wiki — setup, tools reference, authentication
+- [Co-Founder Opportunity](https://kineticmcp.com/en/cofounder/): Open role for a commercial co-founder
+
+## Blog
+
+- [Automating the SDR: From Data Entry to Revenue](https://kineticmcp.com/en/blog/automating-the-sdr/): How AI agents qualify leads and populate Salesforce from raw CSV in seconds
+- [Account Management 2.0: Saving At-Risk Customers with AI](https://kineticmcp.com/en/blog/account-management-ai/): Proactive churn detection via sentiment analysis of account notes
+- [The Billion-Dollar Feedback Loop: Churn Intelligence](https://kineticmcp.com/en/blog/churn-intelligence/): Mining Closed Lost deals to drive product roadmap and recapture revenue
+- [Salesforce Just Validated Our Market](https://kineticmcp.com/en/blog/salesforce-agentforce-market-validation/): Why Agentforce's launch confirms the MCP middleware thesis
+
+## Optional
+
+- [Privacy Policy](https://kineticmcp.com/en/privacy/): GDPR-compliant data handling
+- [Terms of Service](https://kineticmcp.com/en/terms/): Usage terms and licensing
+- [Sitemap](https://kineticmcp.com/sitemap.xml)

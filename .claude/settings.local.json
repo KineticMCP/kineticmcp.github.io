@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem -Path \"c:\\\\Users\\\\hp\\\\Documents\\\\GitHub\\\\kineticmcp.github.io\" -Force)",
+      "Bash(Select-Object Name, FullName)"
+    ]
+  }
+}

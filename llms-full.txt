@@ -1,0 +1,153 @@
+# KineticMCP — Full Content Index
+
+> KineticMCP is the enterprise action layer for Salesforce. It connects AI agents (Claude, OpenAI, local LLMs) to Salesforce via the Model Context Protocol (MCP), enabling autonomous execution of sales, operations, and revenue workflows — with zero data retention, full audit trails, and self-hosted deployment inside the client's own infrastructure.
+
+## Company
+
+**Name:** KineticMCP
+**Domain:** kineticmcp.com
+**Contact:** info@kineticmcp.com
+**Status:** Working MVP with enterprise-grade architecture — actively seeking a commercial co-founder
+**Founder:** Antonio Trento
+**Business Model:** Enterprise licensing with a Founding Partners program (30 slots, 25 remaining as of early 2026)
+
+## What KineticMCP Does
+
+KineticMCP sits between an AI agent and a Salesforce org. The agent makes a natural-language request ("find all At Risk accounts owned by the East team and schedule follow-up tasks"). KineticMCP translates that request into authenticated Salesforce API calls using the right SOQL queries, executes them, and returns structured results back to the agent — all without storing any customer data.
+
+The core workflow is three steps:
+
+1. **Agent decides** — The LLM interprets the user's intent and selects the appropriate MCP tool
+2. **KineticMCP translates** — Natural language is converted to SOQL/Salesforce API calls, permissions are enforced
+3. **Salesforce executes** — Records are read, created, updated, or deleted; results flow back to the agent
+
+## Technology Stack
+
+- **Protocol:** Model Context Protocol (MCP) by Anthropic
+- **AI Models Supported:** Claude (Anthropic), OpenAI GPT series, local/open-source LLMs
+- **Deployment:** Self-hosted Docker container — data never leaves the client's VPC
+- **Authentication:** JWT with persistent encrypted configuration
+- **Multi-tenancy:** Session-isolated architecture — each user session is independent
+- **API Coverage:** Standard REST API + Bulk API v2 (20–50x faster for mass operations)
+- **Tools:** 15 enterprise MCP tools covering full CRUD, semantic search, NLP query translation, bulk operations
+- **Query Engine:** Natural language → SOQL generation with semantic field matching
+
+## Key Features
+
+- **Zero Data Retention:** Stateless design — no customer data stored or logged by KineticMCP
+- **Any LLM:** Model-agnostic; works with any MCP-compatible AI client
+- **Permission Enforcement:** Respects Salesforce user profiles — agents can only do what the authenticated user is allowed to do
+- **Bulk Operations:** Bulk API v2 capable of processing millions of records
+- **Audit Trail:** Full logging of every agent action for compliance and debugging
+- **Plug-and-Play:** Single Docker container, configured via environment variables
+
+## Security & Compliance
+
+- **SOC 2 Type II Ready**
+- **HIPAA Ready**
+- **ISO 27001 Ready**
+- Built on Anthropic Claude Enterprise (data not used for model training)
+- Self-hosted — runs inside the client's own cloud or on-premise infrastructure
+- User-level Salesforce permission controls enforced at every API call
+- No third-party data access; zero vendor lock-in on the data layer
+
+## Use Cases
+
+### Sales Operations — Pipeline Hygiene Automation
+AI agents scan all open opportunities nightly, analyze email sentiment and activity history, automatically update Close Dates and Stage fields for stale deals, and flag "At Risk" opportunities — eliminating the weekly admin overhead for sales ops managers.
+
+### Customer Success — Perfect Handoffs
+When a deal closes, agents detect the Closed-Won event, spin up onboarding projects in project management tools, create dedicated Slack channels, draft personalized welcome emails, and update all Salesforce records — turning a 3-hour manual process into seconds.
+
+### Revenue Operations — Cross-Stack Sync
+Agents monitor external webhooks (e.g., Stripe pricing changes, ERP updates) and automatically synchronize Salesforce Pricebook entries and account records, keeping CRM data consistent across the revenue stack without human intervention.
+
+### Finance — Collections on Autopilot
+Agents monitor overdue invoices in Salesforce, check Gmail for recent customer communications to avoid tone-deaf outreach, and draft context-aware payment reminders — reducing DSO without straining customer relationships.
+
+### Strategy — Automated Competitive Intelligence
+Agents mine "Closed Lost" opportunity notes to extract competitor mentions and objection patterns, quantify lost revenue by competitor, and generate actionable battlecards — turning front-line sales data into strategic intelligence.
+
+### SDR Automation — Lead Qualification at Scale
+Agents accept raw lead data (CSV, form submissions, enriched lists), validate and deduplicate against existing Salesforce records, score and qualify based on configurable criteria, and create fully populated Lead and Contact records in seconds — compressing 3+ days of SDR data entry into minutes.
+
+### Account Management — Churn Prevention
+Agents continuously analyze account health signals (support ticket sentiment, email response rates, renewal dates, usage data) and proactively surface at-risk accounts with recommended next steps — before customers churn.
+
+## Target Audience
+
+**Primary buyers:**
+- VP of Sales / Chief Revenue Officer
+- Head of Revenue Operations (RevOps)
+- VP of Customer Success
+- Salesforce Admins and Architects
+
+**Company profile:** Mid-market to enterprise organizations (200+ employees) with established Salesforce implementations who want AI automation without replacing their CRM or signing expensive platform-level contracts.
+
+**Geography:** English and Italian markets (bilingual site)
+
+## Market Positioning
+
+**vs. Salesforce Agentforce:**
+Agentforce is deeply integrated into the Salesforce platform but priced for large enterprises ($10k+/year), requires Salesforce-native LLMs, and runs inside Salesforce's infrastructure. KineticMCP is self-hosted, model-agnostic, significantly cheaper, and deployable in weeks — making it the practical choice for mid-market companies.
+
+**vs. Custom API integrations:**
+Building a custom Salesforce ↔ LLM integration requires ongoing maintenance, Salesforce API expertise, and careful permission management. KineticMCP provides this infrastructure out-of-the-box with enterprise security guarantees.
+
+**Positioning statement:** "The affordable, self-hosted alternative to Agentforce for companies that want AI automation in Salesforce today, not after an 18-month enterprise procurement cycle."
+
+## Founding Partners Program
+
+KineticMCP is accepting 30 founding partner organizations to co-develop the product roadmap. Benefits include:
+
+- 50% lifetime discount on all future plans
+- White-glove onboarding and dedicated implementation support
+- Direct access to founders for roadmap input
+- Priority support and feature requests
+- Case study co-creation opportunities
+
+25 slots remaining as of early 2026. Target: 30 customers is the stated goal for initial profitability.
+
+## Blog Content
+
+### Automating the SDR: From Data Entry to Revenue (January 2025)
+Explores how AI agents using KineticMCP can replace manual SDR data entry work. A concrete workflow: agent receives a CSV of 200 leads from a trade show, deduplicates against existing Salesforce contacts, scores each lead based on job title and company size, creates qualified Lead records, and notifies the SDR with a prioritized call list — all in under 60 seconds. Reduces 3+ days of SDR work to minutes.
+
+### Account Management 2.0: Saving At-Risk Customers with AI (January 2025)
+Details how sentiment analysis of account notes and email history can surface churn risk before it becomes visible in renewal conversations. Agents score relationship health, flag accounts below threshold, and automatically schedule QBR calls or executive outreach — giving CSMs a proactive tool instead of reactive fire-fighting.
+
+### The Billion-Dollar Feedback Loop: Churn Intelligence (January 2025)
+Analyzes how "Closed Lost" opportunity data in Salesforce is an underutilized strategic asset. Agents mine loss reasons, extract competitor mentions, and quantify lost revenue per issue — turning what most companies treat as a graveyard into a product roadmap signal and competitive intelligence source.
+
+### Salesforce Just Validated Our Market (February 2026)
+A market analysis piece following Salesforce's Agentforce launch. Argues that Agentforce's existence proves the thesis that AI agents operating inside CRM systems is the next wave of enterprise automation — and that the timing creates a window for an affordable, self-hosted alternative before the market consolidates around Salesforce's native offering.
+
+## Documentation (Kinetic Core Wiki)
+
+The docs cover:
+- Installation via Docker and environment variable configuration
+- Authentication setup (JWT, Salesforce Connected App)
+- Full reference for all 15 MCP tools (read, create, update, delete, bulk, search, query)
+- Natural language query examples and SOQL translation
+- Multi-user session management
+- Security hardening and network configuration
+- Integration examples with Claude Desktop, Cursor, and custom MCP clients
+
+## Co-Founder Opportunity
+
+KineticMCP is seeking a commercial co-founder with a background in enterprise SaaS sales, partnerships, or go-to-market strategy. The technical product (MVP) is complete. The open role is for someone to lead customer acquisition, partnerships, and revenue growth. Equity-based role for the right candidate.
+
+## Language & Localization
+
+The site is bilingual:
+- English: `/en/`
+- Italian: `/it/`
+
+All major pages have both language versions.
+
+## Legal
+
+- [Privacy Policy](https://kineticmcp.com/en/privacy/)
+- [Terms of Service](https://kineticmcp.com/en/terms/)
+- [Data Processing Agreement (DPA)](https://kineticmcp.com/en/dpa/)
+- GDPR compliant
